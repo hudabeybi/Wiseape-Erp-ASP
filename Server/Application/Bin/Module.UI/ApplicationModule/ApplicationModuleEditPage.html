@@ -1,0 +1,315 @@
+
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/edit-icon.png" align="left" vspace="6px">Edit Application
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formEditApplicationModule">
+			<table border="0" cellpadding="0" cellspacing="0" width="90%" align="center">
+				<tr>
+					<td class="formContent" valign="top">
+					<div id="divForm">
+					<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblEdit" align="center" >
+					
+						<tr style="display:none">
+							<td height="35" width="28%" class="tdFormLeft">
+							{SOO.LANG:IdApplication}
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+
+							<INPUT ishidden="true" TYPE="hidden" value="{SOO.DATA:IdApplication}" data="{SOO.ENC:IdApplication}" size="80" type="text" name="txtNum_IdApplication" id="txtNum_IdApplication" >
+
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationName}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ApplicationName}" data="{SOO.ENC:ApplicationName}" type="text" name="txt_ApplicationName" id="txt_ApplicationName" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationName}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationTitle}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ApplicationTitle}" data="{SOO.ENC:ApplicationTitle}" type="text" name="txt_ApplicationTitle" id="txt_ApplicationTitle" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationTitle}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationInfo}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<textarea data="{SOO.ENC:ApplicationInfo}"  name="txtArea_ApplicationInfo" id="txtArea_ApplicationInfo">{SOO.DATA:ApplicationInfo}</textarea>
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationInfo}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationIconSmall}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ApplicationIconSmall}" data="{SOO.ENC:ApplicationIconSmall}" type="text" name="txt_ApplicationIconSmall" id="txt_ApplicationIconSmall" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationIconSmall}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationIconMiddle}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ApplicationIconMiddle}" data="{SOO.ENC:ApplicationIconMiddle}" type="text" name="txt_ApplicationIconMiddle" id="txt_ApplicationIconMiddle" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationIconMiddle}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationIconLarge}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ApplicationIconLarge}" data="{SOO.ENC:ApplicationIconLarge}" type="text" name="txt_ApplicationIconLarge" id="txt_ApplicationIconLarge" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationIconLarge}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationPath}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ApplicationPath}" data="{SOO.ENC:ApplicationPath}" type="text" name="txt_ApplicationPath" id="txt_ApplicationPath" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationPath}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationFile}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ApplicationFile}" data="{SOO.ENC:ApplicationFile}" type="text" name="txt_ApplicationFile" id="txt_ApplicationFile" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationFile}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationClass}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ApplicationClass}" data="{SOO.ENC:ApplicationClass}" type="text" name="txt_ApplicationClass" id="txt_ApplicationClass" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationClass}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationMainFunction}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ApplicationMainFunction}" data="{SOO.ENC:ApplicationMainFunction}" type="text" name="txt_ApplicationMainFunction" id="txt_ApplicationMainFunction" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationMainFunction}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:DisplayIcon}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input {SOO.DATA:DisplayIcon} data="{SOO.ENC:DisplayIcon}"  type="checkbox" name="chk_DisplayIcon" id="chk_DisplayIcon"  checkedvalue="1" uncheckedvalue="0"> Ok 
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:DisplayIcon}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IsActive}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input {SOO.DATA:IsActive} data="{SOO.ENC:IsActive}"  type="checkbox" name="chk_IsActive" id="chk_IsActive"  checkedvalue="1" uncheckedvalue="0"> Ok 
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:IsActive}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:UseWorkflow}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input {SOO.DATA:UseWorkflow} data="{SOO.ENC:UseWorkflow}"  type="checkbox" name="chk_UseWorkflow" id="chk_UseWorkflow"  checkedvalue="1" uncheckedvalue="0"> Ok 
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:UseWorkflow}"></div>
+							</td>
+						</tr>
+					
+
+
+						<tr>
+							<td colspan="3" style="position:relative">
+							<div class="tabWrapper">
+								<div class="tabSeparator">
+								</div>
+					
+							</div>
+
+					
+					<script>
+						
+					</script>
+
+					</table>
+					</div>
+
+					</td>
+				</tr>
+			</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	
+	
+}
+defaultOnLoad();
+
+
+</script>

@@ -1,0 +1,32 @@
+{
+	"controls": 
+	[
+		{
+			"type" : "formgroup", "height" : "75%",
+			"controls" :
+			[
+				{
+					"type": "row",
+					"controls" : 
+					[{ "type" : "hidden", "id":"txtIdUser", "name":"txtIdUser", "dataField":"IdUser" }]
+				}
+				,
+				{
+					"type": "row",
+					"controls" : 
+					[{ "type" : "label", "id":"lblInfo", "name":"lblInfo", "text":"Are you sure?" }]
+				}
+
+			]
+		}
+		,
+		{
+			"type": "row", "style" : "padding-left: 10px; padding-right: 10px; padding-top: 20px",
+			"controls":
+			[
+				{ "type":"button", "label":"Yes", "iconClass": "fa-check", "onclick":"save()" },
+				{ "type":"button", "label":"No", "iconClass": "fa-arrow-left", "onclick":"close()" }
+			]
+		}
+	]
+}

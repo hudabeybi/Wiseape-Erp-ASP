@@ -1,0 +1,261 @@
+<form id="formSearchPostModule">
+<table height="100%" width="70%" align="center">
+<tr>
+<td  height="10%">
+
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchPostModule', '', 'formSearchPostModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+</td>
+</tr>
+<tr>
+<td height="80%">
+
+
+<div id="divForm">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+	<tr>
+		<td width="5%"  height="20px"  valign="top" >&nbsp;</td>
+		<td width="95%" height="20px"  valign="top" >&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="20px" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByKeyword" value="true" checked> By Keyword (search in all free text input data)
+		</td>
+	</tr>
+	<tr>
+		<td width="5%"  height="20px">&nbsp;</td>
+		<td width="95%"  height="20px"  valign="top" >
+			<INPUT type="text" name="txtKeyword" id="txtKeyword" data="Keyword">
+		</td>
+	</tr>
+	<tr>
+		<td width="5%" height="20px">&nbsp;</td>
+		<td width="95%" height="20px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="38" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByColumns" value="true"> By Filter Columns
+		</td>
+	</tr>
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" valign="top" >
+			
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchPostTitle}" type="checkbox" name="chkSearchPostTitle" id="chkSearchPostTitle" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Post Title
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:PostTitle}" size="80" type="text" name="txt_PostTitle" id="txt_PostTitle" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchPostSubTitle}" type="checkbox" name="chkSearchPostSubTitle" id="chkSearchPostSubTitle" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Post Sub Title
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:PostSubTitle}" size="80" type="text" name="txt_PostSubTitle" id="txt_PostSubTitle" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchPostDate}" type="checkbox" name="chkSearchPostDate" id="chkSearchPostDate" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Post Date
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<select name="dt_PostDateDay0" id="dt_PostDateDay0" onchange="Soonda.ChangeDateValue('dt_PostDate0')">
+							<soo:datarepeater:dt_PostDateDay0>
+								<option {selecteddt_PostDateDay0} value="{SOO.DATA:dt_PostDateDay0}">{SOO.DATA:dt_PostDateDayDisplay0}</option>
+							</soo:datarepeater:dt_PostDateDay0>
+						</select>
+						<select name="dt_PostDateMonth0" id="dt_PostDateMonth0" onchange="Soonda.ChangeDateValue('dt_PostDate0')">
+							<soo:datarepeater:dt_PostDateMonth0>
+								<option {selecteddt_PostDateMonth0} value="{SOO.DATA:dt_PostDateMonth0}">
+								{SOO.DATA:dt_PostDateMonthDisplay0}
+								</option>
+							</soo:datarepeater:dt_PostDateMonth0>
+						</select>	
+						<select name="dt_PostDateYear0" id="dt_PostDateYear0" onchange="Soonda.ChangeDateValue('dt_PostDate0')">
+							<soo:datarepeater:dt_PostDateYear0>
+								<option {selecteddt_PostDateYear0} value="{SOO.DATA:dt_PostDateYear0}">
+								{SOO.DATA:dt_PostDateYearDisplay0}
+								</option>
+							</soo:datarepeater:dt_PostDateYear0>
+						</select>			
+					
+						:
+						<select name="dt_PostDateHour0" id="dt_PostDateHour0" onchange="Soonda.ChangeDateValue('dt_PostDate0')">
+							<soo:datarepeater:dt_PostDateHour0>
+								<option {selecteddt_PostDateHour0} value="{SOO.DATA:dt_PostDateHour0}">
+								{SOO.DATA:dt_PostDateHourDisplay0}
+								</option>
+							</soo:datarepeater:dt_PostDateHour0>
+						</select>
+						<select name="dt_PostDateMinute0" id="dt_PostDateMinute0" onchange="Soonda.ChangeDateValue('dt_PostDate0')">
+							<soo:datarepeater:dt_PostDateMinute0>
+								<option {selecteddt_PostDateMinute0} value="{SOO.DATA:dt_PostDateMinute0}">
+								{SOO.DATA:dt_PostDateMinuteDisplay0}
+								</option>
+							</soo:datarepeater:dt_PostDateMinute0>
+						</select>
+						<select name="dt_PostDateSecond0" id="dt_PostDateSecond0" onchange="Soonda.ChangeDateValue('dt_PostDate0')">
+							<soo:datarepeater:dt_PostDateSecond0>
+								<option {selecteddt_PostDateSecond0} value="{SOO.DATA:dt_PostDateSecond0}">
+								{SOO.DATA:dt_PostDateSecondDisplay0}
+								</option>
+							</soo:datarepeater:dt_PostDateSecond0>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:PostDate0}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_PostDate0}" name="dt_PostDate0" id="dt_PostDate0">
+					
+						<select name="dt_PostDateDay1" id="dt_PostDateDay1" onchange="Soonda.ChangeDateValue('dt_PostDate1')">
+							<soo:datarepeater:dt_PostDateDay1>
+								<option {selecteddt_PostDateDay1} value="{SOO.DATA:dt_PostDateDay1}">{SOO.DATA:dt_PostDateDayDisplay1}</option>
+							</soo:datarepeater:dt_PostDateDay1>
+						</select>
+						<select name="dt_PostDateMonth1" id="dt_PostDateMonth1" onchange="Soonda.ChangeDateValue('dt_PostDate1')">
+							<soo:datarepeater:dt_PostDateMonth1>
+								<option {selecteddt_PostDateMonth1} value="{SOO.DATA:dt_PostDateMonth1}">
+								{SOO.DATA:dt_PostDateMonthDisplay1}
+								</option>
+							</soo:datarepeater:dt_PostDateMonth1>
+						</select>	
+						<select name="dt_PostDateYear1" id="dt_PostDateYear1" onchange="Soonda.ChangeDateValue('dt_PostDate1')">
+							<soo:datarepeater:dt_PostDateYear1>
+								<option {selecteddt_PostDateYear1} value="{SOO.DATA:dt_PostDateYear1}">
+								{SOO.DATA:dt_PostDateYearDisplay1}
+								</option>
+							</soo:datarepeater:dt_PostDateYear1>
+						</select>			
+					
+						:
+						<select name="dt_PostDateHour1" id="dt_PostDateHour1" onchange="Soonda.ChangeDateValue('dt_PostDate1')">
+							<soo:datarepeater:dt_PostDateHour1>
+								<option {selecteddt_PostDateHour1} value="{SOO.DATA:dt_PostDateHour1}">
+								{SOO.DATA:dt_PostDateHourDisplay1}
+								</option>
+							</soo:datarepeater:dt_PostDateHour1>
+						</select>
+						<select name="dt_PostDateMinute1" id="dt_PostDateMinute1" onchange="Soonda.ChangeDateValue('dt_PostDate1')">
+							<soo:datarepeater:dt_PostDateMinute1>
+								<option {selecteddt_PostDateMinute1} value="{SOO.DATA:dt_PostDateMinute1}">
+								{SOO.DATA:dt_PostDateMinuteDisplay1}
+								</option>
+							</soo:datarepeater:dt_PostDateMinute1>
+						</select>
+						<select name="dt_PostDateSecond1" id="dt_PostDateSecond1" onchange="Soonda.ChangeDateValue('dt_PostDate1')">
+							<soo:datarepeater:dt_PostDateSecond1>
+								<option {selecteddt_PostDateSecond1} value="{SOO.DATA:dt_PostDateSecond1}">
+								{SOO.DATA:dt_PostDateSecondDisplay1}
+								</option>
+							</soo:datarepeater:dt_PostDateSecond1>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:PostDate1}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_PostDate1}" name="dt_PostDate1" id="dt_PostDate1">
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchPostShortText}" type="checkbox" name="chkSearchPostShortText" id="chkSearchPostShortText" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Post Short Text
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<textarea data="{SOO.FUNCTION:Encrypt:PostShortText}"  cols="80" rows="9" name="txtArea_PostShortText" id="txtArea_PostShortText"></textarea>
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchPostText}" type="checkbox" name="chkSearchPostText" id="chkSearchPostText" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Post Text
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<textarea data="{SOO.FUNCTION:Encrypt:PostText}"  cols="80" rows="9" name="txtArea_PostText" id="txtArea_PostText"></textarea>
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchPostTag}" type="checkbox" name="chkSearchPostTag" id="chkSearchPostTag" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Post Tag
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:PostTag}" size="80" type="text" name="txt_PostTag" id="txt_PostTag" />
+					
+					</td>
+				</tr>
+			
+			</table>
+			</div>
+		
+		</td>
+	</tr>
+</table>
+</div>
+
+</td>
+</tr>
+<tr>
+<td height="10%">
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchPostModule', '', 'formSearchPostModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+</td>
+</tr>
+</form>

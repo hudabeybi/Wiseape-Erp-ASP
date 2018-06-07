@@ -1,0 +1,313 @@
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/plus-icon.png" align="left" vspace="6px">Add Post
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formAddPostModule" width="100%">
+		<table border="0" cellpadding="0" cellspacing="0" width="90%" height="auto"  align="center">
+			<tr>
+				<td class="formContent" valign="top">
+				<div id="divForm">
+
+				<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblAdd" align="center">
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:IdPost}
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input class="numericBox" tabindex="1" data="{SOO.ENC:IdPost}"  type="text" name="txtNum_IdPost" id="txtNum_IdPost" onkeypress="Soonda.validateNumeric(event, 'float');"/>					
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:IdPost}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:PostTitle}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="2" data="{SOO.ENC:PostTitle}" type="text" name="txt_PostTitle" id="txt_PostTitle" value="{SOO.DATA:DefaultPostTitle}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:PostTitle}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:PostSubTitle}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="3" data="{SOO.ENC:PostSubTitle}" type="text" name="txt_PostSubTitle" id="txt_PostSubTitle" value="{SOO.DATA:DefaultPostSubTitle}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:PostSubTitle}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:PostDate}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div class="styled-select">
+							<select tabindex="4" name="dt_PostDateDay" id="dt_PostDateDay" onchange="Soonda.changeDateValue('dt_PostDate')">
+								<soo:datarepeater:dt_PostDateDay>
+									<option {selecteddt_PostDateDay} value="{SOO.DATA:dt_PostDateDay}">{SOO.DATA:dt_PostDateDayDisplay}</option>
+								</soo:datarepeater:dt_PostDateDay>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="5" name="dt_PostDateMonth" id="dt_PostDateMonth" onchange="Soonda.changeDateValue('dt_PostDate')">
+								<soo:datarepeater:dt_PostDateMonth>
+									<option {selecteddt_PostDateMonth} value="{SOO.DATA:dt_PostDateMonth}">
+									{SOO.DATA:dt_PostDateMonthDisplay}
+									</option>
+								</soo:datarepeater:dt_PostDateMonth>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="6" name="dt_PostDateYear" id="dt_PostDateYear" onchange="Soonda.changeDateValue('dt_PostDate')">
+								<soo:datarepeater:dt_PostDateYear>
+									<option {selecteddt_PostDateYear} value="{SOO.DATA:dt_PostDateYear}">
+									{SOO.DATA:dt_PostDateYearDisplay}
+									</option>
+								</soo:datarepeater:dt_PostDateYear>
+							</select>	
+							</div>
+
+						
+							<div style="width:2px;display:table-cell">:</div>
+							<div class="styled-select">
+							<select tabindex="7" name="dt_PostDateHour" id="dt_PostDateHour" onchange="Soonda.changeDateValue('dt_PostDate')">
+								<soo:datarepeater:dt_PostDateHour>
+									<option {selecteddt_PostDateHour} value="{SOO.DATA:dt_PostDateHour}">
+									{SOO.DATA:dt_PostDateHourDisplay}
+									</option>
+								</soo:datarepeater:dt_PostDateHour>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="8" name="dt_PostDateMinute" id="dt_PostDateMinute" onchange="Soonda.changeDateValue('dt_PostDate')">
+								<soo:datarepeater:dt_PostDateMinute>
+									<option {selecteddt_PostDateMinute} value="{SOO.DATA:dt_PostDateMinute}">
+									{SOO.DATA:dt_PostDateMinuteDisplay}
+									</option>
+								</soo:datarepeater:dt_PostDateMinute>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="9" name="dt_PostDateSecond" id="dt_PostDateSecond" onchange="Soonda.changeDateValue('dt_PostDate')">
+								<soo:datarepeater:dt_PostDateSecond>
+									<option {selecteddt_PostDateSecond} value="{SOO.DATA:dt_PostDateSecond}">
+									{SOO.DATA:dt_PostDateSecondDisplay}
+									</option>
+								</soo:datarepeater:dt_PostDateSecond>
+							</select>		
+							</div>
+						
+							<input data="{SOO.ENC:PostDate}"  type="hidden" value="{SOO.SELECTEDDATE:dt_PostDate}" name="dt_PostDate" id="dt_PostDate">
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:PostDate}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:PostShortText}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<textarea tabindex="10" data="{SOO.ENC:PostShortText}" name="txtArea_PostShortText" id="txtArea_PostShortText">{SOO.DATA:DefaultPostShortText}</textarea>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:PostShortText}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft"  colspan="3" >
+						{SOO.LANG:PostText}
+						
+							<b>&nbsp;*</b>
+						
+						
+							<div tabindex="11" id="div_txtArea_PostText">
+							</div>
+							<textarea data="{SOO.ENC:PostText}"  cols="80" rows="10" name="txtArea_PostText" id="txtArea_PostText">{SOO.DATA:DefaultPostText}</textarea>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:PostText}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:PostMainImage}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div>
+								<img class="thumbnail" height="80" id="previewimg_PostMainImage" src="{SOO.SELECTEDIMAGEimg_PostMainImage}" onclick="Soonda.previewImage(this.src);">
+								<br>
+								<div tabindex="12" id="btnUploadimg_PostMainImage" class="lookup-btn">Upload</div>
+							</div>
+							
+							<input isimage="true" data="{SOO.ENC:PostMainImage}"  type="hidden" name="img_PostMainImage" id="img_PostMainImage" onchange="Soonda.PreviewImage(this.value, 'previewimg_PostMainImage' );" value="">						
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:PostMainImage}"></div>
+						</td>
+					</tr>
+				
+					<tr style='display:none'>
+						<td height="35" width="28%" class="tdFormLeft" >
+						
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input data="{SOO.ENC:PostedById}" size="80" type="hidden" name="txt_PostedById" id="txt_PostedById"  value="{SOO.DATA:DefaultPostedById}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:PostedById}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:IsActive}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="14" data="{SOO.ENC:IsActive}"  type="checkbox" name="chk_IsActive" id="chk_IsActive" checkedvalue="1" uncheckedvalue="0"> Ok 
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:IsActive}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:PostTag}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="15" data="{SOO.ENC:PostTag}" type="text" name="txt_PostTag" id="txt_PostTag" value="{SOO.DATA:DefaultPostTag}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:PostTag}"></div>
+						</td>
+					</tr>
+				
+					<tr>
+						<td colspan="3" style="position:relative">
+						<div class="tabWrapper">
+							<div class="tabSeparator">
+							</div>
+
+				
+						</div>
+				
+				<script>
+					
+				</script>
+
+						</td>
+					</tr>
+				</table>
+
+				</div>
+				</td>
+			</tr>
+		</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+Soonda.init();
+Soonda.initForm( "formAddPostModule" );
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	Soonda.createHTMLEditor('txtArea_PostText', '{SOO:FILEMANAGERPATH}');
+
+	Soonda.ajaxUpload('img_PostMainImage', 'btnUploadimg_PostMainImage', 'previewimg_PostMainImage', './SoondaService.php?op=upload&ext={SOO.ENC:img_PostMainImage}FileTypes&path={SOO.ENC:img_PostMainImage}SavedFolder&linkedpath={SOO.ENC:img_PostMainImage}LinkedPath');
+
+	
+}
+defaultOnLoad();
+
+
+
+</script>

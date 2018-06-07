@@ -1,0 +1,221 @@
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/plus-icon.png" align="left" vspace="6px">Add Tasklog
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formAddTasklogModule" width="100%">
+		<table border="0" cellpadding="0" cellspacing="0" width="90%" height="auto"  align="center">
+			<tr>
+				<td class="formContent" valign="top">
+				<div id="divForm">
+
+				<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblAdd" align="center">
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:TaskTitle1}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="1" data="{SOO.ENC:TaskTitle1}" type="text" name="txt_TaskTitle1" id="txt_TaskTitle1" value="{SOO.DATA:DefaultTaskTitle1}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:TaskTitle1}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:TaskTitle2}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="2" data="{SOO.ENC:TaskTitle2}" type="text" name="txt_TaskTitle2" id="txt_TaskTitle2" value="{SOO.DATA:DefaultTaskTitle2}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:TaskTitle2}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:TaskTitle3}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="3" data="{SOO.ENC:TaskTitle3}" type="text" name="txt_TaskTitle3" id="txt_TaskTitle3" value="{SOO.DATA:DefaultTaskTitle3}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:TaskTitle3}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:TaskTitle4}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="4" data="{SOO.ENC:TaskTitle4}" type="text" name="txt_TaskTitle4" id="txt_TaskTitle4" value="{SOO.DATA:DefaultTaskTitle4}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:TaskTitle4}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:TaskDate}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div class="styled-select">
+							<select tabindex="5" name="dt_TaskDateDay" id="dt_TaskDateDay" onchange="Soonda.changeDateValue('dt_TaskDate')">
+								<soo:datarepeater:dt_TaskDateDay>
+									<option {selecteddt_TaskDateDay} value="{SOO.DATA:dt_TaskDateDay}">{SOO.DATA:dt_TaskDateDayDisplay}</option>
+								</soo:datarepeater:dt_TaskDateDay>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="6" name="dt_TaskDateMonth" id="dt_TaskDateMonth" onchange="Soonda.changeDateValue('dt_TaskDate')">
+								<soo:datarepeater:dt_TaskDateMonth>
+									<option {selecteddt_TaskDateMonth} value="{SOO.DATA:dt_TaskDateMonth}">
+									{SOO.DATA:dt_TaskDateMonthDisplay}
+									</option>
+								</soo:datarepeater:dt_TaskDateMonth>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="7" name="dt_TaskDateYear" id="dt_TaskDateYear" onchange="Soonda.changeDateValue('dt_TaskDate')">
+								<soo:datarepeater:dt_TaskDateYear>
+									<option {selecteddt_TaskDateYear} value="{SOO.DATA:dt_TaskDateYear}">
+									{SOO.DATA:dt_TaskDateYearDisplay}
+									</option>
+								</soo:datarepeater:dt_TaskDateYear>
+							</select>	
+							</div>
+
+						
+							<div style="width:2px;display:table-cell">:</div>
+							<div class="styled-select">
+							<select tabindex="8" name="dt_TaskDateHour" id="dt_TaskDateHour" onchange="Soonda.changeDateValue('dt_TaskDate')">
+								<soo:datarepeater:dt_TaskDateHour>
+									<option {selecteddt_TaskDateHour} value="{SOO.DATA:dt_TaskDateHour}">
+									{SOO.DATA:dt_TaskDateHourDisplay}
+									</option>
+								</soo:datarepeater:dt_TaskDateHour>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="9" name="dt_TaskDateMinute" id="dt_TaskDateMinute" onchange="Soonda.changeDateValue('dt_TaskDate')">
+								<soo:datarepeater:dt_TaskDateMinute>
+									<option {selecteddt_TaskDateMinute} value="{SOO.DATA:dt_TaskDateMinute}">
+									{SOO.DATA:dt_TaskDateMinuteDisplay}
+									</option>
+								</soo:datarepeater:dt_TaskDateMinute>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="10" name="dt_TaskDateSecond" id="dt_TaskDateSecond" onchange="Soonda.changeDateValue('dt_TaskDate')">
+								<soo:datarepeater:dt_TaskDateSecond>
+									<option {selecteddt_TaskDateSecond} value="{SOO.DATA:dt_TaskDateSecond}">
+									{SOO.DATA:dt_TaskDateSecondDisplay}
+									</option>
+								</soo:datarepeater:dt_TaskDateSecond>
+							</select>		
+							</div>
+						
+							<input data="{SOO.ENC:TaskDate}"  type="hidden" value="{SOO.SELECTEDDATE:dt_TaskDate}" name="dt_TaskDate" id="dt_TaskDate">
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:TaskDate}"></div>
+						</td>
+					</tr>
+				
+					<tr>
+						<td colspan="3" style="position:relative">
+						<div class="tabWrapper">
+							<div class="tabSeparator">
+							</div>
+
+				
+						</div>
+				
+				<script>
+					
+				</script>
+
+						</td>
+					</tr>
+				</table>
+
+				</div>
+				</td>
+			</tr>
+		</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+Soonda.init();
+Soonda.initForm( "formAddTasklogModule" );
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	
+	
+}
+defaultOnLoad();
+
+
+
+</script>

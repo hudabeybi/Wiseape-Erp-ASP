@@ -1,0 +1,5 @@
+<graph  bgSWF='templates/default/images/graphbg.jpg' canvasBgAlpha='100'  caption='{SOO.DATA:title}' subCaption='{SOO.DATA:subtitle}' xAxisName='{SOO.DATA:xaxisname}' yAxisName='{SOO.DATA:yaxisname}' decimalPrecision='0' formatNumberScale='0' showNames='1' showValues='1' showPercentageValues='0' showPercentageInLabel='1' >
+<soo.datarepeater:datafield1>
+	<set name='{SOO.DATA:fieldvalue}' value='{SOO.DATA:aggregatevalue}' color='{SOO.DATA:color}'/>
+</soo.datarepeater:datafield1>
+</graph>

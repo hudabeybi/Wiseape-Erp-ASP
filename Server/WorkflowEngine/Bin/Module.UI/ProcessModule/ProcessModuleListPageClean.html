@@ -1,0 +1,39 @@
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>&nbsp;</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Process No&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Process Name&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Process Created Date&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Application&nbsp;&nbsp;
+	</td>
+	</tr>
+	<soo:dataProcessModule>
+	<tr>
+		
+	<td style='border-bottom: solid 1px #ccc'>&nbsp;{SOO:DATA:ROWNUMBER}.&nbsp;</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:ProcessNo}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:ProcessName}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.FUNCTION:DATEFORMAT:ProcessCreatedDate}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:ApplicationId}
+	</td>
+	</tr>
+	</soo:dataProcessModule>
+</table>
+
+

@@ -1,0 +1,25 @@
+<style>
+.alert-message
+{
+	width: 100%;
+}
+
+.message-icon
+{
+	width:20%;	
+}
+
+.message-text
+{
+	width: 70%;
+}
+</style>
+
+<div id="div-message" class="alert-message">
+	<div class="message-icon" style="background: url(<%=message.icon; %>);">
+		
+	</div>	
+	<div class="message-text" style="display: inline-block;">
+		<%=message.text; %>
+	</div>
+</div>

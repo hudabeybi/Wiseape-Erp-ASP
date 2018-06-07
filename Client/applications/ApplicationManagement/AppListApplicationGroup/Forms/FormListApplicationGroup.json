@@ -1,0 +1,39 @@
+
+{
+	"controls": 
+	[
+		{
+			"type": "row", "style" : "padding-left: 5px;padding-bottom: 2px; border-bottom: solid 1px #ccc;",
+			"controls":
+			[
+				{ "type":"icon-button", "tooltip":"Add", "label":"Add", "url":"applications/SharedResources/Assets/Icons/icon-add-new.svg", "style":"cursor:pointer;float:left", "onclick":"addItem()" },
+				{ "type":"icon-button", "tooltip":"Edit","label":"Edit", "url":"applications/SharedResources/Assets/Icons/icon-edit.svg", "style":"cursor:pointer;float:left", "onclick":"editItem()" },
+				{ "type":"icon-button", "tooltip":"Delete","label":"Delete", "url":"applications/SharedResources/Assets/Icons/delete.svg",  "style":"cursor:pointer;float:left", "onclick":"deleteItem()" }
+			]
+		}	
+		,
+		{
+			"type": "row", "style" : "padding-top: 2px;padding-bottom: 5px;  border-bottom: solid 1px #ccc;",
+			"controls":
+			[
+				{ "type":"textbox", "id":"txtSearch", "name":"txtSearch", "dataField":"Keyword", "label":"Keyword", "placeholder" : "Enter search word", "rowClass" : "col-md-5" },
+				{ "type":"combobox", "id":"cmbPage", "name":"cmbPage", "dataField":"Page", "label":"Page", "placeholder" : "Enter page", "rowClass" : "col-md-1" },
+				{ "type":"combobox", "id":"cmbMax", "name":"cmbMax", "label":"Max.", "placeholder" : "Max Data", "rowClass" : "col-md-1" },
+				{ "type":"icon-button", "label":"Search", "url":"applications/SharedResources/Assets/Icons/icon-search.svg",  "style":"cursor:pointer;float:left;margin-top: 1%", "onclick":"search()" }			]
+		}
+		,
+		{
+			"type": "row",
+			"controls":
+			[
+				{ "type":"grid", "id":"gridApplicationGroup", "width":"100%", "height":"90%", "columns":"[
+						{'datafield':'IdApplicationGroup', 'type':'string', 'text':'Id App Group', 'width':'0%' },
+				
+						{ 'datafield':'ApplicationGroupName', 'type':'string', 'text':'Application Group Name', 'width':'30%' },
+				
+						{ 'datafield':'ApplicationGroupIcon', 'type':'string', 'text':'Icon', 'width':'30%' }
+				]" }
+			]
+		}
+	]
+}

@@ -1,0 +1,68 @@
+<div class="row" style=" width: auto;">
+	<div class="col-md-1">
+		<div class="button-new" onclick="addItem()">
+		
+		</div>
+	</div>
+	<div class="col-md-1">
+		<div class="button-edit" onclick="editItem()">
+		
+		</div>
+	</div>
+	<div class="col-md-1">
+		<div class="button-delete" onclick="deleteItem()">
+		
+		</div>
+	</div>
+</div>
+<div class="row"  style=" width: auto;">
+	<div class="col-md-3">
+		<div class="form-group">
+			<label>Keyword</label>	
+			<input class="form-control" type="text" name="txtSearch" id="txtSearch" />
+		</div>
+	</div>
+	<div class="col-md-1">
+		<div class="form-group">
+			<label>Page</label>
+			<select class="col-md-12" id="cmbPage" name="cmbPage" placeholder="">
+			</select>
+		</div>
+	</div>
+	<div class="col-md-1">
+		<div class="form-group">
+			<label>Max</label>	
+			<select class="col-md-12" id="cmbMaxDisplay" name="cmbMaxDisplay" placeholder="">
+			</select>
+		</div>
+	</div>
+	<div class="col-md-2">
+		<div class="form-group">
+			<label for="dt-fromDate">From Date</label>
+			<div class="input-group date">	
+				<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>	
+				<input class="col-md-12" type="text" id="dt-fromDate" name="dt-fromDate" placeholder="From Date">
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2">
+		<div class="form-group">
+			<label for="dt-endDate">End Date</label>
+			<div class="input-group date">	
+				<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>	
+				<input class="col-md-12" type="text" id="dt-endDate" name="dt-endDate" placeholder="End Date">
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-2">
+		<label>&nbsp;</label>
+		<button class="btn btn-block btn-primary btn-flat" id="btnSearch">Search</button>
+	</div>
+</div>
+<br />
+<div style=" vertical-align: top">
+	<div id="gridTasklog">
+
+	</div>
+</div>

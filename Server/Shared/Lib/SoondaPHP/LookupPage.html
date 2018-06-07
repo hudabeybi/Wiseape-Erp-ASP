@@ -1,0 +1,35 @@
+<input type="hidden" id="txtData" width="100">
+<table border="0" width="100%" cellpadding="0" cellspacing="3">
+	<tr>
+		<td>Search<br>
+		<input type="text" id="txtKeyword" size="28" onkeyup="pp.displayLookupData('{soo:combo}','{SOO:MODULENAME}', '{soo:lookuptable}', '{soo:keycolumn}', '{soo:displaycolumn}');"><br>
+&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+		<div id="div-lookup-list-data">
+			<table border="0" cellpadding="0" width="100%" id="tblData">
+			</table>
+		</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		&nbsp;</td>
+	</tr>
+</table>
+
+<script>
+
+var data = new Array();
+var idx = 0;
+<soo.data:lookup>
+data[idx] = "{soo.data:keycolumn};{soo.data:displaycolumn}";
+txtData.value += data[idx] + "|";
+idx++;
+</soo.data:lookup>
+
+
+
+
+</script>

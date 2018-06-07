@@ -1,0 +1,117 @@
+
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/edit-icon.png" align="left" vspace="6px">Edit Gender
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formEditGenderModule">
+			<table border="0" cellpadding="0" cellspacing="0" width="90%" align="center">
+				<tr>
+					<td class="formContent" valign="top">
+					<div id="divForm">
+					<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblEdit" align="center" >
+					
+						<tr style="display:none">
+							<td height="35" width="28%" class="tdFormLeft">
+							{SOO.LANG:IdGender}
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+
+							<INPUT ishidden="true" TYPE="hidden" value="{SOO.DATA:IdGender}" data="{SOO.ENC:IdGender}" size="80" type="text" name="txtNum_IdGender" id="txtNum_IdGender" >
+
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:GenderName}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:GenderName}" data="{SOO.ENC:GenderName}" type="text" name="txt_GenderName" id="txt_GenderName" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:GenderName}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:GenderInfo}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:GenderInfo}" data="{SOO.ENC:GenderInfo}" type="text" name="txt_GenderInfo" id="txt_GenderInfo" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:GenderInfo}"></div>
+							</td>
+						</tr>
+					
+
+
+						<tr>
+							<td colspan="3" style="position:relative">
+							<div class="tabWrapper">
+								<div class="tabSeparator">
+								</div>
+					
+							</div>
+
+					
+					<script>
+						
+					</script>
+
+					</table>
+					</div>
+
+					</td>
+				</tr>
+			</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	
+	
+}
+defaultOnLoad();
+
+
+</script>

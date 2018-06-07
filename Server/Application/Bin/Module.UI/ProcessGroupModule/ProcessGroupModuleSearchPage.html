@@ -1,0 +1,128 @@
+<form id="formSearchProcessGroupModule">
+<table height="100%" width="70%" align="center">
+<tr>
+<td  height="10%">
+
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchProcessGroupModule', '', 'formSearchProcessGroupModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+</td>
+</tr>
+<tr>
+<td height="80%">
+
+
+<div id="divForm">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+	<tr>
+		<td width="5%"  height="20px"  valign="top" >&nbsp;</td>
+		<td width="95%" height="20px"  valign="top" >&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="20px" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByKeyword" value="true" checked> By Keyword (search in all free text input data)
+		</td>
+	</tr>
+	<tr>
+		<td width="5%"  height="20px">&nbsp;</td>
+		<td width="95%"  height="20px"  valign="top" >
+			<INPUT type="text" name="txtKeyword" id="txtKeyword" data="Keyword">
+		</td>
+	</tr>
+	<tr>
+		<td width="5%" height="20px">&nbsp;</td>
+		<td width="95%" height="20px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="38" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByColumns" value="true"> By Filter Columns
+		</td>
+	</tr>
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" valign="top" >
+			
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchProcessGroupName}" type="checkbox" name="chkSearchProcessGroupName" id="chkSearchProcessGroupName" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Process Group Name
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:ProcessGroupName}" size="80" type="text" name="txt_ProcessGroupName" id="txt_ProcessGroupName" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchProcessGroupTitle}" type="checkbox" name="chkSearchProcessGroupTitle" id="chkSearchProcessGroupTitle" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Process Group Title
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:ProcessGroupTitle}" size="80" type="text" name="txt_ProcessGroupTitle" id="txt_ProcessGroupTitle" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchProcessGroupInfo}" type="checkbox" name="chkSearchProcessGroupInfo" id="chkSearchProcessGroupInfo" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Process Group Info
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<textarea data="{SOO.FUNCTION:Encrypt:ProcessGroupInfo}"  cols="80" rows="9" name="txtArea_ProcessGroupInfo" id="txtArea_ProcessGroupInfo"></textarea>
+					
+					</td>
+				</tr>
+			
+			</table>
+			</div>
+		
+		</td>
+	</tr>
+</table>
+</div>
+
+</td>
+</tr>
+<tr>
+<td height="10%">
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchProcessGroupModule', '', 'formSearchProcessGroupModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+</td>
+</tr>
+</form>

@@ -1,0 +1,39 @@
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>&nbsp;</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Gallery Caption&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Image Date&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Image Url&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Gallery Album&nbsp;&nbsp;
+	</td>
+	</tr>
+	<soo:dataGalleryModule>
+	<tr>
+		
+	<td style='border-bottom: solid 1px #ccc'>&nbsp;{SOO:DATA:ROWNUMBER}.&nbsp;</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:GalleryCaption}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.FUNCTION:DATEFORMAT:ImageDate}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:ImageUrl}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:GalleryAlbumId}
+	</td>
+	</tr>
+	</soo:dataGalleryModule>
+</table>
+
+

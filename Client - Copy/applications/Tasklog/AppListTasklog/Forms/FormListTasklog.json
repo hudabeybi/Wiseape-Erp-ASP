@@ -1,0 +1,34 @@
+{
+	"controls": 
+	[
+		{
+			"type": "row", "style" : "padding-left: 16px;padding-bottom: 16px;",
+			"controls":
+			[
+				{ "type":"icon-button", "tooltip":"Add", "label":"Add", "url":"applications/SharedResources/Assets/Icons/icon-add-new.svg", "style":"cursor:pointer;float:left", "onclick":"addItem()" },
+				{ "type":"icon-button", "tooltip":"Edit","label":"Edit", "url":"applications/SharedResources/Assets/Icons/icon-edit.svg", "style":"cursor:pointer;float:left", "onclick":"editItem()" },
+				{ "type":"icon-button", "tooltip":"Delete","label":"Delete", "url":"applications/SharedResources/Assets/Icons/delete.svg",  "style":"cursor:pointer;float:left", "onclick":"deleteItem()" }
+			]
+		}	
+		,
+		{
+			"type": "row",
+			"controls":
+			[
+				{ "type":"textbox", "id":"txtSearch", "name":"txtSearch", "dataField":"Keyword", "label":"Keyword", "placeholder" : "Enter search word" },
+				{ "type":"datetime", "id":"dtFromDate", "name":"dtFromDate", "dataField":"FromDate", "label":"From Date", "placeholder" : "From Date" },
+				{ "type":"datetime", "id":"dtEndDate", "name":"dtEndDate", "dataField":"EndDate", "label":"End Date", "placeholder" : "End Date" },
+				{ "type":"combobox", "id":"cmbPage", "name":"cmbPage", "dataField":"Page", "label":"Page", "placeholder" : "Enter page" },
+				{ "type":"combobox", "id":"cmbMax", "name":"cmbMax", "label":"Max.", "placeholder" : "Max Data" },
+				{ "type":"icon-button", "label":"Search", "url":"applications/SharedResources/Assets/Icons/icon-search.svg",  "style":"cursor:pointer;float:left;margin-top: 1%", "onclick":"search()" }			]
+		}
+		,
+		{
+			"type": "row",
+			"controls":
+			[
+				{ "type":"grid", "id":"gridTasklog", "width":"100%", "height":"60%", "columns":"[{'datafield':'IdTasklog', 'type':'int', 'text':'Id Tasklog', 'width':'0' },{ 'datafield':'TaskTitle1', 'type':'string', 'text':'Task Title 1', 'width':'300' },{ 'datafield':'TaskTitle2', 'type':'string', 'text':'Task Title 2', 'width':'300' },{ 'datafield':'TaskTitle3', 'type':'string', 'text':'Task Title 3', 'width':'300' },{ 'datafield':'TaskDate', 'type':'date', 'text':'Task Title 3', 'width':'200', 'cellsformat': 'dd-MMMM-yyyy' }]" }
+			]
+		}
+	]
+}

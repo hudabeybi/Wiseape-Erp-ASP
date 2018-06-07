@@ -1,0 +1,103 @@
+{
+	"controls": 
+	[
+		{
+			"type" : "formgroup",
+			"controls" :
+			[
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "hidden", "id":"txtIdProcessGroup", "name": "txtIdProcessGroup", "label":"", "dataField":"IdProcessGroup", "placeholder":"Masukkan Id Process Group" } 
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtProcessGroupName", "name": "txtProcessGroupName", "label":"Process Group Name", "dataField":"ProcessGroupName", "placeholder":"Masukkan Process Group Name" } , 
+						{ "type" : "textbox", "id":"txtProcessGroupTitle", "name": "txtProcessGroupTitle", "label":"Process Group Title", "dataField":"ProcessGroupTitle", "placeholder":"Masukkan Process Group Title" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "textarea", "id":"txtProcessGroupInfo", "name": "txtProcessGroupInfo", "label":"Process Group Info", "dataField":"ProcessGroupInfo", "placeholder":"Masukkan Process Group Info" }   
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "textbox", "id":"imgIconSmall", "name": "imgIconSmall", "label":"Icon Small", "dataField":"IconSmall", "placeholder":"Masukkan Icon Small" } 
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "textbox", "id":"imgIconMiddle", "name": "imgIconMiddle", "label":"Icon Middle", "dataField":"IconMiddle", "placeholder":"Masukkan Icon Middle" } 
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "textbox", "id":"imgIconLarge", "name": "imgIconLarge", "label":"Icon Large", "dataField":"IconLarge", "placeholder":"Masukkan Icon Large" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "checkbox", "id":"txtIsActive", "name": "txtIsActive", "label":"Is Active", "dataField":"IsActive", "placeholder":"Masukkan Is Active" } ,  
+						{ "type": "checkbox", "id":"txtIsDisplay", "name": "txtIsDisplay", "label":"Is Display", "dataField":"IsDisplay", "placeholder":"Masukkan Is Display" }   
+					]
+				}
+				,
+				
+
+				{	"type": "row",
+					"controls":
+					[
+						{	"type": "tabs" 
+		
+						}
+					]
+				}	
+
+			]
+		}
+		,
+		{
+			"type": "row", "style" : "padding-left: 10px; padding-right: 10px; padding-top: 20px",
+			"controls":
+			[
+				{ "type":"button", "label":"Save", "iconClass": "fa-check", "onclick":"save()" },
+				{ "type":"button", "label":"Close", "iconClass": "fa-arrow-left", "onclick":"close()" }
+			]
+		}
+	]
+}

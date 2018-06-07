@@ -1,0 +1,246 @@
+<form id="formSearchUserModule">
+<table height="100%" width="70%" align="center">
+<tr>
+<td  height="10%">
+
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchUserModule', '', 'formSearchUserModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+</td>
+</tr>
+<tr>
+<td height="80%">
+
+
+<div id="divForm">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+	<tr>
+		<td width="5%"  height="20px"  valign="top" >&nbsp;</td>
+		<td width="95%" height="20px"  valign="top" >&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="20px" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByKeyword" value="true" checked> By Keyword (search in all free text input data)
+		</td>
+	</tr>
+	<tr>
+		<td width="5%"  height="20px">&nbsp;</td>
+		<td width="95%"  height="20px"  valign="top" >
+			<INPUT type="text" name="txtKeyword" id="txtKeyword" data="Keyword">
+		</td>
+	</tr>
+	<tr>
+		<td width="5%" height="20px">&nbsp;</td>
+		<td width="95%" height="20px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="38" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByColumns" value="true"> By Filter Columns
+		</td>
+	</tr>
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" valign="top" >
+			
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchFirstName}" type="checkbox" name="chkSearchFirstName" id="chkSearchFirstName" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					First Name
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:FirstName}" size="80" type="text" name="txt_FirstName" id="txt_FirstName" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchLastName}" type="checkbox" name="chkSearchLastName" id="chkSearchLastName" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Last Name
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:LastName}" size="80" type="text" name="txt_LastName" id="txt_LastName" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchUserRegisteredDate}" type="checkbox" name="chkSearchUserRegisteredDate" id="chkSearchUserRegisteredDate" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					User Registered Date
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<select name="dt_UserRegisteredDateDay0" id="dt_UserRegisteredDateDay0" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate0')">
+							<soo:datarepeater:dt_UserRegisteredDateDay0>
+								<option {selecteddt_UserRegisteredDateDay0} value="{SOO.DATA:dt_UserRegisteredDateDay0}">{SOO.DATA:dt_UserRegisteredDateDayDisplay0}</option>
+							</soo:datarepeater:dt_UserRegisteredDateDay0>
+						</select>
+						<select name="dt_UserRegisteredDateMonth0" id="dt_UserRegisteredDateMonth0" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate0')">
+							<soo:datarepeater:dt_UserRegisteredDateMonth0>
+								<option {selecteddt_UserRegisteredDateMonth0} value="{SOO.DATA:dt_UserRegisteredDateMonth0}">
+								{SOO.DATA:dt_UserRegisteredDateMonthDisplay0}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateMonth0>
+						</select>	
+						<select name="dt_UserRegisteredDateYear0" id="dt_UserRegisteredDateYear0" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate0')">
+							<soo:datarepeater:dt_UserRegisteredDateYear0>
+								<option {selecteddt_UserRegisteredDateYear0} value="{SOO.DATA:dt_UserRegisteredDateYear0}">
+								{SOO.DATA:dt_UserRegisteredDateYearDisplay0}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateYear0>
+						</select>			
+					
+						:
+						<select name="dt_UserRegisteredDateHour0" id="dt_UserRegisteredDateHour0" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate0')">
+							<soo:datarepeater:dt_UserRegisteredDateHour0>
+								<option {selecteddt_UserRegisteredDateHour0} value="{SOO.DATA:dt_UserRegisteredDateHour0}">
+								{SOO.DATA:dt_UserRegisteredDateHourDisplay0}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateHour0>
+						</select>
+						<select name="dt_UserRegisteredDateMinute0" id="dt_UserRegisteredDateMinute0" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate0')">
+							<soo:datarepeater:dt_UserRegisteredDateMinute0>
+								<option {selecteddt_UserRegisteredDateMinute0} value="{SOO.DATA:dt_UserRegisteredDateMinute0}">
+								{SOO.DATA:dt_UserRegisteredDateMinuteDisplay0}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateMinute0>
+						</select>
+						<select name="dt_UserRegisteredDateSecond0" id="dt_UserRegisteredDateSecond0" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate0')">
+							<soo:datarepeater:dt_UserRegisteredDateSecond0>
+								<option {selecteddt_UserRegisteredDateSecond0} value="{SOO.DATA:dt_UserRegisteredDateSecond0}">
+								{SOO.DATA:dt_UserRegisteredDateSecondDisplay0}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateSecond0>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:UserRegisteredDate0}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_UserRegisteredDate0}" name="dt_UserRegisteredDate0" id="dt_UserRegisteredDate0">
+					
+						<select name="dt_UserRegisteredDateDay1" id="dt_UserRegisteredDateDay1" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate1')">
+							<soo:datarepeater:dt_UserRegisteredDateDay1>
+								<option {selecteddt_UserRegisteredDateDay1} value="{SOO.DATA:dt_UserRegisteredDateDay1}">{SOO.DATA:dt_UserRegisteredDateDayDisplay1}</option>
+							</soo:datarepeater:dt_UserRegisteredDateDay1>
+						</select>
+						<select name="dt_UserRegisteredDateMonth1" id="dt_UserRegisteredDateMonth1" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate1')">
+							<soo:datarepeater:dt_UserRegisteredDateMonth1>
+								<option {selecteddt_UserRegisteredDateMonth1} value="{SOO.DATA:dt_UserRegisteredDateMonth1}">
+								{SOO.DATA:dt_UserRegisteredDateMonthDisplay1}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateMonth1>
+						</select>	
+						<select name="dt_UserRegisteredDateYear1" id="dt_UserRegisteredDateYear1" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate1')">
+							<soo:datarepeater:dt_UserRegisteredDateYear1>
+								<option {selecteddt_UserRegisteredDateYear1} value="{SOO.DATA:dt_UserRegisteredDateYear1}">
+								{SOO.DATA:dt_UserRegisteredDateYearDisplay1}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateYear1>
+						</select>			
+					
+						:
+						<select name="dt_UserRegisteredDateHour1" id="dt_UserRegisteredDateHour1" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate1')">
+							<soo:datarepeater:dt_UserRegisteredDateHour1>
+								<option {selecteddt_UserRegisteredDateHour1} value="{SOO.DATA:dt_UserRegisteredDateHour1}">
+								{SOO.DATA:dt_UserRegisteredDateHourDisplay1}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateHour1>
+						</select>
+						<select name="dt_UserRegisteredDateMinute1" id="dt_UserRegisteredDateMinute1" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate1')">
+							<soo:datarepeater:dt_UserRegisteredDateMinute1>
+								<option {selecteddt_UserRegisteredDateMinute1} value="{SOO.DATA:dt_UserRegisteredDateMinute1}">
+								{SOO.DATA:dt_UserRegisteredDateMinuteDisplay1}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateMinute1>
+						</select>
+						<select name="dt_UserRegisteredDateSecond1" id="dt_UserRegisteredDateSecond1" onchange="Soonda.ChangeDateValue('dt_UserRegisteredDate1')">
+							<soo:datarepeater:dt_UserRegisteredDateSecond1>
+								<option {selecteddt_UserRegisteredDateSecond1} value="{SOO.DATA:dt_UserRegisteredDateSecond1}">
+								{SOO.DATA:dt_UserRegisteredDateSecondDisplay1}
+								</option>
+							</soo:datarepeater:dt_UserRegisteredDateSecond1>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:UserRegisteredDate1}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_UserRegisteredDate1}" name="dt_UserRegisteredDate1" id="dt_UserRegisteredDate1">
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchUserEmail}" type="checkbox" name="chkSearchUserEmail" id="chkSearchUserEmail" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					User Email
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:UserEmail}" size="80" type="text" name="txt_UserEmail" id="txt_UserEmail" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchUserPhone}" type="checkbox" name="chkSearchUserPhone" id="chkSearchUserPhone" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					User Phone
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:UserPhone}" size="80" type="text" name="txt_UserPhone" id="txt_UserPhone" />
+					
+					</td>
+				</tr>
+			
+			</table>
+			</div>
+		
+		</td>
+	</tr>
+</table>
+</div>
+
+</td>
+</tr>
+<tr>
+<td height="10%">
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchUserModule', '', 'formSearchUserModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+</td>
+</tr>
+</form>

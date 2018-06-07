@@ -1,0 +1,88 @@
+{
+	"controls": 
+	[
+		{
+			"type" : "formgroup",
+			"controls" :
+			[
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "hidden", "id":"txtIdGalleryAlbum", "name": "txtIdGalleryAlbum", "label":"", "dataField":"IdGalleryAlbum", "placeholder":"Masukkan Id Gallery Album" } 
+					]
+				}
+				,
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "combobox", "id":"cmbTag", "name": "cmbTag", "label":"Tag", "dataField":"Tag", "placeholder":"", 
+						"dataSourceInfo":{ "valueField":"IdTag", "displayField" : "TagName"  }, 
+						"dataSource": [ {"IdTag" : "Gallery Album", "TagName":"Gallery Album"}, {"IdTag" : "Media Coverage", "TagName":"Media Coverage"} ] } 	
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtAlbumTitle", "name": "txtAlbumTitle", "label":"Album Title", "dataField":"AlbumTitle", "placeholder":"Masukkan Album Title" } 	
+					]
+				}
+				,
+				{
+					"type": "row",
+					"controls": 
+					[
+		
+						{ "type": "textarea", "id":"txtAlbumDescription", "name": "txtAlbumDescription", "label":"Album Description", "dataField":"AlbumDescription", "placeholder":"Masukkan Album Description" }   
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "datetime", "id":"dtAlbumCreatedDate", "name": "dtAlbumCreatedDate", "label":"Album Created Date", "dataField":"AlbumCreatedDate", "placeholder":"Masukkan Album Created Date" } 
+					]
+				}
+				,
+				
+
+				{	"type": "row",
+					"controls":
+					[
+						{ "type": "image", "id":"imgAlbum", "name": "imgAlbum", "label":"Album Main Picture", "dataField":"AlbumImage", "placeholder":"Image album", "multiple" : "false" }
+					]
+				}
+				,
+				
+
+				{	"type": "row",
+					"controls":
+					[
+						{ "type": "image", "id":"imgUserPicture", "name": "imgUserPicture", "label":"List of Pictures in this album", "dataField":"PictureList", "placeholder":"Masukkan User Picture", "multiple" : "true" }
+					]
+				}	
+
+			]
+		}
+		,
+		{
+			"type": "row", "style" : "padding-left: 10px; padding-right: 10px; padding-top: 20px",
+			"controls":
+			[
+				{ "type":"button", "label":"Save", "iconClass": "fa-check", "onclick":"save()" },
+				{ "type":"button", "label":"Close", "iconClass": "fa-arrow-left", "onclick":"close()" }
+			]
+		}
+	]
+}

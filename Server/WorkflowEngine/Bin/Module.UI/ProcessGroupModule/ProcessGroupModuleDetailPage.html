@@ -1,0 +1,242 @@
+
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/edit-icon.png" align="left" vspace="6px">Detail of ProcessGroupModule
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formEditProcessGroupModule">
+			<table border="0" cellpadding="0" cellspacing="0" width="90%" align="center">
+				<tr>
+					<td class="formContent" valign="top">
+					<div id="divForm">
+					<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblEdit" align="center" >
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessGroupName}
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>{SOO.DATA:ProcessGroupName}</div>
+							
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessGroupTitle}
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>{SOO.DATA:ProcessGroupTitle}</div>
+							
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessGroupInfo}
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>{SOO.DATA:ProcessGroupInfo}</div>
+							
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IconSmall}
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>
+									<img class='thumbnail' isimage="true" height="80" id="previewimg_IconSmall" src="{SOO.DATA:IconSmall}" onclick="Soonda.previewImage(this.src);">
+									<br>
+								</div>		
+							
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IconMiddle}
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>
+									<img class='thumbnail' isimage="true" height="80" id="previewimg_IconMiddle" src="{SOO.DATA:IconMiddle}" onclick="Soonda.previewImage(this.src);">
+									<br>
+								</div>		
+							
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IconLarge}
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>
+									<img class='thumbnail' isimage="true" height="80" id="previewimg_IconLarge" src="{SOO.DATA:IconLarge}" onclick="Soonda.previewImage(this.src);">
+									<br>
+								</div>		
+							
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IsActive}
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>{SOO.DATA:IsActive}</div>
+							
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IsDisplay}
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>{SOO.DATA:IsDisplay}</div>
+							
+							</td>
+						</tr>
+					
+
+
+						<tr>
+							<td colspan="3" style="position:relative">
+							<div class="tabWrapper">
+								<div class="tabSeparator">
+								</div>
+					
+								<div id="divTabProcessModule" onclick="Soonda.showElement('divTabProcessModule', 'divProcessModuleWrapper', 'tabDetail', 'detail-content-wrapper', 'tab-selected')" class="tabDetail">
+									ProcessModule
+								</div>
+								<div class="tabSeparator">
+								</div>
+
+					
+							</div>
+
+					
+							<div id="divProcessModuleWrapper"  class="detail-content-wrapper">
+								<div class="divDetailWrapper">
+								
+									<div id="childModuleProcessModule" class="detail-table-container">
+
+									</div>
+
+								</div>
+								<div style="height:20px">
+								</div>
+
+							</div>
+
+					
+					<script>
+						Soonda.showElement( 'divTabProcessModule', 'divProcessModuleWrapper', 'tabDetail', 'detail-content-wrapper', 'tab-selected');
+					</script>
+
+					</table>
+					</div>
+
+					</td>
+				</tr>
+			</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+
+
+//display ProcessModule()
+loadProcessModule();
+
+
+/*
+function to display ProcessModule list
+*/
+function loadProcessModule()
+{
+	var dataTable = new DataTable ("detailTableProcessModule");
+
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:IdProcess}", "{SOO.LANG:IdProcess}"); 
+	var dataColumn = dataTable.createNewColumn ("text", "{SOO.ENC:ProcessNo}", "{SOO.LANG:ProcessNo}"); 
+	var dataColumn = dataTable.createNewColumn ("text", "{SOO.ENC:ProcessName}", "{SOO.LANG:ProcessName}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:ProcessInfo}", "{SOO.LANG:ProcessInfo}"); 
+	var dataColumn = dataTable.createNewColumn ("text", "{SOO.ENC:ProcessCreatedDate}", "{SOO.LANG:ProcessCreatedDate}"); 
+	var dataColumn = dataTable.createNewColumn ("text", "{SOO.ENC:ApplicationId}", "{SOO.LANG:ApplicationId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:PreviousWorkflowEvaluatorId}", "{SOO.LANG:PreviousWorkflowEvaluatorId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:NextWorkflowEvaluatorId}", "{SOO.LANG:NextWorkflowEvaluatorId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:WorkflowId}", "{SOO.LANG:WorkflowId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:CreatedByUserId}", "{SOO.LANG:CreatedByUserId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:ProcessGroupId}", "{SOO.LANG:ProcessGroupId}"); 
+	
+	<soo.repeater:dataProcessModule>
+	var dataRow 				= dataTable.createNewRow();
+	dataRow.isEdit				= true;
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:IdProcess}", "{SOO.DATA:IdProcess}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:ProcessNo}", "{SOO.DATA:ProcessNo}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:ProcessName}", "{SOO.DATA:ProcessName}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:ProcessInfo}", "{SOO.DATA:ProcessInfo}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:ProcessCreatedDate}", "{SOO.DATA:ProcessCreatedDate}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:ApplicationId}", "{SOO.DATA:_}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:PreviousWorkflowEvaluatorId}", "{SOO.DATA:PreviousWorkflowEvaluatorId}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:NextWorkflowEvaluatorId}", "{SOO.DATA:NextWorkflowEvaluatorId}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:WorkflowId}", "{SOO.DATA:WorkflowId}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:CreatedByUserId}", "{SOO.DATA:CreatedByUserId}");
+	var dataCell				= dataRow.createNewCell( "{SOO.DATA:ProcessGroupId}", "{SOO.DATA:ProcessGroupId}");
+	</soo.repeater:dataProcessModule>
+
+	dataTable.id						= "detailTableProcessModule";
+	dataTable.moduleName				= "{SOO:MODULENAME}";
+	dataTable.componentName				= "{SOO:COMPONENTNAME}";
+	dataTable.childComponentName		= "com_ProcessModule";
+	DataTableRender.editOnClick			= FormUtil.editOnClick;
+	DataTableRender.removeOnClick		= FormUtil.removeOnClick; 
+	DataTableRender.display ( "childModuleProcessModule", dataTable, false);
+
+}
+
+
+</script>

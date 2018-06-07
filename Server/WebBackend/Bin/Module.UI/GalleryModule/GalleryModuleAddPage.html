@@ -1,0 +1,221 @@
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/plus-icon.png" align="left" vspace="6px">Add Gallery
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formAddGalleryModule" width="100%">
+		<table border="0" cellpadding="0" cellspacing="0" width="90%" height="auto"  align="center">
+			<tr>
+				<td class="formContent" valign="top">
+				<div id="divForm">
+
+				<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblAdd" align="center">
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:GalleryCaption}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="1" data="{SOO.ENC:GalleryCaption}" type="text" name="txt_GalleryCaption" id="txt_GalleryCaption" value="{SOO.DATA:DefaultGalleryCaption}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:GalleryCaption}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ImageDate}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div class="styled-select">
+							<select tabindex="2" name="dt_ImageDateDay" id="dt_ImageDateDay" onchange="Soonda.changeDateValue('dt_ImageDate')">
+								<soo:datarepeater:dt_ImageDateDay>
+									<option {selecteddt_ImageDateDay} value="{SOO.DATA:dt_ImageDateDay}">{SOO.DATA:dt_ImageDateDayDisplay}</option>
+								</soo:datarepeater:dt_ImageDateDay>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="3" name="dt_ImageDateMonth" id="dt_ImageDateMonth" onchange="Soonda.changeDateValue('dt_ImageDate')">
+								<soo:datarepeater:dt_ImageDateMonth>
+									<option {selecteddt_ImageDateMonth} value="{SOO.DATA:dt_ImageDateMonth}">
+									{SOO.DATA:dt_ImageDateMonthDisplay}
+									</option>
+								</soo:datarepeater:dt_ImageDateMonth>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="4" name="dt_ImageDateYear" id="dt_ImageDateYear" onchange="Soonda.changeDateValue('dt_ImageDate')">
+								<soo:datarepeater:dt_ImageDateYear>
+									<option {selecteddt_ImageDateYear} value="{SOO.DATA:dt_ImageDateYear}">
+									{SOO.DATA:dt_ImageDateYearDisplay}
+									</option>
+								</soo:datarepeater:dt_ImageDateYear>
+							</select>	
+							</div>
+
+						
+							<div style="width:2px;display:table-cell">:</div>
+							<div class="styled-select">
+							<select tabindex="5" name="dt_ImageDateHour" id="dt_ImageDateHour" onchange="Soonda.changeDateValue('dt_ImageDate')">
+								<soo:datarepeater:dt_ImageDateHour>
+									<option {selecteddt_ImageDateHour} value="{SOO.DATA:dt_ImageDateHour}">
+									{SOO.DATA:dt_ImageDateHourDisplay}
+									</option>
+								</soo:datarepeater:dt_ImageDateHour>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="6" name="dt_ImageDateMinute" id="dt_ImageDateMinute" onchange="Soonda.changeDateValue('dt_ImageDate')">
+								<soo:datarepeater:dt_ImageDateMinute>
+									<option {selecteddt_ImageDateMinute} value="{SOO.DATA:dt_ImageDateMinute}">
+									{SOO.DATA:dt_ImageDateMinuteDisplay}
+									</option>
+								</soo:datarepeater:dt_ImageDateMinute>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="7" name="dt_ImageDateSecond" id="dt_ImageDateSecond" onchange="Soonda.changeDateValue('dt_ImageDate')">
+								<soo:datarepeater:dt_ImageDateSecond>
+									<option {selecteddt_ImageDateSecond} value="{SOO.DATA:dt_ImageDateSecond}">
+									{SOO.DATA:dt_ImageDateSecondDisplay}
+									</option>
+								</soo:datarepeater:dt_ImageDateSecond>
+							</select>		
+							</div>
+						
+							<input data="{SOO.ENC:ImageDate}"  type="hidden" value="{SOO.SELECTEDDATE:dt_ImageDate}" name="dt_ImageDate" id="dt_ImageDate">
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ImageDate}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ImageUrl}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div>
+								<img class="thumbnail" height="80" id="previewimg_ImageUrl" src="{SOO.SELECTEDIMAGEimg_ImageUrl}" onclick="Soonda.previewImage(this.src);">
+								<br>
+								<div tabindex="8" id="btnUploadimg_ImageUrl" class="lookup-btn">Upload</div>
+							</div>
+							
+							<input isimage="true" data="{SOO.ENC:ImageUrl}"  type="hidden" name="img_ImageUrl" id="img_ImageUrl" onchange="Soonda.PreviewImage(this.value, 'previewimg_ImageUrl' );" value="">						
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ImageUrl}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:GalleryAlbumId}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div class="styled-select">
+							<select tabindex="9" data="{SOO.ENC:GalleryAlbumId}"  name="cmbLookup_GalleryAlbumId" id="cmbLookup_GalleryAlbumId">
+							<soo:datarepeater:cmbLookup_GalleryAlbumId>
+								<option {SOO.SELECTEDLOOKUP} value="{SOO.DATA:lookup_}">{SOO.DATA:lookup_}</option>
+							</soo:datarepeater:cmbLookup_GalleryAlbumId>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell">
+							</div>
+							<div class="lookup-btn" onclick="Soonda.loadModule('{SOO:MODULENAME}', 'viewLookup', 'lookupTable=&keyColumn=&displayColumn=&combo=cmbLookup_GalleryAlbumId', null, true, '{SOO:COMPONENTNAME}');">
+								Find
+							</div>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:GalleryAlbumId}"></div>
+						</td>
+					</tr>
+				
+					<tr>
+						<td colspan="3" style="position:relative">
+						<div class="tabWrapper">
+							<div class="tabSeparator">
+							</div>
+
+				
+						</div>
+				
+				<script>
+					
+				</script>
+
+						</td>
+					</tr>
+				</table>
+
+				</div>
+				</td>
+			</tr>
+		</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+Soonda.init();
+Soonda.initForm( "formAddGalleryModule" );
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	Soonda.ajaxUpload('img_ImageUrl', 'btnUploadimg_ImageUrl', 'previewimg_ImageUrl', './SoondaService.php?op=upload&ext={SOO.ENC:img_ImageUrl}FileTypes&path={SOO.ENC:img_ImageUrl}SavedFolder&linkedpath={SOO.ENC:img_ImageUrl}LinkedPath');
+
+	
+}
+defaultOnLoad();
+
+
+
+</script>

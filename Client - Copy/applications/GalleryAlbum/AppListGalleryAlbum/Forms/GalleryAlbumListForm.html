@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-md-6">
+		<div class="button-new" onclick="addItem()">
+		
+		</div>
+		<div style="display: inline-block;height: 10px;"></div>
+		<div  class="button-edit" onclick="editItem()">
+			
+		</div>
+		<div style="display: inline-block; height: 10px;"></div>
+		<div class="button-delete" onclick="deleteItem()">
+			
+		</div>
+	</div>
+	<div class="col-md-6 text-right" style="padding-right: 2%">
+		<div style="display: inline-block; height: 10px;"></div>
+		<div style="display: inline-block">
+			Max. Display
+		</div>
+		<div style="display: inline-block; height: 10px;"></div>
+		<div style="display: inline-block">
+			<select id="cmbMaxDisplay" onchange="refreshData()"></select>
+		</div>&nbsp;,
+		<div style="display: inline-block; height: 10px;"></div>
+		<div style="display: inline-block">
+			Page
+		</div>
+		<div style="display: inline-block; height: 10px;"></div>
+		<div style="display: inline-block">
+			<select id="cmbPage" onchange="refreshData()"></select>
+		</div>&nbsp;,
+		<div style="display: inline-block; height: 10px;"></div>
+		<div style="display: inline-block">
+			Find
+		</div>
+		<div style="display: inline-block">
+			<input type="textbox" id="txtSearch" size="20" onkeyup="refreshData()" />
+		</div>
+	</div>
+</div>
+<br />
+<div style=" vertical-align: top">
+	<div id="gridGalleryAlbum">
+
+	</div>
+</div>

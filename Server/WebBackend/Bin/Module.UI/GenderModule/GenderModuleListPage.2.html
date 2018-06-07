@@ -1,0 +1,252 @@
+<link rel="stylesheet" href="components/com_GenderModule/pages/css.css" type="text/css" /> 
+
+<form id="formView">
+<div class="viewWrapper">
+
+<!--------------------table for View and Summary Tab -------------------------->
+<table border="0" cellspacing="1px" cellpadding="0" style="position:relative; left:20px;top:0px;z-index:1">
+<tr>
+	<td>
+		<div id="viewTab" class="selectedViewTab" onclick="Soonda.selectTab('viewTab', 'summaryTab', 'divTableData', 'divSummary')">
+		View
+		</div>
+	</td>
+	<td>
+		<div id="summaryTab" class="unSelectedViewTab" onclick="Soonda.selectTab('summaryTab', 'viewTab', 'divSummary', 'divTableData')">
+		Summary
+		</div>
+	</td>
+</tr>
+</table>
+<!------------------End table for View and Summary Tab ----------------------->
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="tableList" id="tblGenderModule">
+	<tr>
+		<td height="28" width='100%' align="center">
+			
+			<!--------------------------------Table for list content ----------------------------->
+			<DIV id="divTableData">
+			<table width="90%" cellspacing="4px">
+			<tr>
+				<td width="20%">
+					Tot. Display : 
+					<select id="cmbTotalDisplay" name="cmbTotalDisplay" onchange="Soonda.loadModuleByFilter('{SOO:MODULENAME}', 'viewGenderModule', 'cmbTotalDisplay', 'cmbPage', 'cmbLayout', 'cmbSummary',  'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}')">
+						<option value="-1"> - All -</option>
+						<soo:datarepeater:totaldata>
+						<option value="{SOO:DATA:TOTALDATAVALUE}">{SOO:DATA:TOTALDATAVALUE}</option>
+						</soo:datarepeater:totaldata>
+					</select>.
+				</td>
+
+				<td width="35%" align="left">
+					Layout 	<select id="cmbLayout" name="cmbLayout" onchange="Soonda.loadModuleByFilter('{SOO:MODULENAME}', 'viewGenderModule', 'cmbTotalDisplay', 'cmbPage',  'cmbLayout', 'cmbSummary',  'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}')">
+						<option value="0">-- Raw Layout --</option>
+						<soo:datarepeater:layouts>
+						<option {SOO:DATA:selected} value="{SOO:DATA:IdFieldGrouping}">{SOO:DATA:FieldGroupingName}</option>
+						</soo:datarepeater:layouts>
+					</select>
+					&nbsp;&nbsp;
+					<input type="button" onclick="Soonda.loadModule('{SOO:MODULENAME}', 'addFieldGrouping', 'options=GenderName:Gender Name;GenderInfo:Gender Info;&width=460&height=430&hidebuttons=btnAddDetailWrapper,btnBackWrapper' ,DefaultAnimatorContent, true, '{SOO:COMPONENTNAME}');" value="Add">
+					<input type="button" onclick="Soonda.deleteLayoutGroup('GenderModule', 'cmbLayout', DefaultAnimatorContent, '{SOO:COMPONENTNAME}');" value="Delete">
+
+				</td>
+
+				<td width="67%" align="right">
+					Page 			
+					<select id="cmbPage" name="cmbPage" onchange="Soonda.loadModuleByFilter('{SOO:MODULENAME}', 'viewGenderModule', 'cmbTotalDisplay', 'cmbPage', 'cmbLayout', 'cmbSummary',  'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}')">
+						<soo:datarepeater:page_of>
+						<option value="{SOO:DATA:PAGEINDEX}"></option>
+						</soo:datarepeater:page_of>
+					</select>
+					&nbsp;&nbsp;
+					of
+					&nbsp;&nbsp;
+					{SOO:DATA:TOTALPAGE}
+				</td>
+
+	
+
+				<td width="1%">
+					<A href="javascript:Soonda.loadModule('{SOO:MODULENAME}', 'addGenderModule', '',  DefaultAnimatorContent, true, '{SOO:COMPONENTNAME}');">
+						<img src="templates/default/images/addicon.png" border="0">
+					</A>
+				</td>
+				<td width="1%">
+					<A href="javascript:Soonda.exportToPDF('divTableListContent', 'GenderModule', 'cmbTotalDisplay', 'cmbPage', 'cmbLayout', 'txtCondition', DefaultAnimatorContent, '{SOO:COMPONENTNAME}')">
+						<img src="templates/default/images/pdf.png" border="0">
+					</A>
+				</td>
+				<td width="1%">
+					<A href="javascript:Soonda.exportToExcel('divTableListContent', 'GenderModule', 'cmbTotalDisplay', 'cmbPage', 'cmbLayout', 'txtCondition', DefaultAnimatorContent, '{SOO:COMPONENTNAME}')">
+						<img src="templates/default/images/excel.png" border="0">
+					</A>
+				</td>
+			</tr>
+			</table>
+			<!--------------------------------------End Table for list content ------------------------------>
+
+			<!------- Table for the data list ----------->
+			<div id="divTableListContent">
+				<table border="0" width="98%" height="100%" cellspacing="0" cellpadding="0" align="center">
+					<tr>
+						<td height="10%" align="top">
+							<table cellspacing="0" cellpadding="0" id="tableListHeader">
+								<tr>
+									
+					<td class='tableHeaderColumnLeft'>&nbsp;
+					</td>
+					<td class='tableHeaderColumn'>
+		
+								<table border='0' width='100%' height='100%'>
+								<tr>
+									<td class='tableHeaderColumn'>Gender Name
+									</td>
+									<td width='15px'>
+										<img class='sortImg' src='templates/default/images/up.png' border='0' onclick="Soonda.sortBy('{SOO.FUNCTION:SOOENCRYPT:GenderName}', 'ASC', 'GenderModule', 'viewGenderModule','cmbTotalDisplay', 'cmbPage', 'cmbLayout', 'cmbSummary', 'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}');">
+									<img class='sortImg' src='templates/default/images/down.png' border='0' onclick="Soonda.sortBy('{SOO.FUNCTION:SOOENCRYPT:GenderName}', 'DESC', 'GenderModule', 'viewGenderModule','cmbTotalDisplay', 'cmbPage', 'cmbLayout', 'cmbSummary', 'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}');"></td>
+									<td width='2px' class='tdColumnSeparator'>
+										
+									</td>
+								</tr>
+								</table>
+	
+					</td>
+					<td class='tableHeaderColumn'>
+		
+								<table border='0' width='100%' height='100%'>
+								<tr>
+									<td class='tableHeaderColumn'>Gender Info
+									</td>
+									<td width='15px'>
+										<img class='sortImg' src='templates/default/images/up.png' border='0' onclick="Soonda.sortBy('{SOO.FUNCTION:SOOENCRYPT:GenderInfo}', 'ASC', 'GenderModule', 'viewGenderModule','cmbTotalDisplay', 'cmbPage', 'cmbLayout', 'cmbSummary', 'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}');">
+									<img class='sortImg' src='templates/default/images/down.png' border='0' onclick="Soonda.sortBy('{SOO.FUNCTION:SOOENCRYPT:GenderInfo}', 'DESC', 'GenderModule', 'viewGenderModule','cmbTotalDisplay', 'cmbPage', 'cmbLayout', 'cmbSummary', 'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}');"></td>
+									<td width='2px' class='tdColumnSeparator'>
+										
+									</td>
+								</tr>
+								</table>
+	
+					</td>
+					<td class='tableHeaderColumnRight'>&nbsp;&nbsp;
+					</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+					<td height="90%"  align="top">
+
+					<div id="divList">
+						<table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+						<soo:datagroupGenderModule>
+							<tr>
+								<td colspan="5" class="tdGroup{SOO.DATA:i}">
+									{SOO.DATA:GROUPTEXTDATA}
+								</td>
+							</tr>
+						</soo:datagroupGenderModule>
+
+						<soo:dataGenderModule>
+							<tr onmouseover="DefaultAnimator.highlightOn(this)" onmouseout="DefaultAnimator.highlightOff(this)">
+								
+						<td class='{SOO:EVENODD}'>&nbsp;{SOO:DATA:ROWNUMBER}.&nbsp;
+						</td>
+						<td class='{SOO:EVENODD}' onclick="Soonda.loadModule('{SOO:MODULENAME}', 'detailGenderModule', '{SOO.FUNCTION:ENCRYPT:IdGender}={SOO.DATA:IdGender}', DefaultAnimatorContent, true, '{SOO:COMPONENTNAME}');">
+							<A class='linkDataItem' href="javascript:Soonda.loadModule('{SOO:MODULENAME}', 'detailGenderModule', '{SOO.FUNCTION:ENCRYPT:IdGender}={SOO.DATA:IdGender}', DefaultAnimatorContent, true, '{SOO:COMPONENTNAME}');">
+	
+							{SOO.DATA:GenderName}
+							</A>
+	
+						</td>
+						<td class='{SOO:EVENODD}' onclick="Soonda.loadModule('{SOO:MODULENAME}', 'detailGenderModule', '{SOO.FUNCTION:ENCRYPT:IdGender}={SOO.DATA:IdGender}', DefaultAnimatorContent, true, '{SOO:COMPONENTNAME}');">
+		
+						
+							{SOO.DATA:GenderInfo}
+	
+						</td>
+	
+						<td class='{SOO:EVENODD}'>
+	
+							<a href="javascript:Soonda.loadModule('{SOO:MODULENAME}', 'editGenderModule', '{SOO.FUNCTION:ENCRYPT:IdGender}={SOO.DATA:IdGender}', DefaultAnimatorContent, true, '{SOO:COMPONENTNAME}');"  class="linkMenuIcon">
+								<img border="0" src="templates/default/images/editicon.png" width="20" height="20" class="imgIcon">
+	
+							</a>
+	
+						
+	
+							<a href="javascript:Soonda.loadModuleDelete('{SOO:MODULENAME}', 'deleteGenderModule', '{SOO.FUNCTION:ENCRYPT:IdGender}={SOO.DATA:IdGender}', DefaultAnimatorContent, true, '{SOO:COMPONENTNAME}');"  class="linkMenuIcon">
+			
+								<img border="0" src="templates/default/images/deleteicon.png" width="20" height="20" class="imgIcon">
+		
+							</a>
+	
+					</td>
+							</tr>
+						</soo:dataGenderModule>
+
+						</table>
+					</div>
+
+					</td>
+					</tr>
+				</table>
+				<!---------- Input to store Search condition -------------->
+				<input type="hidden" name="txtCondition" id="txtCondition" value="{SOO:DATA:CONDITION}">
+			</div>
+			</DIV>
+			<!------- End Table for the data list ----------->
+
+			<!---------- Summary content ----------->
+			<div id="divSummary" style="display:none">
+					<!---- Summary List Select ---->
+					Summary <select id="cmbSummary" name="cmbSummary" onchange="Soonda.loadModuleByFilter('{SOO:MODULENAME}', 'viewSummary', 'cmbTotalDisplay', 'cmbPage',  'cmbLayout', 'cmbSummary',  'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}')">
+						<option value="0">-- Select Summary --</option>
+						<soo:datarepeater:summaries>
+						<option {SOO:DATA:selected} value="{SOO:DATA:IdSummary}">{SOO:DATA:SummaryName}</option>
+						</soo:datarepeater:summaries>
+					</select>
+					&nbsp;&nbsp;
+					<input type="button" onclick="Soonda.loadModule('{SOO:MODULENAME}', 'addSummaryReport', 'width=560&height=490&hidebuttons=btnAddDetailWrapper,btnBackWrapper&options=GenderName:Gender Name;GenderInfo:Gender Info;' ,DefaultAnimatorContent, true, '{SOO:COMPONENTNAME}');" value="Add">
+					<input type="button" onclick="Soonda.loadModuleByFilter('{SOO:MODULENAME}', 'deleteSummaryReport', 'cmbTotalDisplay', 'cmbPage',  'cmbLayout', 'cmbSummary',  'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}')" value="Delete">
+					<!---- End Summary List Select ---->
+					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<!---- Graph Type ---->
+					Chart Type <select id="cmbGraphType" name="cmbGraphType" onchange="Soonda.loadModuleByFilter('{SOO:MODULENAME}', 'viewSummary', 'cmbTotalDisplay', 'cmbPage',  'cmbLayout', 'cmbSummary', 'cmbGraphType', 'txtCondition', this, DefaultAnimatorContent, '{SOO:COMPONENTNAME}')">
+						<option value="0">-- Graph Type --</option>
+						<option serietype="single" value="single:FCF_Pie2D.swf">Pie Chart</option>
+						<option serietype="single" value="single:FCF_Doughnut2D.swf">Doughnut Chart</option>
+						<option serietype="all" value="single:FCF_Column3D.swf,multi:FCF_MSColumn3D.swf">Column Chart</option>
+						<option serietype="all" value="single:FCF_Bar2D.swf,multi:FCF_MSBar2D.swf">Bar Chart</option>
+						<option serietype="single-multi" value="single:FCF_Line.swf,multi:FCF_MSLine.swf">Line Chart</option>
+						<option serietype="all" value="single:FCF_Area2D.swf,multi:FCF_MSArea2D.swf">Area Chart</option>
+						<option serietype="stacked" value="multi:FCF_StackedColumn3D.swf">Stacked Column Chart</option>
+						<option serietype="stacked" value="multi:FCF_StackedBar2D.swf">Stacked Bar Chart</option>
+						<option serietype="stacked" value="multi:FCF_StackedArea2D.swf">Stacked Area Chart</option>
+						<option serietype="all" value="multi:FCF_MSColumn3DLineDY.swf">Column + Line Total Chart</option>
+					</select>
+					&nbsp;&nbsp;
+
+					<div id="summaryGraphContent">
+					</div>
+			</div>
+			<!-----End of Summary Content ----->
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+
+		
+		</td>
+	</tr>
+	<tr>
+		<td height="28">
+
+		</td>
+	</tr>
+</table>
+</div>
+</form>
+

@@ -1,0 +1,1 @@
+var PROXY_FORMS = [{ formId : "new.project", form : "SharedResources/Forms/NewProjectForm/NewProjectForm" }]

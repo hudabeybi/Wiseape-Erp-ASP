@@ -1,0 +1,246 @@
+
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/edit-icon.png" align="left" vspace="6px">Edit Process Group Module
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formEditProcessGroupModule">
+			<table border="0" cellpadding="0" cellspacing="0" width="90%" align="center">
+				<tr>
+					<td class="formContent" valign="top">
+					<div id="divForm">
+					<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblEdit" align="center" >
+					
+						<tr style="display:none">
+							<td height="35" width="28%" class="tdFormLeft">
+							{SOO.LANG:IdProcessGroup}
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+
+							<INPUT ishidden="true" TYPE="hidden" value="{SOO.DATA:IdProcessGroup}" data="{SOO.ENC:IdProcessGroup}" size="80" type="text" name="txtNum_IdProcessGroup" id="txtNum_IdProcessGroup" >
+
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessGroupName}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ProcessGroupName}" data="{SOO.ENC:ProcessGroupName}" type="text" name="txt_ProcessGroupName" id="txt_ProcessGroupName" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ProcessGroupName}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessGroupTitle}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ProcessGroupTitle}" data="{SOO.ENC:ProcessGroupTitle}" type="text" name="txt_ProcessGroupTitle" id="txt_ProcessGroupTitle" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ProcessGroupTitle}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessGroupInfo}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<textarea data="{SOO.ENC:ProcessGroupInfo}"  name="txtArea_ProcessGroupInfo" id="txtArea_ProcessGroupInfo">{SOO.DATA:ProcessGroupInfo}</textarea>
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ProcessGroupInfo}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IconSmall}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>
+									<img class='thumbnail' isimage="true" height="80" id="previewimg_IconSmall" src="{SOO.SELECTEDIMAGEimg_IconSmall}" onclick="Soonda.previewImage(this.src);">
+									<br>
+									<div id="btnUploadimg_IconSmall" class="lookup-btn">Upload</div>
+								</div>
+								
+								<input isimage="true" data="{SOO.ENC:IconSmall}"  type="hidden" name="img_IconSmall" id="img_IconSmall" onchange="Soonda.PreviewImage(this.value, 'previewimg_IconSmall' );" value="{SOO.SELECTEDIMAGEimg_IconSmall}">						
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:IconSmall}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IconMiddle}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>
+									<img class='thumbnail' isimage="true" height="80" id="previewimg_IconMiddle" src="{SOO.SELECTEDIMAGEimg_IconMiddle}" onclick="Soonda.previewImage(this.src);">
+									<br>
+									<div id="btnUploadimg_IconMiddle" class="lookup-btn">Upload</div>
+								</div>
+								
+								<input isimage="true" data="{SOO.ENC:IconMiddle}"  type="hidden" name="img_IconMiddle" id="img_IconMiddle" onchange="Soonda.PreviewImage(this.value, 'previewimg_IconMiddle' );" value="{SOO.SELECTEDIMAGEimg_IconMiddle}">						
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:IconMiddle}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IconLarge}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>
+									<img class='thumbnail' isimage="true" height="80" id="previewimg_IconLarge" src="{SOO.SELECTEDIMAGEimg_IconLarge}" onclick="Soonda.previewImage(this.src);">
+									<br>
+									<div id="btnUploadimg_IconLarge" class="lookup-btn">Upload</div>
+								</div>
+								
+								<input isimage="true" data="{SOO.ENC:IconLarge}"  type="hidden" name="img_IconLarge" id="img_IconLarge" onchange="Soonda.PreviewImage(this.value, 'previewimg_IconLarge' );" value="{SOO.SELECTEDIMAGEimg_IconLarge}">						
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:IconLarge}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IsActive}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input {SOO.DATA:IsActive} data="{SOO.ENC:IsActive}"  type="checkbox" name="chk_IsActive" id="chk_IsActive"  checkedvalue="1" uncheckedvalue="0"> Ok 
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:IsActive}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:IsDisplay}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input {SOO.DATA:IsDisplay} data="{SOO.ENC:IsDisplay}"  type="checkbox" name="chk_IsDisplay" id="chk_IsDisplay"  checkedvalue="1" uncheckedvalue="0"> Ok 
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:IsDisplay}"></div>
+							</td>
+						</tr>
+					
+
+
+						<tr>
+							<td colspan="3" style="position:relative">
+							<div class="tabWrapper">
+								<div class="tabSeparator">
+								</div>
+					
+							</div>
+
+					
+					<script>
+						
+					</script>
+
+					</table>
+					</div>
+
+					</td>
+				</tr>
+			</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	Soonda.ajaxUpload('img_IconSmall', 'btnUploadimg_IconSmall', 'previewimg_IconSmall', './SoondaService.php?op=upload&ext={SOO.ENC:img_IconSmall}FileTypes&path={SOO.ENC:img_IconSmall}SavedFolder&linkedpath={SOO.ENC:img_IconSmall}LinkedPath');
+Soonda.ajaxUpload('img_IconMiddle', 'btnUploadimg_IconMiddle', 'previewimg_IconMiddle', './SoondaService.php?op=upload&ext={SOO.ENC:img_IconMiddle}FileTypes&path={SOO.ENC:img_IconMiddle}SavedFolder&linkedpath={SOO.ENC:img_IconMiddle}LinkedPath');
+Soonda.ajaxUpload('img_IconLarge', 'btnUploadimg_IconLarge', 'previewimg_IconLarge', './SoondaService.php?op=upload&ext={SOO.ENC:img_IconLarge}FileTypes&path={SOO.ENC:img_IconLarge}SavedFolder&linkedpath={SOO.ENC:img_IconLarge}LinkedPath');
+
+	
+}
+defaultOnLoad();
+
+
+</script>

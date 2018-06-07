@@ -1,0 +1,45 @@
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>&nbsp;</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Post Title&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Post Sub Title&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Post Date&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Post Main Image&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Post Tag&nbsp;&nbsp;
+	</td>
+	</tr>
+	<soo:dataPostModule>
+	<tr>
+		
+	<td style='border-bottom: solid 1px #ccc'>&nbsp;{SOO:DATA:ROWNUMBER}.&nbsp;</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:PostTitle}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:PostSubTitle}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.FUNCTION:DATEFORMAT:PostDate}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:PostMainImage}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:PostTag}
+	</td>
+	</tr>
+	</soo:dataPostModule>
+</table>
+
+

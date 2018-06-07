@@ -1,0 +1,29 @@
+.button-new
+{
+	display: inline-block; 
+	cursor:pointer; 
+	width: 40px; 
+	height: 40px; 
+	background: url(../Icons/icon-add-new.svg) no-repeat; 
+	background-size: 100% auto;
+}
+
+.button-edit
+{
+	display: inline-block; 
+	cursor:pointer; 
+	width: 40px; 
+	height: 40px; 
+	background: url(../Icons/icon-edit.svg) no-repeat; 
+	background-size: 100% auto;
+}
+
+.button-delete
+{
+	display: inline-block; 
+	cursor:pointer; 
+	width: 40px; 
+	height: 40px; 
+	background: url(../Icons/cancel-button.svg) no-repeat; 
+	background-size: 100% auto;
+}

@@ -1,0 +1,231 @@
+<form id="formSearchProcessModule">
+<table height="100%" width="70%" align="center">
+<tr>
+<td  height="10%">
+
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchProcessModule', '', 'formSearchProcessModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+</td>
+</tr>
+<tr>
+<td height="80%">
+
+
+<div id="divForm">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+	<tr>
+		<td width="5%"  height="20px"  valign="top" >&nbsp;</td>
+		<td width="95%" height="20px"  valign="top" >&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="20px" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByKeyword" value="true" checked> By Keyword (search in all free text input data)
+		</td>
+	</tr>
+	<tr>
+		<td width="5%"  height="20px">&nbsp;</td>
+		<td width="95%"  height="20px"  valign="top" >
+			<INPUT type="text" name="txtKeyword" id="txtKeyword" data="Keyword">
+		</td>
+	</tr>
+	<tr>
+		<td width="5%" height="20px">&nbsp;</td>
+		<td width="95%" height="20px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="38" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByColumns" value="true"> By Filter Columns
+		</td>
+	</tr>
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" valign="top" >
+			
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchProcessNo}" type="checkbox" name="chkSearchProcessNo" id="chkSearchProcessNo" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Process No
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:ProcessNo}" size="80" type="text" name="txt_ProcessNo" id="txt_ProcessNo" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchProcessName}" type="checkbox" name="chkSearchProcessName" id="chkSearchProcessName" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Process Name
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:ProcessName}" size="80" type="text" name="txt_ProcessName" id="txt_ProcessName" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchProcessInfo}" type="checkbox" name="chkSearchProcessInfo" id="chkSearchProcessInfo" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Process Info
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<textarea data="{SOO.FUNCTION:Encrypt:ProcessInfo}"  cols="80" rows="9" name="txtArea_ProcessInfo" id="txtArea_ProcessInfo"></textarea>
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchProcessCreatedDate}" type="checkbox" name="chkSearchProcessCreatedDate" id="chkSearchProcessCreatedDate" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Process Created Date
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<select name="dt_ProcessCreatedDateDay0" id="dt_ProcessCreatedDateDay0" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate0')">
+							<soo:datarepeater:dt_ProcessCreatedDateDay0>
+								<option {selecteddt_ProcessCreatedDateDay0} value="{SOO.DATA:dt_ProcessCreatedDateDay0}">{SOO.DATA:dt_ProcessCreatedDateDayDisplay0}</option>
+							</soo:datarepeater:dt_ProcessCreatedDateDay0>
+						</select>
+						<select name="dt_ProcessCreatedDateMonth0" id="dt_ProcessCreatedDateMonth0" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate0')">
+							<soo:datarepeater:dt_ProcessCreatedDateMonth0>
+								<option {selecteddt_ProcessCreatedDateMonth0} value="{SOO.DATA:dt_ProcessCreatedDateMonth0}">
+								{SOO.DATA:dt_ProcessCreatedDateMonthDisplay0}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateMonth0>
+						</select>	
+						<select name="dt_ProcessCreatedDateYear0" id="dt_ProcessCreatedDateYear0" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate0')">
+							<soo:datarepeater:dt_ProcessCreatedDateYear0>
+								<option {selecteddt_ProcessCreatedDateYear0} value="{SOO.DATA:dt_ProcessCreatedDateYear0}">
+								{SOO.DATA:dt_ProcessCreatedDateYearDisplay0}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateYear0>
+						</select>			
+					
+						:
+						<select name="dt_ProcessCreatedDateHour0" id="dt_ProcessCreatedDateHour0" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate0')">
+							<soo:datarepeater:dt_ProcessCreatedDateHour0>
+								<option {selecteddt_ProcessCreatedDateHour0} value="{SOO.DATA:dt_ProcessCreatedDateHour0}">
+								{SOO.DATA:dt_ProcessCreatedDateHourDisplay0}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateHour0>
+						</select>
+						<select name="dt_ProcessCreatedDateMinute0" id="dt_ProcessCreatedDateMinute0" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate0')">
+							<soo:datarepeater:dt_ProcessCreatedDateMinute0>
+								<option {selecteddt_ProcessCreatedDateMinute0} value="{SOO.DATA:dt_ProcessCreatedDateMinute0}">
+								{SOO.DATA:dt_ProcessCreatedDateMinuteDisplay0}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateMinute0>
+						</select>
+						<select name="dt_ProcessCreatedDateSecond0" id="dt_ProcessCreatedDateSecond0" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate0')">
+							<soo:datarepeater:dt_ProcessCreatedDateSecond0>
+								<option {selecteddt_ProcessCreatedDateSecond0} value="{SOO.DATA:dt_ProcessCreatedDateSecond0}">
+								{SOO.DATA:dt_ProcessCreatedDateSecondDisplay0}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateSecond0>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:ProcessCreatedDate0}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_ProcessCreatedDate0}" name="dt_ProcessCreatedDate0" id="dt_ProcessCreatedDate0">
+					
+						<select name="dt_ProcessCreatedDateDay1" id="dt_ProcessCreatedDateDay1" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate1')">
+							<soo:datarepeater:dt_ProcessCreatedDateDay1>
+								<option {selecteddt_ProcessCreatedDateDay1} value="{SOO.DATA:dt_ProcessCreatedDateDay1}">{SOO.DATA:dt_ProcessCreatedDateDayDisplay1}</option>
+							</soo:datarepeater:dt_ProcessCreatedDateDay1>
+						</select>
+						<select name="dt_ProcessCreatedDateMonth1" id="dt_ProcessCreatedDateMonth1" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate1')">
+							<soo:datarepeater:dt_ProcessCreatedDateMonth1>
+								<option {selecteddt_ProcessCreatedDateMonth1} value="{SOO.DATA:dt_ProcessCreatedDateMonth1}">
+								{SOO.DATA:dt_ProcessCreatedDateMonthDisplay1}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateMonth1>
+						</select>	
+						<select name="dt_ProcessCreatedDateYear1" id="dt_ProcessCreatedDateYear1" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate1')">
+							<soo:datarepeater:dt_ProcessCreatedDateYear1>
+								<option {selecteddt_ProcessCreatedDateYear1} value="{SOO.DATA:dt_ProcessCreatedDateYear1}">
+								{SOO.DATA:dt_ProcessCreatedDateYearDisplay1}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateYear1>
+						</select>			
+					
+						:
+						<select name="dt_ProcessCreatedDateHour1" id="dt_ProcessCreatedDateHour1" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate1')">
+							<soo:datarepeater:dt_ProcessCreatedDateHour1>
+								<option {selecteddt_ProcessCreatedDateHour1} value="{SOO.DATA:dt_ProcessCreatedDateHour1}">
+								{SOO.DATA:dt_ProcessCreatedDateHourDisplay1}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateHour1>
+						</select>
+						<select name="dt_ProcessCreatedDateMinute1" id="dt_ProcessCreatedDateMinute1" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate1')">
+							<soo:datarepeater:dt_ProcessCreatedDateMinute1>
+								<option {selecteddt_ProcessCreatedDateMinute1} value="{SOO.DATA:dt_ProcessCreatedDateMinute1}">
+								{SOO.DATA:dt_ProcessCreatedDateMinuteDisplay1}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateMinute1>
+						</select>
+						<select name="dt_ProcessCreatedDateSecond1" id="dt_ProcessCreatedDateSecond1" onchange="Soonda.ChangeDateValue('dt_ProcessCreatedDate1')">
+							<soo:datarepeater:dt_ProcessCreatedDateSecond1>
+								<option {selecteddt_ProcessCreatedDateSecond1} value="{SOO.DATA:dt_ProcessCreatedDateSecond1}">
+								{SOO.DATA:dt_ProcessCreatedDateSecondDisplay1}
+								</option>
+							</soo:datarepeater:dt_ProcessCreatedDateSecond1>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:ProcessCreatedDate1}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_ProcessCreatedDate1}" name="dt_ProcessCreatedDate1" id="dt_ProcessCreatedDate1">
+					
+					</td>
+				</tr>
+			
+			</table>
+			</div>
+		
+		</td>
+	</tr>
+</table>
+</div>
+
+</td>
+</tr>
+<tr>
+<td height="10%">
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchProcessModule', '', 'formSearchProcessModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+</td>
+</tr>
+</form>

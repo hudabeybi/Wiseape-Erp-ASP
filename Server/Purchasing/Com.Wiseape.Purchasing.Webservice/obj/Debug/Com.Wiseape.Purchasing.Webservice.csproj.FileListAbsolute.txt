@@ -1,0 +1,143 @@
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\ApplicationInsights.config
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Webservice.dll.config
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Webservice.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Webservice.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\EntityFramework.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\EntityFramework.SqlServer.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.Agent.Intercept.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.DependencyCollector.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.PerfCounterCollector.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.Web.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.WindowsServer.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.ApplicationInsights.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.Diagnostics.Tracing.EventSource.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.Threading.Tasks.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.Threading.Tasks.Extensions.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\System.IO.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\System.Runtime.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\System.Threading.Tasks.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\System.Linq.Dynamic.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Framework.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Business.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Data.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Utility.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\EntityFramework.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\EntityFramework.SqlServer.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.DependencyCollector.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.Web.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.AI.WindowsServer.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.ApplicationInsights.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.Diagnostics.Tracing.EventSource.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.Threading.Tasks.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.Threading.Tasks.Extensions.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\System.IO.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\System.Runtime.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\System.Threading.Tasks.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\ApplicationInsights.config
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Webservice.dll.config
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Webservice.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Webservice.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Framework.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Data.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.View.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Utility.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\EntityFramework.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\EntityFramework.SqlServer.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.DependencyCollector.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.Web.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.WindowsServer.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.ApplicationInsights.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.Extensions.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\System.IO.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\System.Runtime.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\System.Threading.Tasks.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\System.Linq.Dynamic.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Newtonsoft.Json.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Framework.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Data.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.View.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Utility.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\EntityFramework.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\EntityFramework.SqlServer.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.DependencyCollector.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.Web.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.WindowsServer.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.ApplicationInsights.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.Extensions.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\System.IO.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\System.Runtime.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\System.Threading.Tasks.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Newtonsoft.Json.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Newtonsoft.Json.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\obj\Debug\Com.Wiseape.Purchasing.Webservice.csproj.App.config
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\obj\Debug\Com.Wiseape.Purchasing.Webservice.csprojResolveAssemblyReference.cache
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\obj\Debug\Com.Wiseape.Purchasing.Webservice.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\obj\Debug\Com.Wiseape.Purchasing.Webservice.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Business.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Business.pdb
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\ApplicationInsights.config
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Webservice.dll.config
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Webservice.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Webservice.pdb
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Framework.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Business.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Data.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.View.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Utility.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\EntityFramework.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\EntityFramework.SqlServer.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.DependencyCollector.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.Web.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.WindowsServer.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.ApplicationInsights.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.Extensions.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\System.IO.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\System.Runtime.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\System.Threading.Tasks.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\System.Linq.Dynamic.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Newtonsoft.Json.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Framework.pdb
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Business.pdb
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.Data.pdb
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Purchasing.View.pdb
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Com.Wiseape.Utility.pdb
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\EntityFramework.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\EntityFramework.SqlServer.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.DependencyCollector.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.Web.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.AI.WindowsServer.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.ApplicationInsights.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.Extensions.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\System.IO.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\System.Runtime.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\System.Threading.Tasks.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Newtonsoft.Json.pdb
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\bin\Newtonsoft.Json.xml
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\obj\Debug\Com.Wiseape.Purchasing.Webservice.csproj.App.config
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\obj\Debug\Com.Wiseape.Purchasing.Webservice.csprojResolveAssemblyReference.cache
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\obj\Debug\Com.Wiseape.Purchasing.Webservice.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\obj\Debug\Com.Wiseape.Purchasing.Webservice.pdb

@@ -1,0 +1,45 @@
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>&nbsp;</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Task Title 1&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Task Title 2&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Task Title 3&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Task Title 4&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Task Date&nbsp;&nbsp;
+	</td>
+	</tr>
+	<soo:dataTasklogModule>
+	<tr>
+		
+	<td style='border-bottom: solid 1px #ccc'>&nbsp;{SOO:DATA:ROWNUMBER}.&nbsp;</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:TaskTitle1}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:TaskTitle2}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:TaskTitle3}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:TaskTitle4}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.FUNCTION:DATEFORMAT:TaskDate}
+	</td>
+	</tr>
+	</soo:dataTasklogModule>
+</table>
+
+

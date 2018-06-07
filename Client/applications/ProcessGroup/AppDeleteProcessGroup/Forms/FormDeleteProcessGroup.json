@@ -1,0 +1,82 @@
+using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Collections;
+using Soonda_Library.BO;
+using Soonda_Library.Controls;
+using SoondaDbProvider;
+using SoondaUtility;
+public class Page {
+  public MyStreamWriter me;
+  public MyStreamWriter Response;
+  public string SectionText1;
+  public string SectionText3;
+  public string SectionText5;
+  public string SectionText7;
+  public Soonda_Library.BO.ProjectClass Project;
+  public Soonda_Library.BO.ModuleClass Module;
+  public Page() {}
+  public void RenderPage() {
+
+	ModuleColumn colPk = Module.GetKeyColumn();
+    me.say(SectionText1);
+ me.sau(colPk.ColumnName);     me.say(SectionText3);
+ me.sau(colPk.ColumnName);     me.say(SectionText5);
+ me.sau(colPk.ColumnName);     me.say(SectionText7);
+  }
+}
+Error on line 23: 'Soonda_Library.BO.MyStreamWriter' does not contain a definition for 'sau' and no extension method 'sau' accepting a first argument of type 'Soonda_Library.BO.MyStreamWriter' could be found (are you missing a using directive or an assembly reference?)using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Collections;
+using Soonda_Library.BO;
+using Soonda_Library.Controls;
+using SoondaDbProvider;
+using SoondaUtility;
+public class Page {
+  public MyStreamWriter me;
+  public MyStreamWriter Response;
+  public string SectionText1;
+  public string SectionText3;
+  public string SectionText5;
+  public string SectionText7;
+  public Soonda_Library.BO.ProjectClass Project;
+  public Soonda_Library.BO.ModuleClass Module;
+  public Page() {}
+  public void RenderPage() {
+
+	ModuleColumn colPk = Module.GetKeyColumn();
+    me.say(SectionText1);
+ me.sau(colPk.ColumnName);     me.say(SectionText3);
+ me.sau(colPk.ColumnName);     me.say(SectionText5);
+ me.sau(colPk.ColumnName);     me.say(SectionText7);
+  }
+}
+Error on line 24: 'Soonda_Library.BO.MyStreamWriter' does not contain a definition for 'sau' and no extension method 'sau' accepting a first argument of type 'Soonda_Library.BO.MyStreamWriter' could be found (are you missing a using directive or an assembly reference?)using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Collections;
+using Soonda_Library.BO;
+using Soonda_Library.Controls;
+using SoondaDbProvider;
+using SoondaUtility;
+public class Page {
+  public MyStreamWriter me;
+  public MyStreamWriter Response;
+  public string SectionText1;
+  public string SectionText3;
+  public string SectionText5;
+  public string SectionText7;
+  public Soonda_Library.BO.ProjectClass Project;
+  public Soonda_Library.BO.ModuleClass Module;
+  public Page() {}
+  public void RenderPage() {
+
+	ModuleColumn colPk = Module.GetKeyColumn();
+    me.say(SectionText1);
+ me.sau(colPk.ColumnName);     me.say(SectionText3);
+ me.sau(colPk.ColumnName);     me.say(SectionText5);
+ me.sau(colPk.ColumnName);     me.say(SectionText7);
+  }
+}
+Error on line 25: 'Soonda_Library.BO.MyStreamWriter' does not contain a definition for 'sau' and no extension method 'sau' accepting a first argument of type 'Soonda_Library.BO.MyStreamWriter' could be found (are you missing a using directive or an assembly reference?)

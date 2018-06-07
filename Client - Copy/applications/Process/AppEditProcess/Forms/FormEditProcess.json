@@ -1,0 +1,105 @@
+{
+	"controls": 
+	[
+		{
+			"type" : "formgroup",
+			"controls" :
+			[
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "hidden", "id":"txtIdProcess", "name": "txtIdProcess", "label":"", "dataField":"IdProcess", "placeholder":"Masukkan Id Process" } 
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtProcessNo", "name": "txtProcessNo", "label":"Process No", "dataField":"ProcessNo", "placeholder":"Masukkan Process No" } , 
+						{ "type" : "textbox", "id":"txtProcessName", "name": "txtProcessName", "label":"Process Name", "dataField":"ProcessName", "placeholder":"Masukkan Process Name" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "textarea", "id":"txtProcessInfo", "name": "txtProcessInfo", "label":"Process Info", "dataField":"ProcessInfo", "placeholder":"Masukkan Process Info" }   
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "datetime", "id":"dtProcessCreatedDate", "name": "dtProcessCreatedDate", "label":"Process Created Date", "dataField":"ProcessCreatedDate", "placeholder":"Masukkan Process Created Date" } ,  
+						{ "type": "combobox", "id":"cmbApplicationId", "name":"cmbApplicationId", "label": "Application", "dataField": "ApplicationId", "dataSourceInfo": { "valueField": "IdApplication", "displayField": "ApplicationName"  } }   
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "numericbox", "id":"txtPreviousWorkflowEvaluatorId", "name": "txtPreviousWorkflowEvaluatorId", "label":"Previous Workflow Evaluator Id", "dataField":"PreviousWorkflowEvaluatorId", "placeholder":"Masukkan Previous Workflow Evaluator Id" } ,  
+						{ "type": "numericbox", "id":"txtNextWorkflowEvaluatorId", "name": "txtNextWorkflowEvaluatorId", "label":"Next Workflow Evaluator Id", "dataField":"NextWorkflowEvaluatorId", "placeholder":"Masukkan Next Workflow Evaluator Id" }   
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "combobox", "id":"cmbWorkflowId", "name":"cmbWorkflowId", "label": "Workflow", "dataField": "WorkflowId", "dataSourceInfo": { "valueField": "IdWorkflow", "displayField": "WorkflowName"  } } ,  
+						{ "type": "numericbox", "id":"txtCreatedByUserId", "name": "txtCreatedByUserId", "label":"Create by Id", "dataField":"CreatedByUserId", "placeholder":"Masukkan Create by Id" }   
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "combobox", "id":"cmbProcessGroupId", "name":"cmbProcessGroupId", "label": "Process Group", "dataField": "ProcessGroupId", "dataSourceInfo": { "valueField": "IdProcessGroup", "displayField": "ProcessGroupName"  } }  
+					]
+				}
+				,
+				
+
+				{	"type": "row",
+					"controls":
+					[
+						{	"type": "tabs" 
+		
+						}
+					]
+				}	
+
+			]
+		}
+		,
+		{
+			"type": "row", "style" : "padding-left: 10px; padding-right: 10px; padding-top: 20px",
+			"controls":
+			[
+				{ "type":"button", "label":"Save", "iconClass": "fa-check", "onclick":"save()" },
+				{ "type":"button", "label":"Close", "iconClass": "fa-arrow-left", "onclick":"close()" }
+			]
+		}
+	]
+}

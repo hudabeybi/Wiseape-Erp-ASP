@@ -1,0 +1,216 @@
+<form id="formSearchGalleryAlbumModule">
+<table height="100%" width="70%" align="center">
+<tr>
+<td  height="10%">
+
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchGalleryAlbumModule', '', 'formSearchGalleryAlbumModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+</td>
+</tr>
+<tr>
+<td height="80%">
+
+
+<div id="divForm">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+	<tr>
+		<td width="5%"  height="20px"  valign="top" >&nbsp;</td>
+		<td width="95%" height="20px"  valign="top" >&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="20px" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByKeyword" value="true" checked> By Keyword (search in all free text input data)
+		</td>
+	</tr>
+	<tr>
+		<td width="5%"  height="20px">&nbsp;</td>
+		<td width="95%"  height="20px"  valign="top" >
+			<INPUT type="text" name="txtKeyword" id="txtKeyword" data="Keyword">
+		</td>
+	</tr>
+	<tr>
+		<td width="5%" height="20px">&nbsp;</td>
+		<td width="95%" height="20px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="38" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByColumns" value="true"> By Filter Columns
+		</td>
+	</tr>
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" valign="top" >
+			
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchAlbumTitle}" type="checkbox" name="chkSearchAlbumTitle" id="chkSearchAlbumTitle" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Album Title
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:AlbumTitle}" size="80" type="text" name="txt_AlbumTitle" id="txt_AlbumTitle" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchAlbumDescription}" type="checkbox" name="chkSearchAlbumDescription" id="chkSearchAlbumDescription" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Album Description
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<textarea data="{SOO.FUNCTION:Encrypt:AlbumDescription}"  cols="80" rows="9" name="txtArea_AlbumDescription" id="txtArea_AlbumDescription"></textarea>
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchAlbumCreatedDate}" type="checkbox" name="chkSearchAlbumCreatedDate" id="chkSearchAlbumCreatedDate" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Album Created Date
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<select name="dt_AlbumCreatedDateDay0" id="dt_AlbumCreatedDateDay0" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate0')">
+							<soo:datarepeater:dt_AlbumCreatedDateDay0>
+								<option {selecteddt_AlbumCreatedDateDay0} value="{SOO.DATA:dt_AlbumCreatedDateDay0}">{SOO.DATA:dt_AlbumCreatedDateDayDisplay0}</option>
+							</soo:datarepeater:dt_AlbumCreatedDateDay0>
+						</select>
+						<select name="dt_AlbumCreatedDateMonth0" id="dt_AlbumCreatedDateMonth0" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate0')">
+							<soo:datarepeater:dt_AlbumCreatedDateMonth0>
+								<option {selecteddt_AlbumCreatedDateMonth0} value="{SOO.DATA:dt_AlbumCreatedDateMonth0}">
+								{SOO.DATA:dt_AlbumCreatedDateMonthDisplay0}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateMonth0>
+						</select>	
+						<select name="dt_AlbumCreatedDateYear0" id="dt_AlbumCreatedDateYear0" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate0')">
+							<soo:datarepeater:dt_AlbumCreatedDateYear0>
+								<option {selecteddt_AlbumCreatedDateYear0} value="{SOO.DATA:dt_AlbumCreatedDateYear0}">
+								{SOO.DATA:dt_AlbumCreatedDateYearDisplay0}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateYear0>
+						</select>			
+					
+						:
+						<select name="dt_AlbumCreatedDateHour0" id="dt_AlbumCreatedDateHour0" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate0')">
+							<soo:datarepeater:dt_AlbumCreatedDateHour0>
+								<option {selecteddt_AlbumCreatedDateHour0} value="{SOO.DATA:dt_AlbumCreatedDateHour0}">
+								{SOO.DATA:dt_AlbumCreatedDateHourDisplay0}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateHour0>
+						</select>
+						<select name="dt_AlbumCreatedDateMinute0" id="dt_AlbumCreatedDateMinute0" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate0')">
+							<soo:datarepeater:dt_AlbumCreatedDateMinute0>
+								<option {selecteddt_AlbumCreatedDateMinute0} value="{SOO.DATA:dt_AlbumCreatedDateMinute0}">
+								{SOO.DATA:dt_AlbumCreatedDateMinuteDisplay0}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateMinute0>
+						</select>
+						<select name="dt_AlbumCreatedDateSecond0" id="dt_AlbumCreatedDateSecond0" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate0')">
+							<soo:datarepeater:dt_AlbumCreatedDateSecond0>
+								<option {selecteddt_AlbumCreatedDateSecond0} value="{SOO.DATA:dt_AlbumCreatedDateSecond0}">
+								{SOO.DATA:dt_AlbumCreatedDateSecondDisplay0}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateSecond0>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:AlbumCreatedDate0}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_AlbumCreatedDate0}" name="dt_AlbumCreatedDate0" id="dt_AlbumCreatedDate0">
+					
+						<select name="dt_AlbumCreatedDateDay1" id="dt_AlbumCreatedDateDay1" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate1')">
+							<soo:datarepeater:dt_AlbumCreatedDateDay1>
+								<option {selecteddt_AlbumCreatedDateDay1} value="{SOO.DATA:dt_AlbumCreatedDateDay1}">{SOO.DATA:dt_AlbumCreatedDateDayDisplay1}</option>
+							</soo:datarepeater:dt_AlbumCreatedDateDay1>
+						</select>
+						<select name="dt_AlbumCreatedDateMonth1" id="dt_AlbumCreatedDateMonth1" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate1')">
+							<soo:datarepeater:dt_AlbumCreatedDateMonth1>
+								<option {selecteddt_AlbumCreatedDateMonth1} value="{SOO.DATA:dt_AlbumCreatedDateMonth1}">
+								{SOO.DATA:dt_AlbumCreatedDateMonthDisplay1}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateMonth1>
+						</select>	
+						<select name="dt_AlbumCreatedDateYear1" id="dt_AlbumCreatedDateYear1" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate1')">
+							<soo:datarepeater:dt_AlbumCreatedDateYear1>
+								<option {selecteddt_AlbumCreatedDateYear1} value="{SOO.DATA:dt_AlbumCreatedDateYear1}">
+								{SOO.DATA:dt_AlbumCreatedDateYearDisplay1}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateYear1>
+						</select>			
+					
+						:
+						<select name="dt_AlbumCreatedDateHour1" id="dt_AlbumCreatedDateHour1" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate1')">
+							<soo:datarepeater:dt_AlbumCreatedDateHour1>
+								<option {selecteddt_AlbumCreatedDateHour1} value="{SOO.DATA:dt_AlbumCreatedDateHour1}">
+								{SOO.DATA:dt_AlbumCreatedDateHourDisplay1}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateHour1>
+						</select>
+						<select name="dt_AlbumCreatedDateMinute1" id="dt_AlbumCreatedDateMinute1" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate1')">
+							<soo:datarepeater:dt_AlbumCreatedDateMinute1>
+								<option {selecteddt_AlbumCreatedDateMinute1} value="{SOO.DATA:dt_AlbumCreatedDateMinute1}">
+								{SOO.DATA:dt_AlbumCreatedDateMinuteDisplay1}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateMinute1>
+						</select>
+						<select name="dt_AlbumCreatedDateSecond1" id="dt_AlbumCreatedDateSecond1" onchange="Soonda.ChangeDateValue('dt_AlbumCreatedDate1')">
+							<soo:datarepeater:dt_AlbumCreatedDateSecond1>
+								<option {selecteddt_AlbumCreatedDateSecond1} value="{SOO.DATA:dt_AlbumCreatedDateSecond1}">
+								{SOO.DATA:dt_AlbumCreatedDateSecondDisplay1}
+								</option>
+							</soo:datarepeater:dt_AlbumCreatedDateSecond1>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:AlbumCreatedDate1}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_AlbumCreatedDate1}" name="dt_AlbumCreatedDate1" id="dt_AlbumCreatedDate1">
+					
+					</td>
+				</tr>
+			
+			</table>
+			</div>
+		
+		</td>
+	</tr>
+</table>
+</div>
+
+</td>
+</tr>
+<tr>
+<td height="10%">
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchGalleryAlbumModule', '', 'formSearchGalleryAlbumModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+</td>
+</tr>
+</form>

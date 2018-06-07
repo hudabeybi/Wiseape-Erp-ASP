@@ -1,0 +1,332 @@
+
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/edit-icon.png" align="left" vspace="6px">Edit ProcessModule
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formEditProcessModule">
+			<table border="0" cellpadding="0" cellspacing="0" width="90%" align="center">
+				<tr>
+					<td class="formContent" valign="top">
+					<div id="divForm">
+					<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblEdit" align="center" >
+					
+						<tr style="display:none">
+							<td height="35" width="28%" class="tdFormLeft">
+							{SOO.LANG:IdProcess}
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+
+							<INPUT ishidden="true" TYPE="hidden" value="{SOO.DATA:IdProcess}" data="{SOO.ENC:IdProcess}" size="80" type="text" name="txtNum_IdProcess" id="txtNum_IdProcess" >
+
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessNo}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ProcessNo}" data="{SOO.ENC:ProcessNo}" type="text" name="txt_ProcessNo" id="txt_ProcessNo" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ProcessNo}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessName}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:ProcessName}" data="{SOO.ENC:ProcessName}" type="text" name="txt_ProcessName" id="txt_ProcessName" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ProcessName}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessInfo}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<textarea data="{SOO.ENC:ProcessInfo}"  name="txtArea_ProcessInfo" id="txtArea_ProcessInfo">{SOO.DATA:ProcessInfo}</textarea>
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ProcessInfo}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ProcessCreatedDate}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div class="styled-select">
+								<select name="dt_ProcessCreatedDateDay" id="dt_ProcessCreatedDateDay" onchange="Soonda.changeDateValue('dt_ProcessCreatedDate')">
+									<soo:datarepeater:dt_ProcessCreatedDateDay>
+										<option {selecteddt_ProcessCreatedDateDay} value="{SOO.DATA:dt_ProcessCreatedDateDay}">{SOO.DATA:dt_ProcessCreatedDateDayDisplay}</option>
+									</soo:datarepeater:dt_ProcessCreatedDateDay>
+								</select>
+								</div>
+								<div style="width:4px;display:table-cell"></div>
+								<div class="styled-select">
+								<select name="dt_ProcessCreatedDateMonth" id="dt_ProcessCreatedDateMonth" onchange="Soonda.changeDateValue('dt_ProcessCreatedDate')">
+									<soo:datarepeater:dt_ProcessCreatedDateMonth>
+										<option {selecteddt_ProcessCreatedDateMonth} value="{SOO.DATA:dt_ProcessCreatedDateMonth}">
+										{SOO.DATA:dt_ProcessCreatedDateMonthDisplay}
+										</option>
+									</soo:datarepeater:dt_ProcessCreatedDateMonth>
+								</select>	
+								</div>
+								<div style="width:4px;display:table-cell"></div>
+								<div class="styled-select">
+								<select name="dt_ProcessCreatedDateYear" id="dt_ProcessCreatedDateYear" onchange="Soonda.changeDateValue('dt_ProcessCreatedDate')">
+									<soo:datarepeater:dt_ProcessCreatedDateYear>
+										<option {selecteddt_ProcessCreatedDateYear} value="{SOO.DATA:dt_ProcessCreatedDateYear}">
+										{SOO.DATA:dt_ProcessCreatedDateYearDisplay}
+										</option>
+									</soo:datarepeater:dt_ProcessCreatedDateYear>
+								</select>	
+								</div>
+
+							
+								<div style="width:2px;display:table-cell">:</div>
+
+								<div class="styled-select">
+								<select name="dt_ProcessCreatedDateHour" id="dt_ProcessCreatedDateHour" onchange="Soonda.changeDateValue('dt_ProcessCreatedDate')">
+									<soo:datarepeater:dt_ProcessCreatedDateHour>
+										<option {selecteddt_ProcessCreatedDateHour} value="{SOO.DATA:dt_ProcessCreatedDateHour}">
+										{SOO.DATA:dt_ProcessCreatedDateHourDisplay}
+										</option>
+									</soo:datarepeater:dt_ProcessCreatedDateHour>
+								</select>
+								</div>
+								<div style="width:4px;display:table-cell"></div>
+								<div class="styled-select">
+								<select name="dt_ProcessCreatedDateMinute" id="dt_ProcessCreatedDateMinute" onchange="Soonda.changeDateValue('dt_ProcessCreatedDate')">
+									<soo:datarepeater:dt_ProcessCreatedDateMinute>
+										<option {selecteddt_ProcessCreatedDateMinute} value="{SOO.DATA:dt_ProcessCreatedDateMinute}">
+										{SOO.DATA:dt_ProcessCreatedDateMinuteDisplay}
+										</option>
+									</soo:datarepeater:dt_ProcessCreatedDateMinute>
+								</select>
+								</div>
+								<div style="width:4px;display:table-cell"></div>
+								<div class="styled-select">
+								<select name="dt_ProcessCreatedDateSecond" id="dt_ProcessCreatedDateSecond" onchange="Soonda.changeDateValue('dt_ProcessCreatedDate')">
+									<soo:datarepeater:dt_ProcessCreatedDateSecond>
+										<option {selecteddt_ProcessCreatedDateSecond} value="{SOO.DATA:dt_ProcessCreatedDateSecond}">
+										{SOO.DATA:dt_ProcessCreatedDateSecondDisplay}
+										</option>
+									</soo:datarepeater:dt_ProcessCreatedDateSecond>
+								</select>	
+								</div>
+							
+								<input data="{SOO.ENC:ProcessCreatedDate}"  type="hidden" value="{SOO.DATA:ProcessCreatedDate}" name="dt_ProcessCreatedDate" id="dt_ProcessCreatedDate">
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ProcessCreatedDate}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:ApplicationId}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div class="styled-select">
+								<select data="{SOO.ENC:ApplicationId}"  name="cmbLookup_ApplicationId" id="cmbLookup_ApplicationId">
+								<soo:datarepeater:cmbLookup_ApplicationId>
+									<option {SOO.SELECTEDLOOKUP} value="{SOO.DATA:lookup_}">{SOO.DATA:lookup_}</option>
+								</soo:datarepeater:cmbLookup_ApplicationId>
+								</select>
+								</div>
+								<div style="width:4px;display:table-cell">
+								</div>
+								<div class="lookup-btn" onclick="Soonda.loadModule('{SOO:MODULENAME}', 'viewLookup', 'lookupTable=&keyColumn=&displayColumn=&combo=cmbLookup_ApplicationId', null, true, '{SOO:COMPONENTNAME}');">
+									Find
+								</div>
+
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ApplicationId}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:PreviousWorkflowEvaluatorId}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input class="numericBox" value="{SOO.DATA:PreviousWorkflowEvaluatorId}" data="{SOO.ENC:PreviousWorkflowEvaluatorId}"  type="text" name="txtNum_PreviousWorkflowEvaluatorId" id="txtNum_PreviousWorkflowEvaluatorId" onkeyup="SoondaUtil.numericControl(this, 'float');"/>					
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:PreviousWorkflowEvaluatorId}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:NextWorkflowEvaluatorId}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input class="numericBox" value="{SOO.DATA:NextWorkflowEvaluatorId}" data="{SOO.ENC:NextWorkflowEvaluatorId}"  type="text" name="txtNum_NextWorkflowEvaluatorId" id="txtNum_NextWorkflowEvaluatorId" onkeyup="SoondaUtil.numericControl(this, 'float');"/>					
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:NextWorkflowEvaluatorId}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:WorkflowId}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input class="numericBox" value="{SOO.DATA:WorkflowId}" data="{SOO.ENC:WorkflowId}"  type="text" name="txtNum_WorkflowId" id="txtNum_WorkflowId" onkeyup="SoondaUtil.numericControl(this, 'float');"/>					
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:WorkflowId}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:CreatedByUserId}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input class="numericBox" value="{SOO.DATA:CreatedByUserId}" data="{SOO.ENC:CreatedByUserId}"  type="text" name="txtNum_CreatedByUserId" id="txtNum_CreatedByUserId" onkeyup="SoondaUtil.numericControl(this, 'float');"/>					
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:CreatedByUserId}"></div>
+							</td>
+						</tr>
+					
+						<tr style='display:none'>
+							<td height="35" width="28%" class="tdFormLeft" >
+							
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input data="{SOO.ENC:ProcessGroupId}" value="{SOO.DATA:ProcessGroupId}"  type="hidden" name="txt_ProcessGroupId" id="txt_ProcessGroupId" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:ProcessGroupId}"></div>
+							</td>
+						</tr>
+					
+
+
+						<tr>
+							<td colspan="3" style="position:relative">
+							<div class="tabWrapper">
+								<div class="tabSeparator">
+								</div>
+					
+							</div>
+
+					
+					<script>
+						
+					</script>
+
+					</table>
+					</div>
+
+					</td>
+				</tr>
+			</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	
+	
+}
+defaultOnLoad();
+
+
+</script>

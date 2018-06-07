@@ -1,0 +1,332 @@
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/plus-icon.png" align="left" vspace="6px">Add Application Module
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formAddApplicationModule" width="100%">
+		<table border="0" cellpadding="0" cellspacing="0" width="90%" height="auto"  align="center">
+			<tr>
+				<td class="formContent" valign="top">
+				<div id="divForm">
+
+				<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblAdd" align="center">
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationName}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="1" data="{SOO.ENC:ApplicationName}" type="text" name="txt_ApplicationName" id="txt_ApplicationName" value="{SOO.DATA:DefaultApplicationName}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationName}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationTitle}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="2" data="{SOO.ENC:ApplicationTitle}" type="text" name="txt_ApplicationTitle" id="txt_ApplicationTitle" value="{SOO.DATA:DefaultApplicationTitle}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationTitle}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationInfo}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<textarea tabindex="3" data="{SOO.ENC:ApplicationInfo}" name="txtArea_ApplicationInfo" id="txtArea_ApplicationInfo">{SOO.DATA:DefaultApplicationInfo}</textarea>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationInfo}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationIconSmall}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div>
+								<div id="previewfile_ApplicationIconSmall"> 
+									<A href="{SOO.SELECTEDFILEfile_ApplicationIconSmall}">
+									{SOO.SELECTEDFILEfile_ApplicationIconSmall}
+									</A>
+								</div>
+								<div tabindex="4" id="btnUploadfile_ApplicationIconSmall" class="lookup-btn">Upload</div>
+							</div>
+							<input data="{SOO.ENC:ApplicationIconSmall}"  type="hidden" name="file_ApplicationIconSmall" id="file_ApplicationIconSmall" value="{SOO.SELECTEDFILEfile_ApplicationIconSmall}">	
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationIconSmall}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationIconMiddle}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div>
+								<div id="previewfile_ApplicationIconMiddle"> 
+									<A href="{SOO.SELECTEDFILEfile_ApplicationIconMiddle}">
+									{SOO.SELECTEDFILEfile_ApplicationIconMiddle}
+									</A>
+								</div>
+								<div tabindex="5" id="btnUploadfile_ApplicationIconMiddle" class="lookup-btn">Upload</div>
+							</div>
+							<input data="{SOO.ENC:ApplicationIconMiddle}"  type="hidden" name="file_ApplicationIconMiddle" id="file_ApplicationIconMiddle" value="{SOO.SELECTEDFILEfile_ApplicationIconMiddle}">	
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationIconMiddle}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationIconLarge}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div>
+								<div id="previewfile_ApplicationIconLarge"> 
+									<A href="{SOO.SELECTEDFILEfile_ApplicationIconLarge}">
+									{SOO.SELECTEDFILEfile_ApplicationIconLarge}
+									</A>
+								</div>
+								<div tabindex="6" id="btnUploadfile_ApplicationIconLarge" class="lookup-btn">Upload</div>
+							</div>
+							<input data="{SOO.ENC:ApplicationIconLarge}"  type="hidden" name="file_ApplicationIconLarge" id="file_ApplicationIconLarge" value="{SOO.SELECTEDFILEfile_ApplicationIconLarge}">	
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationIconLarge}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationPath}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="7" data="{SOO.ENC:ApplicationPath}" type="text" name="txt_ApplicationPath" id="txt_ApplicationPath" value="{SOO.DATA:DefaultApplicationPath}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationPath}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationFile}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="8" data="{SOO.ENC:ApplicationFile}" type="text" name="txt_ApplicationFile" id="txt_ApplicationFile" value="{SOO.DATA:DefaultApplicationFile}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationFile}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationClass}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="9" data="{SOO.ENC:ApplicationClass}" type="text" name="txt_ApplicationClass" id="txt_ApplicationClass" value="{SOO.DATA:DefaultApplicationClass}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationClass}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ApplicationMainFunction}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="10" data="{SOO.ENC:ApplicationMainFunction}" type="text" name="txt_ApplicationMainFunction" id="txt_ApplicationMainFunction" value="{SOO.DATA:DefaultApplicationMainFunction}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ApplicationMainFunction}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:DisplayIcon}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="11" data="{SOO.ENC:DisplayIcon}"  type="checkbox" name="chk_DisplayIcon" id="chk_DisplayIcon" checkedvalue="1" uncheckedvalue="0"> Ok 
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:DisplayIcon}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:IsActive}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="12" data="{SOO.ENC:IsActive}"  type="checkbox" name="chk_IsActive" id="chk_IsActive" checkedvalue="1" uncheckedvalue="0"> Ok 
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:IsActive}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:UseWorkflow}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="13" data="{SOO.ENC:UseWorkflow}"  type="checkbox" name="chk_UseWorkflow" id="chk_UseWorkflow" checkedvalue="1" uncheckedvalue="0"> Ok 
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:UseWorkflow}"></div>
+						</td>
+					</tr>
+				
+					<tr>
+						<td colspan="3" style="position:relative">
+						<div class="tabWrapper">
+							<div class="tabSeparator">
+							</div>
+
+				
+						</div>
+				
+				<script>
+					
+				</script>
+
+						</td>
+					</tr>
+				</table>
+
+				</div>
+				</td>
+			</tr>
+		</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+Soonda.init();
+Soonda.initForm( "formAddApplicationModule" );
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	
+	Soonda.ajaxUpload('file_ApplicationIconSmall', 'btnUploadfile_ApplicationIconSmall', 'previewfile_ApplicationIconSmall', './SoondaService.php?op=upload&ext={SOO.ENC:file_ApplicationIconSmall}FileTypes&path={SOO.ENC:file_ApplicationIconSmall}SavedFolder');
+Soonda.ajaxUpload('file_ApplicationIconMiddle', 'btnUploadfile_ApplicationIconMiddle', 'previewfile_ApplicationIconMiddle', './SoondaService.php?op=upload&ext={SOO.ENC:file_ApplicationIconMiddle}FileTypes&path={SOO.ENC:file_ApplicationIconMiddle}SavedFolder');
+Soonda.ajaxUpload('file_ApplicationIconLarge', 'btnUploadfile_ApplicationIconLarge', 'previewfile_ApplicationIconLarge', './SoondaService.php?op=upload&ext={SOO.ENC:file_ApplicationIconLarge}FileTypes&path={SOO.ENC:file_ApplicationIconLarge}SavedFolder');
+
+}
+defaultOnLoad();
+
+
+
+</script>

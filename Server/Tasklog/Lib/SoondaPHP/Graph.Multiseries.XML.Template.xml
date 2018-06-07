@@ -1,0 +1,14 @@
+<graph bgSWF='templates/default/images/graphbg.jpg' canvasBgAlpha='20' xaxisname='{SOO.DATA:xaxisname}' yaxisname='{SOO.DATA:yaxisname}' hovercapbg='DEDEBE' hovercapborder='889E6D' rotateNames='0' numdivlines='9' divLineColor='CCCCCC' divLineAlpha='30' decimalPrecision='0' showAlternateHGridColor='1' AlternateHGridAlpha='30' AlternateHGridColor='CCCCCC' caption='{SOO.DATA:title}' subcaption='{SOO.DATA:subtitle}' >
+<categories font='Arial' fontSize='11' fontColor='000000'>
+<soo.datarepeater:datafield1>
+	<category name='{SOO.DATA:shortvaluefield1}' hoverText='{SOO.DATA:valuefield1}'/>
+</soo.datarepeater:datafield1>
+</categories>
+<soo.datarepeater:datafield2>
+	<dataset seriesname='{SOO.DATA:shortvaluefield2}' color='{SOO.DATA:color}'>
+	<soo.datarepeater:aggregatevalue>
+		<set value='{SOO.DATA:aggregatevalue}'/>
+	</soo.datarepeater:aggregatevalue>
+	</dataset>
+</soo.datarepeater:datafield2>
+</graph>

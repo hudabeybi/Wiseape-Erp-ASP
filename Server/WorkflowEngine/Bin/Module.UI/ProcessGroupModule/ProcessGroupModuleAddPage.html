@@ -1,0 +1,298 @@
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/plus-icon.png" align="left" vspace="6px">Add ProcessGroupModule
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formAddProcessGroupModule" width="100%">
+		<table border="0" cellpadding="0" cellspacing="0" width="90%" height="auto"  align="center">
+			<tr>
+				<td class="formContent" valign="top">
+				<div id="divForm">
+
+				<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblAdd" align="center">
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ProcessGroupName}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="1" data="{SOO.ENC:ProcessGroupName}" type="text" name="txt_ProcessGroupName" id="txt_ProcessGroupName" value="{SOO.DATA:DefaultProcessGroupName}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ProcessGroupName}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ProcessGroupTitle}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="2" data="{SOO.ENC:ProcessGroupTitle}" type="text" name="txt_ProcessGroupTitle" id="txt_ProcessGroupTitle" value="{SOO.DATA:DefaultProcessGroupTitle}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ProcessGroupTitle}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:ProcessGroupInfo}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="3" data="{SOO.ENC:ProcessGroupInfo}" type="text" name="txt_ProcessGroupInfo" id="txt_ProcessGroupInfo" value="{SOO.DATA:DefaultProcessGroupInfo}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:ProcessGroupInfo}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:IconSmall}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div>
+								<img class="thumbnail" height="80" id="previewimg_IconSmall" src="{SOO.SELECTEDIMAGEimg_IconSmall}" onclick="Soonda.previewImage(this.src);">
+								<br>
+								<div tabindex="4" id="btnUploadimg_IconSmall" class="lookup-btn">Upload</div>
+							</div>
+							
+							<input isimage="true" data="{SOO.ENC:IconSmall}"  type="hidden" name="img_IconSmall" id="img_IconSmall" onchange="Soonda.PreviewImage(this.value, 'previewimg_IconSmall' );" value="">						
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:IconSmall}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:IconMiddle}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div>
+								<img class="thumbnail" height="80" id="previewimg_IconMiddle" src="{SOO.SELECTEDIMAGEimg_IconMiddle}" onclick="Soonda.previewImage(this.src);">
+								<br>
+								<div tabindex="5" id="btnUploadimg_IconMiddle" class="lookup-btn">Upload</div>
+							</div>
+							
+							<input isimage="true" data="{SOO.ENC:IconMiddle}"  type="hidden" name="img_IconMiddle" id="img_IconMiddle" onchange="Soonda.PreviewImage(this.value, 'previewimg_IconMiddle' );" value="">						
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:IconMiddle}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:IconLarge}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div>
+								<img class="thumbnail" height="80" id="previewimg_IconLarge" src="{SOO.SELECTEDIMAGEimg_IconLarge}" onclick="Soonda.previewImage(this.src);">
+								<br>
+								<div tabindex="6" id="btnUploadimg_IconLarge" class="lookup-btn">Upload</div>
+							</div>
+							
+							<input isimage="true" data="{SOO.ENC:IconLarge}"  type="hidden" name="img_IconLarge" id="img_IconLarge" onchange="Soonda.PreviewImage(this.value, 'previewimg_IconLarge' );" value="">						
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:IconLarge}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:IsActive}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="7" data="{SOO.ENC:IsActive}"  type="checkbox" name="chk_IsActive" id="chk_IsActive" checkedvalue="1" uncheckedvalue="0"> Ok 
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:IsActive}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:IsDisplay}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="8" data="{SOO.ENC:IsDisplay}"  type="checkbox" name="chk_IsDisplay" id="chk_IsDisplay" checkedvalue="1" uncheckedvalue="0"> Ok 
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:IsDisplay}"></div>
+						</td>
+					</tr>
+				
+					<tr>
+						<td colspan="3" style="position:relative">
+						<div class="tabWrapper">
+							<div class="tabSeparator">
+							</div>
+
+				
+							<div id="divTabProcessModule" onclick="Soonda.showElement('divTabProcessModule', 'divProcessModuleWrapper', 'tabDetail', 'detail-content-wrapper', 'tab-selected')" class="tabDetail">
+								ProcessModule
+							</div>
+							<div class="tabSeparator">
+							</div>
+
+				
+						</div>
+				
+							<div id="divProcessModuleWrapper"  class="detail-content-wrapper">
+								<div class="divDetailWrapper">
+								
+									<div id="childModuleProcessModule" class="detail-table-container">
+
+									</div>
+
+								</div>
+								<div style="height:20px">
+								</div>
+
+								<div id="divBtnAddDetail" class="button" onclick="FormUtil.addOnClick( 'detailTableProcessModule');">
+									<img src="{SOO:USEDTEMPLATEPATH}/images/plus-icon.png" class="btnImg">
+									Add ProcessModule
+								</div>
+
+								<div class="separator-block-wider">
+								</div>
+							</div>
+				
+				<script>
+					Soonda.showElement( 'divTabProcessModule', 'divProcessModuleWrapper', 'tabDetail', 'detail-content-wrapper', 'tab-selected');
+				</script>
+
+						</td>
+					</tr>
+				</table>
+
+				</div>
+				</td>
+			</tr>
+		</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+Soonda.init();
+Soonda.initForm( "formAddProcessGroupModule" );
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	Soonda.ajaxUpload('img_IconSmall', 'btnUploadimg_IconSmall', 'previewimg_IconSmall', './SoondaService.php?op=upload&ext={SOO.ENC:img_IconSmall}FileTypes&path={SOO.ENC:img_IconSmall}SavedFolder&linkedpath={SOO.ENC:img_IconSmall}LinkedPath');
+Soonda.ajaxUpload('img_IconMiddle', 'btnUploadimg_IconMiddle', 'previewimg_IconMiddle', './SoondaService.php?op=upload&ext={SOO.ENC:img_IconMiddle}FileTypes&path={SOO.ENC:img_IconMiddle}SavedFolder&linkedpath={SOO.ENC:img_IconMiddle}LinkedPath');
+Soonda.ajaxUpload('img_IconLarge', 'btnUploadimg_IconLarge', 'previewimg_IconLarge', './SoondaService.php?op=upload&ext={SOO.ENC:img_IconLarge}FileTypes&path={SOO.ENC:img_IconLarge}SavedFolder&linkedpath={SOO.ENC:img_IconLarge}LinkedPath');
+
+	
+}
+defaultOnLoad();
+
+
+//display ProcessModule()
+loadProcessModule();
+
+
+/*
+function to display ProcessModule list
+*/
+function loadProcessModule()
+{
+	var dataTable = new DataTable ("detailTableProcessModule");
+
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:IdProcess}", "{SOO.LANG:IdProcess}"); 
+	var dataColumn = dataTable.createNewColumn ("text", "{SOO.ENC:ProcessNo}", "{SOO.LANG:ProcessNo}"); 
+	var dataColumn = dataTable.createNewColumn ("text", "{SOO.ENC:ProcessName}", "{SOO.LANG:ProcessName}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:ProcessInfo}", "{SOO.LANG:ProcessInfo}"); 
+	var dataColumn = dataTable.createNewColumn ("text", "{SOO.ENC:ProcessCreatedDate}", "{SOO.LANG:ProcessCreatedDate}"); 
+	var dataColumn = dataTable.createNewColumn ("text", "{SOO.ENC:ApplicationId}", "{SOO.LANG:ApplicationId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:PreviousWorkflowEvaluatorId}", "{SOO.LANG:PreviousWorkflowEvaluatorId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:NextWorkflowEvaluatorId}", "{SOO.LANG:NextWorkflowEvaluatorId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:WorkflowId}", "{SOO.LANG:WorkflowId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:CreatedByUserId}", "{SOO.LANG:CreatedByUserId}"); 
+	var dataColumn = dataTable.createNewColumn ("hidden", "{SOO.ENC:ProcessGroupId}", "{SOO.LANG:ProcessGroupId}"); 
+	
+	
+
+	dataTable.id						= "detailTableProcessModule";
+	dataTable.moduleName				= "{SOO:MODULENAME}";
+	dataTable.componentName				= "{SOO:COMPONENTNAME}";
+	dataTable.childComponentName		= "com_ProcessModule";
+	DataTableRender.editOnClick			= FormUtil.editOnClick;
+	DataTableRender.removeOnClick		= FormUtil.removeOnClick; 
+	DataTableRender.display ( "childModuleProcessModule", dataTable, true);
+
+}
+
+
+</script>

@@ -1,0 +1,62 @@
+
+<div class='row'>
+	<div class='col-md-6'>
+		<div class='form-group'>
+			<label for='txt-FirstName'>First Name</label>
+			<input control-type='textbox' type='text' id='txt-FirstName' name='txt-FirstName' class='form-control' placeholder='' data-field='firstName' />
+		</div>
+	</div>
+	<div class='col-md-6'>
+		<div class='form-group'>
+			<label for='txt-LastName'>Last Name</label>
+			<input control-type='textbox' type='text' id='txt-LastName' name='txt-LastName' class='form-control' placeholder='' data-field='lastName' />
+		</div>
+	</div>
+</div>
+
+<div class='row'>
+	<div class='col-md-12'>
+		<div class='form-group'>
+			<label for='radGender'>Gender</label>
+			<input type='radio' id='radGender' name='radGender' value='1' data-field='Gender.IdGender' class='form-control minimal' />Pria
+			<input type='radio' id='radGender' name='radGender' value='2' data-field='Gender.IdGender' class='form-control minimal' />Wanita
+		</div>
+	</div>
+</div>
+
+<div class='row'>
+	<div class='col-md-6'>
+		<div class='form-group'>
+			<label for='cmbDept'>Department</label>
+			<select id='cmbDept' name='cmbDept' data-field='Department.IdDepartment' valueField='IdDepartment' displayField='DepartmentName' onchange='setDepartmentName()'  class='form-control select2' style='width: 100%' ></select>
+		</div>
+	</div>
+	<div class='col-md-6'>
+		<div class='form-group'>
+			<label for='txt-DepartmentName'></label>
+			<input control-type='textbox' type='text' id='txt-DepartmentName' name='txt-DepartmentName' class='form-control' placeholder='' data-field='lastName' />
+		</div>
+	</div>
+</div>
+
+<div class='row'>
+	<div class='col-md-12'>
+		<div class='form-group'>
+			<label for='gridEmployee'></label>
+			<div control-type='grid' id='gridEmployee' name='gridEmployee' column-info='[{"dataField":"IdEmployee","dataType":"number","label":"Id","width":"0"},{"dataField":"FirstName","dataType":"string","label":"First Name","width":"100"},{"dataField":"LastName","dataType":"string","label":"Last Name","width":"100"}]' ></div>
+		</div>
+	</div>
+</div>
+
+<div class='row'>
+	<div class='col-md-6'>
+		<div class='form-group'>
+			<label for='btnSave'>Save</label>
+		</div>
+	</div>
+	<div class='col-md-6'>
+		<div class='form-group'>
+			<label for='btnClose'>Close</label>
+		</div>
+	</div>
+</div>

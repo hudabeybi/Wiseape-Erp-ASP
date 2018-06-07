@@ -1,0 +1,24 @@
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\Com.Wiseape.Purchasing.Data.dll.config
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\Com.Wiseape.Purchasing.Data.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\Com.Wiseape.Purchasing.Data.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\Com.Wiseape.Framework.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\EntityFramework.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\Com.Wiseape.Utility.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\Com.Wiseape.Framework.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\EntityFramework.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\Com.Wiseape.Utility.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\bin\Debug\System.Linq.Dynamic.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Data.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Data.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\obj\Debug\Com.Wiseape.Purchasing.Data.csprojResolveAssemblyReference.cache
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\obj\Debug\Com.Wiseape.Purchasing.Data.dll
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Data\obj\Debug\Com.Wiseape.Purchasing.Data.pdb
+D:\Source Codes\Com.Wiseape\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Data.dll.config
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Data.dll.config
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Data.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Webservice\Resources\Dlls\Com.Wiseape.Purchasing.Data.pdb
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Data\obj\Debug\Com.Wiseape.Purchasing.Data.csprojResolveAssemblyReference.cache
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Data\obj\Debug\Com.Wiseape.Purchasing.Data.dll
+D:\Sample\WiseapeAppGenerate\bin\Debug\Templates\Com.Wiseape.Webservice.Template\Com.Wiseape.Purchasing.Data\obj\Debug\Com.Wiseape.Purchasing.Data.pdb

@@ -1,0 +1,201 @@
+<form id="formSearchGalleryModule">
+<table height="100%" width="70%" align="center">
+<tr>
+<td  height="10%">
+
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchGalleryModule', '', 'formSearchGalleryModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+</td>
+</tr>
+<tr>
+<td height="80%">
+
+
+<div id="divForm">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+	<tr>
+		<td width="5%"  height="20px"  valign="top" >&nbsp;</td>
+		<td width="95%" height="20px"  valign="top" >&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="20px" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByKeyword" value="true" checked> By Keyword (search in all free text input data)
+		</td>
+	</tr>
+	<tr>
+		<td width="5%"  height="20px">&nbsp;</td>
+		<td width="95%"  height="20px"  valign="top" >
+			<INPUT type="text" name="txtKeyword" id="txtKeyword" data="Keyword">
+		</td>
+	</tr>
+	<tr>
+		<td width="5%" height="20px">&nbsp;</td>
+		<td width="95%" height="20px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="38" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByColumns" value="true"> By Filter Columns
+		</td>
+	</tr>
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" valign="top" >
+			
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchGalleryCaption}" type="checkbox" name="chkSearchGalleryCaption" id="chkSearchGalleryCaption" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Gallery Caption
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:GalleryCaption}" size="80" type="text" name="txt_GalleryCaption" id="txt_GalleryCaption" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchImageDate}" type="checkbox" name="chkSearchImageDate" id="chkSearchImageDate" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Image Date
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<select name="dt_ImageDateDay0" id="dt_ImageDateDay0" onchange="Soonda.ChangeDateValue('dt_ImageDate0')">
+							<soo:datarepeater:dt_ImageDateDay0>
+								<option {selecteddt_ImageDateDay0} value="{SOO.DATA:dt_ImageDateDay0}">{SOO.DATA:dt_ImageDateDayDisplay0}</option>
+							</soo:datarepeater:dt_ImageDateDay0>
+						</select>
+						<select name="dt_ImageDateMonth0" id="dt_ImageDateMonth0" onchange="Soonda.ChangeDateValue('dt_ImageDate0')">
+							<soo:datarepeater:dt_ImageDateMonth0>
+								<option {selecteddt_ImageDateMonth0} value="{SOO.DATA:dt_ImageDateMonth0}">
+								{SOO.DATA:dt_ImageDateMonthDisplay0}
+								</option>
+							</soo:datarepeater:dt_ImageDateMonth0>
+						</select>	
+						<select name="dt_ImageDateYear0" id="dt_ImageDateYear0" onchange="Soonda.ChangeDateValue('dt_ImageDate0')">
+							<soo:datarepeater:dt_ImageDateYear0>
+								<option {selecteddt_ImageDateYear0} value="{SOO.DATA:dt_ImageDateYear0}">
+								{SOO.DATA:dt_ImageDateYearDisplay0}
+								</option>
+							</soo:datarepeater:dt_ImageDateYear0>
+						</select>			
+					
+						:
+						<select name="dt_ImageDateHour0" id="dt_ImageDateHour0" onchange="Soonda.ChangeDateValue('dt_ImageDate0')">
+							<soo:datarepeater:dt_ImageDateHour0>
+								<option {selecteddt_ImageDateHour0} value="{SOO.DATA:dt_ImageDateHour0}">
+								{SOO.DATA:dt_ImageDateHourDisplay0}
+								</option>
+							</soo:datarepeater:dt_ImageDateHour0>
+						</select>
+						<select name="dt_ImageDateMinute0" id="dt_ImageDateMinute0" onchange="Soonda.ChangeDateValue('dt_ImageDate0')">
+							<soo:datarepeater:dt_ImageDateMinute0>
+								<option {selecteddt_ImageDateMinute0} value="{SOO.DATA:dt_ImageDateMinute0}">
+								{SOO.DATA:dt_ImageDateMinuteDisplay0}
+								</option>
+							</soo:datarepeater:dt_ImageDateMinute0>
+						</select>
+						<select name="dt_ImageDateSecond0" id="dt_ImageDateSecond0" onchange="Soonda.ChangeDateValue('dt_ImageDate0')">
+							<soo:datarepeater:dt_ImageDateSecond0>
+								<option {selecteddt_ImageDateSecond0} value="{SOO.DATA:dt_ImageDateSecond0}">
+								{SOO.DATA:dt_ImageDateSecondDisplay0}
+								</option>
+							</soo:datarepeater:dt_ImageDateSecond0>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:ImageDate0}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_ImageDate0}" name="dt_ImageDate0" id="dt_ImageDate0">
+					
+						<select name="dt_ImageDateDay1" id="dt_ImageDateDay1" onchange="Soonda.ChangeDateValue('dt_ImageDate1')">
+							<soo:datarepeater:dt_ImageDateDay1>
+								<option {selecteddt_ImageDateDay1} value="{SOO.DATA:dt_ImageDateDay1}">{SOO.DATA:dt_ImageDateDayDisplay1}</option>
+							</soo:datarepeater:dt_ImageDateDay1>
+						</select>
+						<select name="dt_ImageDateMonth1" id="dt_ImageDateMonth1" onchange="Soonda.ChangeDateValue('dt_ImageDate1')">
+							<soo:datarepeater:dt_ImageDateMonth1>
+								<option {selecteddt_ImageDateMonth1} value="{SOO.DATA:dt_ImageDateMonth1}">
+								{SOO.DATA:dt_ImageDateMonthDisplay1}
+								</option>
+							</soo:datarepeater:dt_ImageDateMonth1>
+						</select>	
+						<select name="dt_ImageDateYear1" id="dt_ImageDateYear1" onchange="Soonda.ChangeDateValue('dt_ImageDate1')">
+							<soo:datarepeater:dt_ImageDateYear1>
+								<option {selecteddt_ImageDateYear1} value="{SOO.DATA:dt_ImageDateYear1}">
+								{SOO.DATA:dt_ImageDateYearDisplay1}
+								</option>
+							</soo:datarepeater:dt_ImageDateYear1>
+						</select>			
+					
+						:
+						<select name="dt_ImageDateHour1" id="dt_ImageDateHour1" onchange="Soonda.ChangeDateValue('dt_ImageDate1')">
+							<soo:datarepeater:dt_ImageDateHour1>
+								<option {selecteddt_ImageDateHour1} value="{SOO.DATA:dt_ImageDateHour1}">
+								{SOO.DATA:dt_ImageDateHourDisplay1}
+								</option>
+							</soo:datarepeater:dt_ImageDateHour1>
+						</select>
+						<select name="dt_ImageDateMinute1" id="dt_ImageDateMinute1" onchange="Soonda.ChangeDateValue('dt_ImageDate1')">
+							<soo:datarepeater:dt_ImageDateMinute1>
+								<option {selecteddt_ImageDateMinute1} value="{SOO.DATA:dt_ImageDateMinute1}">
+								{SOO.DATA:dt_ImageDateMinuteDisplay1}
+								</option>
+							</soo:datarepeater:dt_ImageDateMinute1>
+						</select>
+						<select name="dt_ImageDateSecond1" id="dt_ImageDateSecond1" onchange="Soonda.ChangeDateValue('dt_ImageDate1')">
+							<soo:datarepeater:dt_ImageDateSecond1>
+								<option {selecteddt_ImageDateSecond1} value="{SOO.DATA:dt_ImageDateSecond1}">
+								{SOO.DATA:dt_ImageDateSecondDisplay1}
+								</option>
+							</soo:datarepeater:dt_ImageDateSecond1>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:ImageDate1}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_ImageDate1}" name="dt_ImageDate1" id="dt_ImageDate1">
+					
+					</td>
+				</tr>
+			
+			</table>
+			</div>
+		
+		</td>
+	</tr>
+</table>
+</div>
+
+</td>
+</tr>
+<tr>
+<td height="10%">
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchGalleryModule', '', 'formSearchGalleryModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+</td>
+</tr>
+</form>

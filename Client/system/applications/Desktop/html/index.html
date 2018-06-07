@@ -1,0 +1,608 @@
+<script src="system/framework/WiseUI/WiseapeWindow.js" type="text/javascript"></script>
+<script src="system/framework/WiseUI/WiseapeFormRenderer.js" type="text/javascript"></script>
+<script src="system/framework/WiseUI/WiseapeBaseListForm.js" type="text/javascript"></script>
+<script src="system/framework/WiseUI/WiseapeBaseInputForm.js" type="text/javascript"></script>
+<script src="system/framework/WiseUI/WiseapeFormUtil.js" type="text/javascript"></script>
+<script src="system/framework/WiseUI/WiseUIConfig.js" type="text/javascript"></script>
+
+<link href="system/framework/WiseUI/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+<script src="system/framework/WiseUI/bootstrap-fileinput/js/plugins/piexif.min.js" type="text/javascript"></script>
+<script src="system/framework/WiseUI/bootstrap-fileinput/js/plugins/sortable.min.js" type="text/javascript"></script>
+<!-- purify.min.js is only needed if you wish to purify HTML content in your preview for HTML files.
+     This must be loaded before fileinput.min.js -->
+<script src="system/framework/WiseUI/bootstrap-fileinput/js/plugins/purify.min.js" type="text/javascript"></script>
+<!-- the main fileinput plugin file -->
+<script src="system/framework/WiseUI/bootstrap-fileinput/js/fileinput.min.js"></script>
+<!-- optionally if you need a theme like font awesome theme you can include 
+    it as mentioned below -->
+<script src="system/framework/WiseUI/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="system/framework/WiseUI/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+<link rel="stylesheet" href="system/applications/Desktop/css/desktop.css" />
+
+<style>
+
+@font-face {
+    font-family: segoeui;
+    src: url({{path.system.applications}}/Desktop/html/metro-ui/fonts/segoe-ui-883.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: metro;
+    src: url({{path.system.applications}}/Desktop/html/metro-ui/fonts/metro.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: gruppo;
+    src: url({{path.system.applications}}/Desktop/html/metro-ui/fonts/Gruppo-Regular.ttf);
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: android;
+    src: url({{path.system.applications}}/Desktop/html/metro-ui/fonts/android.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: siffon;
+    src: url({{path.system.applications}}/Desktop/html/metro-ui/fonts/siffon.otf);
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: caviardreams;
+    src: url({{path.system.applications}}/Desktop/html/metro-ui/fonts/CaviarDreams.ttf);
+    font-weight: normal;
+}
+
+
+#search-button
+{
+	background: url({{path.system.applications}}/Desktop/images/icon/search.png) no-repeat; 
+	background-size: 80% auto; 
+	background-position: center;
+}
+
+#home-button
+{
+	background: url({{path.system.applications}}/Desktop/images/icon/home.svg) no-repeat; 
+	background-size: 80% auto; 
+	background-position: center;
+}
+
+#setting-button
+{
+	background: url({{path.system.applications}}/Desktop/images/icon/setting.png) no-repeat; 
+	background-size: 80% auto; 
+	background-position: center;
+}
+
+#user-button
+{
+	background: url({{path.system.applications}}/Desktop/images/icon/user.png) no-repeat; 
+	background-size: 80% auto; 
+	background-position: center;
+}
+
+#content-panel
+{
+	width: 95%; 
+	height:100%; 
+	max-height:100%; 
+	display: inline-block; 
+	position: absolute; 
+	top: 0px;
+	overflow: hidden;
+
+}
+
+.desktop
+{
+	overflow: hidden;
+}
+
+#content-panel
+{
+	background: url({{path.system.applications}}/Desktop/images/wallpaper/wallpaper.jpg?id=9889); 
+	background-size: 100% 100%;	
+}
+
+.left-icon
+{ 
+	width: 80%; 
+	height: 90%; 
+	margin-left: 10%; 
+	opacity: 1; 
+	cursor: pointer;
+	-webkit-transition: all 0.2s; /* Safari */
+    transition: all 0.2s;
+}
+
+.left-icon:hover
+{
+	width: 90%;
+	margin-left: 5%; 
+}
+
+.box-menu
+{
+	position:relative; 
+	display:inline-block; 
+	cursor: pointer; 
+	width: 40%;
+	height: 30%; 
+	background-color:#993333; 
+	padding: 22px; 
+	border: solid 2px transparent;
+	-webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+	margin:4px;
+	border-radius: 10px;
+}
+
+.box-menu:hover
+{
+	border: solid 2px #fff;
+}
+
+.box-menu-left
+{
+	display:inline-block; 
+	width: 50%; 
+	height:100%;
+}
+
+.box-menu-icon-left
+{
+	display:inline-block; 
+	width: 15%; 
+	height: 20%;
+	padding-right: 20px;
+}
+
+.box-menu-right
+{
+	display:inline-block;
+	height:100%; 
+	width:50%;  
+	float:right;
+}
+
+.box-menu-icon-container
+{
+	width: 100%; height:100%;
+}
+
+
+.box-menu-title
+{
+	color: #fff; 
+	font-size: 14pt; 
+	text-align:left; 
+	font-weight:bold; 
+	height: 26px;
+}
+
+.box-menu-icon-title
+{
+	color: #fff; 
+	font-size: 10pt; 
+	text-align:center; 
+	font-weight:bold; 
+	height: 16px;
+}
+
+.box-menu-text
+{
+	color: #fff; 
+	font-size: 10pt; 
+	text-align:left; 
+	font-weight:normal; 
+}
+
+.box-menu-group-title
+{
+	color: #fff; 
+	font-size: 10pt; 
+	text-align:left; 
+	font-weight:bold; 
+	display: none;
+}
+
+body
+{
+	overflow: hidden;
+}
+
+
+.desktop
+{
+	width:100%; 
+	height: 100%; 
+
+}
+
+.left-panel
+{
+	width:5%; 
+	height:100%; 
+	display:inline-block; 
+	background-color: #4fa1c7; 
+	text-align:center; 
+	padding-top: 12px;
+	z-index: 120000000000;
+	opacity: 1.0;
+}
+
+.color1
+{
+	background-color: #0099FF;
+}
+
+.color2
+{
+	background-color: #FFFF66;
+}
+
+
+.color3
+{
+	background-color: #FF0000;
+}
+
+
+.color4
+{
+	background-color: #009900;
+}
+
+.color5
+{
+	background-color: #CC66FF;
+}
+
+.color6
+{
+	background-color: #FF3300;
+}
+
+
+.color7
+{
+	background-color: #009900;
+}
+
+
+.color8
+{
+	background-color:teal;
+}
+
+.color9
+{
+	background-color: silver;
+}
+
+.color10
+{
+	background-color: #66CCFF;
+}
+
+.color11
+{
+	background-color: #FFCC66;
+}
+
+.color12
+{
+	background-color: #00FF99;
+}
+
+.color13
+{
+	background-color: #00CC66;
+}
+
+.color14
+{
+	background-color: #9999FF;
+}
+
+
+.menu-background
+{
+	height: 100%; 
+	width:100%; 
+	padding: 20px;
+	padding-left: 5%;
+	padding-top:5%; 	
+	background: url({{path.system.applications}}/Desktop/images/wallpaper/metro-wallpaper.jpg?id=9889) no-repeat; 
+	background-size: 100% auto;
+	opacity: 0.9;
+	z-index: 100333333333330000;
+}
+
+
+div{
+	font: normal 10pt segoeui;
+	color: #000;
+}
+
+input{
+	font: normal 10pt segoeui;
+	color: #777;
+}
+
+select{
+	font: normal 10pt segoeui;
+	color: #777;
+}
+
+button label
+{
+	font: normal 12pt segoeui;
+	color: #fff;
+	vertical-align: middle;
+	line-height: 10pt;
+	height: 25px;
+	padding-top: 5px;
+
+}
+
+body{
+	overflow:hidden;
+}
+
+.app-icon
+{
+	background-size: 100% auto;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+}
+
+button
+{
+	height: 40px;
+}
+
+
+ .circle{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     background-color: #333;
+
+	-webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+  }
+
+  .circle:hover{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     background-color: #999;
+  }
+ 
+ .menu-app-container
+ {
+	width: 100%;
+	height: 80%;
+ }
+
+ .menu-app-back-container
+ {
+	width: 90%;
+	height: 20%;
+	background: url({{path.system.applications}}/Desktop/images/icon/back.svg) no-repeat;
+	background-position: top right;
+	background-size: auto 40%;
+	cursor: pointer;
+ }
+
+ #group-menu
+ {
+	z-index: 1200000;
+	position: absolute;
+ }
+
+ #app-container
+ {
+	z-index: 1200000;
+	position: absolute;
+ }
+
+ #menu-panel
+ {
+	position: absolute;
+	left: 5.1%;
+	top: 10px;
+	height: 99%;
+	z-index: 99999;
+	
+ }
+
+ #menu-panel > ul
+ {
+
+ }
+
+  #menu-panel 
+ {
+	width: 20%;
+	height: auto;
+	background-color: #fff;
+	color: #999;
+	border-radius: 6px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+
+ }
+
+ .ui-menu-item:hover
+ {
+	background-color: #ccc;
+ }
+
+ .menu-item-img-wrapper
+ {
+	background-color: #4fa1c7;
+	display: inline-block;
+	padding: 10px;
+ }
+
+  .menu-item-text-wrapper
+ {
+	display: inline-block;
+	padding-left: 6px;
+ }
+
+ #menu-panel li
+ {
+ }
+
+ #menu-panel img
+ {
+	width: 25px;
+	height: 25px;
+ }
+
+ .app-item > div
+ {
+
+ }
+
+ #menu-panel > .ui-widget.ui-widget-content {
+    border: 0px solid #f5f1ff;
+    border-radius: 0px;
+    /* -webkit-box-shadow: 6px 2px 58px 7px rgba(0,0,0,0.94); */
+    -moz-box-shadow: 0px 0px 0px 0px transparent;
+    /* box-shadow: 6px 2px 58px 7px rgba(0,0,0,0.94); */
+
+	webkit-box-shadow: 0px 0px 0px 0px transparent;
+
+	box-shadow: 0px 0px 0px 0px transparent;
+}
+
+.ui-menu-item > .ui-widget.ui-widget-content {
+     border: 0px solid #f5f1ff;
+    border-radius: 0px;
+    /* -webkit-box-shadow: 6px 2px 58px 7px rgba(0,0,0,0.94); */
+    -moz-box-shadow: 0px 0px 0px 0px transparent;
+    /* box-shadow: 6px 2px 58px 7px rgba(0,0,0,0.94); */
+
+	webkit-box-shadow: 0px 0px 0px 0px transparent;
+
+	box-shadow: 0px 0px 0px 0px transparent;  
+}
+
+.ui-menu-item > ul
+{
+	width: 90%;
+	border-radius: 6px !important;
+}
+
+.ui-menu-item > ul > li
+{
+	padding: 6px;
+}
+
+
+ .app-item > div:hover
+ {
+	background-color: #ccc;
+ }
+
+ #left-menu > li > .ui-state-active
+ {
+	background-color: transparent;
+	border: solid 1px transparent;
+ }
+
+.app-item > .ui-state-active
+{
+	background-color: transparent;
+	border: solid 1px transparent;
+}
+
+.ui-icon-caret-1-e {
+    background-position: 120px 0;
+}
+
+.ui-menu-item-wrapper > img
+{
+	width: 25px !important;
+	height: 25px !important;
+}
+
+ .my-label
+ {
+	font-size: 11pt;
+	color: #555;
+	font-weight:  bold;
+ } 
+ 
+ .form-group {
+    margin-bottom: 5px;
+}
+
+.taskbar-icon
+{ 
+	width: 50px; 
+	height: 50px; 
+	margin-left: 10%; 
+	opacity: .8; 
+	cursor: pointer;
+	-webkit-transition: all 0.2s; /* Safari */
+    transition: all 0.2s;
+}
+
+.taskbar-icon:hover
+{
+	width: 90%;
+	margin-left: 5%; 
+}
+
+
+</style>
+
+<div class="desktop">
+	<div class="left-panel">
+		<div id="home-button" class="left-icon">
+		</div>
+		<div id="app-icon-container" style="height: 80%;">
+		</div>
+		<div style="width: 70%; height:0px; border: solid 1px #fff;margin-left: 12px;"></div>
+		<div style="height:4px"></div>
+		<div style="color: #fff"></div>
+	</div>
+	<div id="content-panel">
+		
+	</div>
+	<div id="menu-panel">
+	</div>
+
+</div>
+
+<script>
+	$(document).ready(function()
+	{
+		$(".menu-background").hide();
+		var w = $(".left-icon").css("width");
+		$(".left-icon").css("height", w);
+		
+	});
+</script>
+
+
+
+
+
+
+
+

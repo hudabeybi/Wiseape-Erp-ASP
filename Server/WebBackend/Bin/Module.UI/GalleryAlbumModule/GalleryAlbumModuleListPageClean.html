@@ -1,0 +1,27 @@
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>&nbsp;</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Album Title&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Album Created Date&nbsp;&nbsp;
+	</td>
+	</tr>
+	<soo:dataGalleryAlbumModule>
+	<tr>
+		
+	<td style='border-bottom: solid 1px #ccc'>&nbsp;{SOO:DATA:ROWNUMBER}.&nbsp;</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:AlbumTitle}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.FUNCTION:DATEFORMAT:AlbumCreatedDate}
+	</td>
+	</tr>
+	</soo:dataGalleryAlbumModule>
+</table>
+
+

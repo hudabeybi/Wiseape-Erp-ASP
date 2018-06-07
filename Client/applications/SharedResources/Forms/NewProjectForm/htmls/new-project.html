@@ -1,0 +1,64 @@
+﻿<div id="formNewProject">
+<div class="grid">
+	<div class="row">
+		<div class="cell">
+	        <label>Project Title</label>
+	        <div class="input-control text full-size">
+	            <input id="txtTitle" name="txtTitle" field="title" type="text" placeholder="Enter your project title..." />
+	        </div>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="cell">
+	        <label>Project Description</label>
+	        <div class="input-control text full-size">
+	            <textarea id="txtDesc" name="txtDesc" field="desc" placeholder="Project description to give information about your project..." ></textarea>
+	        </div>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="cell">
+	    </div>
+	</div>
+	<div class="row">
+		<div class="cell">
+	    </div>
+	</div>
+	<div class="row">
+		<div class="cell">
+	    </div>
+	</div>
+
+	<div class="row">
+		<div class="cell">
+	        <label>Database Connection</label>
+	        <div class="input-control text full-size">
+				<select id="cmbConnection" name="cmbConnection" field="projectConnectionId" onchange="onConnectionSelect()" placeholder="Select project connection.....">
+					<option value="-1"> ----- Select Connection ---- </option>
+					<option value="0"> ----- Create New Connection ---- </option>
+					<option value="1"> @localhost </option>
+					<option value="2"> @192.168.1.1 </option>
+
+				</select>
+	        </div>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="cell">
+	        <label>Project Icon</label>
+	        <div class="input-control file  full-size" data-role="input">
+	            <input  id="txtFile" name="txtFile"  field="icon" type="file" />
+    			<button class="button" style="height:38px; border-right: solid 0px #ccc;"><span class="mif-folder full-size"></span></button>	        
+    		</div>
+	    </div>
+	</div>
+	<div class="row cells2">
+		<div class="cell">
+			<button class="button primary full-size" onclick="onBtnSaveClick()">Ok</button>	        
+		</div>
+		<div class="cell">
+			<button class="button primary full-size" onclick="onBtnCancelClick()">Cancel</button>	    
+		</div>
+	</div>
+</div>
+</div>

@@ -1,0 +1,47 @@
+
+{
+	"controls": 
+	[
+		{
+			"type": "row", "style" : "padding-left: 50px;padding-bottom: 5px; border-bottom: solid 1px #ccc;",
+			"controls":
+			[
+				{ "type":"icon-button", "tooltip":"Add", "label":"Add", "url":"applications/SharedResources/Assets/Icons/icon-add-new.svg", "style":"cursor:pointer;float:left", "onclick":"addItem()" },
+				{ "type":"icon-button", "tooltip":"Edit","label":"Edit", "url":"applications/SharedResources/Assets/Icons/icon-edit.svg", "style":"cursor:pointer;float:left", "onclick":"editItem()" },
+				{ "type":"icon-button", "tooltip":"Delete","label":"Delete", "url":"applications/SharedResources/Assets/Icons/delete.svg",  "style":"cursor:pointer;float:left", "onclick":"deleteItem()" }
+			]
+		}	
+		,
+		{
+			"type": "row", "style" : "padding-top: 5px;padding-bottom: 5px;  border-bottom: solid 1px #ccc;",
+			"controls":
+			[
+				{ "type":"textbox", "id":"txtSearch", "name":"txtSearch", "dataField":"Keyword", "label":"Keyword", "placeholder" : "Enter search word" },
+				{ "type":"combobox", "id":"cmbPage", "name":"cmbPage", "dataField":"Page", "label":"Page", "placeholder" : "Enter page" },
+				{ "type":"combobox", "id":"cmbMax", "name":"cmbMax", "label":"Max.", "placeholder" : "Max Data" },
+				{ "type":"icon-button", "label":"Search", "url":"applications/SharedResources/Assets/Icons/icon-search.svg",  "style":"cursor:pointer;float:left;margin-top: 1%", "onclick":"search()" }			]
+		}
+		,
+		{
+			"type": "row",
+			"controls":
+			[
+				{ "type":"grid", "id":"gridUserLogin", "width":"100%", "height":"60%", "columns":"[
+						{'datafield':'IdUser', 'type':'string', 'text':'Id User', 'width':'0%' },
+				
+						{ 'datafield':'IdentityNo', 'type':'string', 'text':'Identity No', 'width':'30%' },
+				
+						{ 'datafield':'FirstName', 'type':'string', 'text':'First Name', 'width':'30%' },
+				
+						{ 'datafield':'LastName', 'type':'string', 'text':'Last Name', 'width':'30%' },
+				
+						{ 'datafield':'Email', 'type':'string', 'text':'Email', 'width':'30%' },
+				
+						{ 'datafield':'Username', 'type':'string', 'text':'Username', 'width':'30%' },
+				
+						{ 'datafield':'CreatedDate', 'type':'string', 'text':'Created Date', 'filtertype': 'date', 'width': '10%', 'cellsformat': 'dd-MMMM-yyyy' }
+				]" }
+			]
+		}
+	]
+}

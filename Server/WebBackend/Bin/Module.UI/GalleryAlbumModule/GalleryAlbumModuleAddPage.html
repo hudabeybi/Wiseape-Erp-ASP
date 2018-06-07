@@ -1,0 +1,185 @@
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/plus-icon.png" align="left" vspace="6px">Add Gallery Album
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formAddGalleryAlbumModule" width="100%">
+		<table border="0" cellpadding="0" cellspacing="0" width="90%" height="auto"  align="center">
+			<tr>
+				<td class="formContent" valign="top">
+				<div id="divForm">
+
+				<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblAdd" align="center">
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:AlbumTitle}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<input tabindex="1" data="{SOO.ENC:AlbumTitle}" type="text" name="txt_AlbumTitle" id="txt_AlbumTitle" value="{SOO.DATA:DefaultAlbumTitle}"/>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:AlbumTitle}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:AlbumDescription}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<textarea tabindex="2" data="{SOO.ENC:AlbumDescription}" name="txtArea_AlbumDescription" id="txtArea_AlbumDescription">{SOO.DATA:DefaultAlbumDescription}</textarea>
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:AlbumDescription}"></div>
+						</td>
+					</tr>
+				
+					<tr >
+						<td height="35" width="28%" class="tdFormLeft" >
+						{SOO.LANG:AlbumCreatedDate}
+						
+							<b>&nbsp;*</b>
+						
+						</td>
+						<td height="35" width="3%">&nbsp;</td>
+						<td height="35" width="68%" class="tdFormRight">
+						
+						
+							<div class="styled-select">
+							<select tabindex="3" name="dt_AlbumCreatedDateDay" id="dt_AlbumCreatedDateDay" onchange="Soonda.changeDateValue('dt_AlbumCreatedDate')">
+								<soo:datarepeater:dt_AlbumCreatedDateDay>
+									<option {selecteddt_AlbumCreatedDateDay} value="{SOO.DATA:dt_AlbumCreatedDateDay}">{SOO.DATA:dt_AlbumCreatedDateDayDisplay}</option>
+								</soo:datarepeater:dt_AlbumCreatedDateDay>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="4" name="dt_AlbumCreatedDateMonth" id="dt_AlbumCreatedDateMonth" onchange="Soonda.changeDateValue('dt_AlbumCreatedDate')">
+								<soo:datarepeater:dt_AlbumCreatedDateMonth>
+									<option {selecteddt_AlbumCreatedDateMonth} value="{SOO.DATA:dt_AlbumCreatedDateMonth}">
+									{SOO.DATA:dt_AlbumCreatedDateMonthDisplay}
+									</option>
+								</soo:datarepeater:dt_AlbumCreatedDateMonth>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="5" name="dt_AlbumCreatedDateYear" id="dt_AlbumCreatedDateYear" onchange="Soonda.changeDateValue('dt_AlbumCreatedDate')">
+								<soo:datarepeater:dt_AlbumCreatedDateYear>
+									<option {selecteddt_AlbumCreatedDateYear} value="{SOO.DATA:dt_AlbumCreatedDateYear}">
+									{SOO.DATA:dt_AlbumCreatedDateYearDisplay}
+									</option>
+								</soo:datarepeater:dt_AlbumCreatedDateYear>
+							</select>	
+							</div>
+
+						
+							<div style="width:2px;display:table-cell">:</div>
+							<div class="styled-select">
+							<select tabindex="6" name="dt_AlbumCreatedDateHour" id="dt_AlbumCreatedDateHour" onchange="Soonda.changeDateValue('dt_AlbumCreatedDate')">
+								<soo:datarepeater:dt_AlbumCreatedDateHour>
+									<option {selecteddt_AlbumCreatedDateHour} value="{SOO.DATA:dt_AlbumCreatedDateHour}">
+									{SOO.DATA:dt_AlbumCreatedDateHourDisplay}
+									</option>
+								</soo:datarepeater:dt_AlbumCreatedDateHour>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="7" name="dt_AlbumCreatedDateMinute" id="dt_AlbumCreatedDateMinute" onchange="Soonda.changeDateValue('dt_AlbumCreatedDate')">
+								<soo:datarepeater:dt_AlbumCreatedDateMinute>
+									<option {selecteddt_AlbumCreatedDateMinute} value="{SOO.DATA:dt_AlbumCreatedDateMinute}">
+									{SOO.DATA:dt_AlbumCreatedDateMinuteDisplay}
+									</option>
+								</soo:datarepeater:dt_AlbumCreatedDateMinute>
+							</select>
+							</div>
+							<div style="width:4px;display:table-cell"></div>
+							<div class="styled-select">
+							<select tabindex="8" name="dt_AlbumCreatedDateSecond" id="dt_AlbumCreatedDateSecond" onchange="Soonda.changeDateValue('dt_AlbumCreatedDate')">
+								<soo:datarepeater:dt_AlbumCreatedDateSecond>
+									<option {selecteddt_AlbumCreatedDateSecond} value="{SOO.DATA:dt_AlbumCreatedDateSecond}">
+									{SOO.DATA:dt_AlbumCreatedDateSecondDisplay}
+									</option>
+								</soo:datarepeater:dt_AlbumCreatedDateSecond>
+							</select>		
+							</div>
+						
+							<input data="{SOO.ENC:AlbumCreatedDate}"  type="hidden" value="{SOO.SELECTEDDATE:dt_AlbumCreatedDate}" name="dt_AlbumCreatedDate" id="dt_AlbumCreatedDate">
+						
+							&nbsp;&nbsp;
+							<div id="lblInvalid{SOO.ENC:AlbumCreatedDate}"></div>
+						</td>
+					</tr>
+				
+					<tr>
+						<td colspan="3" style="position:relative">
+						<div class="tabWrapper">
+							<div class="tabSeparator">
+							</div>
+
+				
+						</div>
+				
+				<script>
+					
+				</script>
+
+						</td>
+					</tr>
+				</table>
+
+				</div>
+				</td>
+			</tr>
+		</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+Soonda.init();
+Soonda.initForm( "formAddGalleryAlbumModule" );
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	
+	
+}
+defaultOnLoad();
+
+
+
+</script>

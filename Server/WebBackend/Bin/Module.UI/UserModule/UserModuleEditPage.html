@@ -1,0 +1,317 @@
+
+<div id="div-page-wrapper" class="page-wrapper">
+
+	<div class="page-label">
+		<img src="{SOO:USEDTEMPLATEPATH}/images/edit-icon.png" align="left" vspace="6px">Edit User
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+	<div id="div-form-wrapper" class="form-wrapper">
+		<form id="formEditUserModule">
+			<table border="0" cellpadding="0" cellspacing="0" width="90%" align="center">
+				<tr>
+					<td class="formContent" valign="top">
+					<div id="divForm">
+					<table border="0" cellpadding="0" cellspacing="0" width="96%" id="tblEdit" align="center" >
+					
+						<tr style="display:none">
+							<td height="35" width="28%" class="tdFormLeft">
+							{SOO.LANG:IdUser}
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+
+							<INPUT ishidden="true" TYPE="hidden" value="{SOO.DATA:IdUser}" data="{SOO.ENC:IdUser}" size="80" type="text" name="txtNum_IdUser" id="txtNum_IdUser" >
+
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:FirstName}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:FirstName}" data="{SOO.ENC:FirstName}" type="text" name="txt_FirstName" id="txt_FirstName" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:FirstName}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:LastName}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:LastName}" data="{SOO.ENC:LastName}" type="text" name="txt_LastName" id="txt_LastName" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:LastName}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:UserPicture}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div>
+									<img class='thumbnail' isimage="true" height="80" id="previewimg_UserPicture" src="{SOO.SELECTEDIMAGEimg_UserPicture}" onclick="Soonda.previewImage(this.src);">
+									<br>
+									<div id="btnUploadimg_UserPicture" class="lookup-btn">Upload</div>
+								</div>
+								
+								<input isimage="true" data="{SOO.ENC:UserPicture}"  type="hidden" name="img_UserPicture" id="img_UserPicture" onchange="Soonda.PreviewImage(this.value, 'previewimg_UserPicture' );" value="{SOO.SELECTEDIMAGEimg_UserPicture}">						
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:UserPicture}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:UserRegisteredDate}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div class="styled-select">
+								<select name="dt_UserRegisteredDateDay" id="dt_UserRegisteredDateDay" onchange="Soonda.changeDateValue('dt_UserRegisteredDate')">
+									<soo:datarepeater:dt_UserRegisteredDateDay>
+										<option {selecteddt_UserRegisteredDateDay} value="{SOO.DATA:dt_UserRegisteredDateDay}">{SOO.DATA:dt_UserRegisteredDateDayDisplay}</option>
+									</soo:datarepeater:dt_UserRegisteredDateDay>
+								</select>
+								</div>
+								<div style="width:4px;display:table-cell"></div>
+								<div class="styled-select">
+								<select name="dt_UserRegisteredDateMonth" id="dt_UserRegisteredDateMonth" onchange="Soonda.changeDateValue('dt_UserRegisteredDate')">
+									<soo:datarepeater:dt_UserRegisteredDateMonth>
+										<option {selecteddt_UserRegisteredDateMonth} value="{SOO.DATA:dt_UserRegisteredDateMonth}">
+										{SOO.DATA:dt_UserRegisteredDateMonthDisplay}
+										</option>
+									</soo:datarepeater:dt_UserRegisteredDateMonth>
+								</select>	
+								</div>
+								<div style="width:4px;display:table-cell"></div>
+								<div class="styled-select">
+								<select name="dt_UserRegisteredDateYear" id="dt_UserRegisteredDateYear" onchange="Soonda.changeDateValue('dt_UserRegisteredDate')">
+									<soo:datarepeater:dt_UserRegisteredDateYear>
+										<option {selecteddt_UserRegisteredDateYear} value="{SOO.DATA:dt_UserRegisteredDateYear}">
+										{SOO.DATA:dt_UserRegisteredDateYearDisplay}
+										</option>
+									</soo:datarepeater:dt_UserRegisteredDateYear>
+								</select>	
+								</div>
+
+							
+								<div style="width:2px;display:table-cell">:</div>
+
+								<div class="styled-select">
+								<select name="dt_UserRegisteredDateHour" id="dt_UserRegisteredDateHour" onchange="Soonda.changeDateValue('dt_UserRegisteredDate')">
+									<soo:datarepeater:dt_UserRegisteredDateHour>
+										<option {selecteddt_UserRegisteredDateHour} value="{SOO.DATA:dt_UserRegisteredDateHour}">
+										{SOO.DATA:dt_UserRegisteredDateHourDisplay}
+										</option>
+									</soo:datarepeater:dt_UserRegisteredDateHour>
+								</select>
+								</div>
+								<div style="width:4px;display:table-cell"></div>
+								<div class="styled-select">
+								<select name="dt_UserRegisteredDateMinute" id="dt_UserRegisteredDateMinute" onchange="Soonda.changeDateValue('dt_UserRegisteredDate')">
+									<soo:datarepeater:dt_UserRegisteredDateMinute>
+										<option {selecteddt_UserRegisteredDateMinute} value="{SOO.DATA:dt_UserRegisteredDateMinute}">
+										{SOO.DATA:dt_UserRegisteredDateMinuteDisplay}
+										</option>
+									</soo:datarepeater:dt_UserRegisteredDateMinute>
+								</select>
+								</div>
+								<div style="width:4px;display:table-cell"></div>
+								<div class="styled-select">
+								<select name="dt_UserRegisteredDateSecond" id="dt_UserRegisteredDateSecond" onchange="Soonda.changeDateValue('dt_UserRegisteredDate')">
+									<soo:datarepeater:dt_UserRegisteredDateSecond>
+										<option {selecteddt_UserRegisteredDateSecond} value="{SOO.DATA:dt_UserRegisteredDateSecond}">
+										{SOO.DATA:dt_UserRegisteredDateSecondDisplay}
+										</option>
+									</soo:datarepeater:dt_UserRegisteredDateSecond>
+								</select>	
+								</div>
+							
+								<input data="{SOO.ENC:UserRegisteredDate}"  type="hidden" value="{SOO.DATA:UserRegisteredDate}" name="dt_UserRegisteredDate" id="dt_UserRegisteredDate">
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:UserRegisteredDate}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:GenderId}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div class="styled-select">
+								<select data="{SOO.ENC:GenderId}"  name="cmbLookup_GenderId" id="cmbLookup_GenderId">
+								<soo:datarepeater:cmbLookup_GenderId>
+									<option {SOO.SELECTEDLOOKUP} value="{SOO.DATA:lookup_}">{SOO.DATA:lookup_}</option>
+								</soo:datarepeater:cmbLookup_GenderId>
+								</select>
+								</div>
+								<div style="width:4px;display:table-cell">
+								</div>
+								<div class="lookup-btn" onclick="Soonda.loadModule('{SOO:MODULENAME}', 'viewLookup', 'lookupTable=&keyColumn=&displayColumn=&combo=cmbLookup_GenderId', null, true, '{SOO:COMPONENTNAME}');">
+									Find
+								</div>
+
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:GenderId}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:UserEmail}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:UserEmail}" data="{SOO.ENC:UserEmail}" type="text" name="txt_UserEmail" id="txt_UserEmail" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:UserEmail}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:UserPhone}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<input value="{SOO.DATA:UserPhone}" data="{SOO.ENC:UserPhone}" type="text" name="txt_UserPhone" id="txt_UserPhone" />
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:UserPhone}"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td height="35" width="28%" class="tdFormLeft" >
+							{SOO.LANG:UserGroupId}
+							
+								<b>&nbsp;*</b>
+							
+							</td>
+							<td height="35" width="3%">&nbsp;</td>
+							<td height="35" width="68%" class="tdFormRight">
+							
+							
+								<div class="styled-select">
+								<select data="{SOO.ENC:UserGroupId}"  name="cmbLookup_UserGroupId" id="cmbLookup_UserGroupId">
+								<soo:datarepeater:cmbLookup_UserGroupId>
+									<option {SOO.SELECTEDLOOKUP} value="{SOO.DATA:lookup_}">{SOO.DATA:lookup_}</option>
+								</soo:datarepeater:cmbLookup_UserGroupId>
+								</select>
+								</div>
+								<div style="width:4px;display:table-cell">
+								</div>
+								<div class="lookup-btn" onclick="Soonda.loadModule('{SOO:MODULENAME}', 'viewLookup', 'lookupTable=&keyColumn=&displayColumn=&combo=cmbLookup_UserGroupId', null, true, '{SOO:COMPONENTNAME}');">
+									Find
+								</div>
+
+							
+								&nbsp;&nbsp;
+								<div id="lblInvalid{SOO.ENC:UserGroupId}"></div>
+							</td>
+						</tr>
+					
+
+
+						<tr>
+							<td colspan="3" style="position:relative">
+							<div class="tabWrapper">
+								<div class="tabSeparator">
+								</div>
+					
+							</div>
+
+					
+					<script>
+						
+					</script>
+
+					</table>
+					</div>
+
+					</td>
+				</tr>
+			</table>
+		</form>
+	<!--- End of div-form-wrapper --->
+	</div>
+
+	<div class="small-page-label">
+	</div>
+	<div class="button-container" id="div-button-container">
+	</div>
+	<div class="small-page-label">
+	</div>
+
+<!--- End of div-page-wrapper --->
+</div>
+
+<script>
+function defaultOnLoad()
+{
+	var editor, html = '';
+	var config = {};
+	Soonda.EDITORS = new Array();
+	
+	Soonda.ajaxUpload('img_UserPicture', 'btnUploadimg_UserPicture', 'previewimg_UserPicture', './SoondaService.php?op=upload&ext={SOO.ENC:img_UserPicture}FileTypes&path={SOO.ENC:img_UserPicture}SavedFolder&linkedpath={SOO.ENC:img_UserPicture}LinkedPath');
+
+	
+}
+defaultOnLoad();
+
+
+</script>

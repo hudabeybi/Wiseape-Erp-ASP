@@ -1,0 +1,73 @@
+{
+	"controls": 
+	[
+		{
+			"type" : "formgroup",
+			"controls" :
+			[
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "hidden", "id":"txtIdTaskLog", "name": "txtIdTaskLog", "label":"", "dataField":"IdTaskLog", "placeholder":"Masukkan Id Task Log" } 
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtTaskTitle1", "name": "txtTaskTitle1", "label":"Task Title 1", "dataField":"TaskTitle1", "placeholder":"Masukkan Task Title 1" } , 
+						{ "type" : "textbox", "id":"txtTaskTitle2", "name": "txtTaskTitle2", "label":"Task Title 2", "dataField":"TaskTitle2", "placeholder":"Masukkan Task Title 2" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtTaskTitle3", "name": "txtTaskTitle3", "label":"Task Title 3", "dataField":"TaskTitle3", "placeholder":"Masukkan Task Title 3" } , 
+						{ "type" : "textbox", "id":"txtTaskTitle4", "name": "txtTaskTitle4", "label":"Task Title 4", "dataField":"TaskTitle4", "placeholder":"Masukkan Task Title 4" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "datetime", "id":"dtTaskDate", "name": "dtTaskDate", "label":"Task Date", "dataField":"TaskDate", "placeholder":"Masukkan Task Date" }  
+					]
+				}
+				,
+				
+
+				{	"type": "row",
+					"controls":
+					[
+						{	"type": "tabs" 
+		
+						}
+					]
+				}	
+
+			]
+		}
+		,
+		{
+			"type": "row", "style" : "padding-left: 10px; padding-right: 10px; padding-top: 20px",
+			"controls":
+			[
+				{ "type":"button", "label":"Save", "iconClass": "fa-check", "onclick":"save()" },
+				{ "type":"button", "label":"Close", "iconClass": "fa-arrow-left", "onclick":"close()" }
+			]
+		}
+	]
+}

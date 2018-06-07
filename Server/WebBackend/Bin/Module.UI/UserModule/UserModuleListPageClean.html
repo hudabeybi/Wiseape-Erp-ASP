@@ -1,0 +1,63 @@
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>&nbsp;</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;First Name&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Last Name&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;User Picture&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;User Registered Date&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;Gender&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;User Email&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;User Phone&nbsp;&nbsp;
+	</td>
+	<td style='border:solid 1px #cccccc;background-color:#cccc'>
+		&nbsp;&nbsp;User Group Id&nbsp;&nbsp;
+	</td>
+	</tr>
+	<soo:dataUserModule>
+	<tr>
+		
+	<td style='border-bottom: solid 1px #ccc'>&nbsp;{SOO:DATA:ROWNUMBER}.&nbsp;</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:FirstName}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:LastName}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:UserPicture}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.FUNCTION:DATEFORMAT:UserRegisteredDate}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:GenderId}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:UserEmail}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:UserPhone}
+	</td>
+	<td style='border-bottom: solid 1px #ccc'>
+		{SOO.DATA:UserGroupId}
+	</td>
+	</tr>
+	</soo:dataUserModule>
+</table>
+
+

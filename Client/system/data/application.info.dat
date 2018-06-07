@@ -1,0 +1,57 @@
+[ 
+	{
+		 "groupName": "groupUser", "groupTitle": "User Management", "groupDesc" : "Application to manage users", "displayInMenu" : true, "groupIcon" : "UserManagement/images/icon/usergroup-icon.png",
+		 "applications" : 
+		 [ 		
+			{ "appName": "appListUser", 
+			"appTitle": "List of Users", 
+			"appDesc": "List of users to access this system", 
+			"appPath": "UserManagement", 
+			"appFile":"AppListUser.js", 
+			"appObject": "AppListUser", 
+			"appStartFunction": "run", 
+			"appIcon": "UserManagement/images/icon/user-list.png", 
+			"displayInMenu" : true } ,
+
+			{ "appName": "appSearchUser", 
+			"appTitle": "Search User", 
+			"appDesc": "Search user to access this system", 
+			"appPath": "UserManagement", 
+			"appFile":"AppSearchUser.js", 
+			"appObject": "AppSearchUser", 
+			"appStartFunction": "run", 
+			"appIcon": "UserManagement/images/icon/user-search.png", 
+			"displayInMenu" : "false" } ,
+
+			{ "appName": "appNewUser", 
+			"appTitle": "Create User", 
+			"appDesc": "Create new user to access this system", 
+			"appPath": "UserManagement", 
+			"appFile":"AppCreateUser.js", 
+			"appObject": "AppCreateUser", 
+			"appStartFunction": "run", 
+			"appIcon": "UserManagement/images/icon/user-create.png", 
+			"displayInMenu" : "false" } ,
+
+			{ "appName": "appEditUser", 
+			"appTitle": "Edit User", 
+			"appDesc": "Create edit user to access this system", 
+			"appPath": "UserManagement", 
+			"appFile":"AppEditUser.js", 
+			"appObject": "AppEditUser", 
+			"appStartFunction": "false", 
+			"appIcon": "UserManagement/images/icon/user-edit.png", 
+			"displayInMenu" : true } ,
+
+			{ "appName": "appDeleteUser", 
+			"appTitle": "Delete User", 
+			"appDesc": "Create edit user to access this system", 
+			"appPath": "UserManagement", 
+			"appFile":"AppDeleteUser.js", 
+			"appObject": "AppDeleteUser", 
+			"appStartFunction": "run", 
+			"appIcon": "UserManagement/images/icon/user-delete.png", 
+			"displayInMenu" : "false" } 
+		]
+	}
+]

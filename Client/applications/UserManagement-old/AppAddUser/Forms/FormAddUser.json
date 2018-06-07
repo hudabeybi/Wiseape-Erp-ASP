@@ -1,0 +1,84 @@
+{
+	"controls": 
+	[
+		{
+			"type" : "formgroup",
+			"controls" :
+			[
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtFirstName", "name": "txtFirstName", "label":"First Name", "dataField":"FirstName", "placeholder":"Masukkan First Name" } , 
+						{ "type" : "textbox", "id":"txtLastName", "name": "txtLastName", "label":"Last Name", "dataField":"LastName", "placeholder":"Masukkan Last Name" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "image", "id":"imgUserPicture", "name": "imgUserPicture", "label":"User Picture", "dataField":"UserPicture", "placeholder":"Masukkan User Picture" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "datetime", "id":"dtUserRegisteredDate", "name": "dtUserRegisteredDate", "label":"User Registered Date", "dataField":"UserRegisteredDate", "placeholder":"Masukkan User Registered Date" } ,  
+						{ "type": "combobox", "id":"cmbGenderId", "name":"cmbGenderId", "label": "Gender", "dataField": "GenderId", "dataSourceInfo": { "valueField": "IdGender", "displayField": "GenderName"  } }   
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtUserEmail", "name": "txtUserEmail", "label":"User Email", "dataField":"UserEmail", "placeholder":"Masukkan User Email" } , 
+						{ "type" : "textbox", "id":"txtUserPhone", "name": "txtUserPhone", "label":"User Phone", "dataField":"UserPhone", "placeholder":"Masukkan User Phone" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "combobox", "id":"cmbUserGroupId", "name":"cmbUserGroupId", "label": "User Group", "dataField": "UserGroupId", "dataSourceInfo": { "valueField": "IdUserGroup", "displayField": "UserGroup"  } }  
+					]
+				}
+				,
+				
+
+				{	"type": "row",
+					"controls":
+					[
+						{	"type": "tabs" 
+		
+						}
+					]
+				}	
+
+			]
+		}
+		,
+		{
+			"type": "row", "style" : "padding-left: 10px; padding-right: 10px; padding-top: 20px",
+			"controls":
+			[
+				{ "type":"button", "label":"Save", "iconClass": "fa-check", "onclick":"save()" },
+				{ "type":"button", "label":"Close", "iconClass": "fa-arrow-left", "onclick":"close()" }
+			]
+		}
+	]
+}

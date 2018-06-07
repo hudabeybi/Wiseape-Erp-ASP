@@ -1,0 +1,117 @@
+{
+	"controls": 
+	[
+		{
+			"type" : "formgroup",
+			"controls" :
+			[
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "hidden", "id":"txtIdApplication", "name": "txtIdApplication", "label":"", "dataField":"IdApplication", "placeholder":"Masukkan Id Application" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtApplicationName", "name": "txtApplicationName", "label":"Application Name", "dataField":"ApplicationName", "placeholder":"Masukkan Application Name" } , 
+						{ "type" : "textbox", "id":"txtApplicationTitle", "name": "txtApplicationTitle", "label":"Application Title", "dataField":"ApplicationTitle", "placeholder":"Masukkan Application Title" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "textarea", "id":"txtApplicationInfo", "name": "txtApplicationInfo", "label":"Application Info", "dataField":"ApplicationInfo", "placeholder":"Masukkan Application Info" }   
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtApplicationIconSmall", "name": "txtApplicationIconSmall", "label":"Application Icon Small", "dataField":"ApplicationIconSmall", "placeholder":"Masukkan Application Icon Small" } , 
+						{ "type" : "textbox", "id":"txtApplicationIconMiddle", "name": "txtApplicationIconMiddle", "label":"Application Icon Middle", "dataField":"ApplicationIconMiddle", "placeholder":"Masukkan Application Icon Middle" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtApplicationIconLarge", "name": "txtApplicationIconLarge", "label":"Application Icon Large", "dataField":"ApplicationIconLarge", "placeholder":"Masukkan Application Icon Large" } , 
+						{ "type" : "textbox", "id":"txtApplicationPath", "name": "txtApplicationPath", "label":"Application Path", "dataField":"ApplicationPath", "placeholder":"Masukkan Application Path" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtApplicationFile", "name": "txtApplicationFile", "label":"Application File", "dataField":"ApplicationFile", "placeholder":"Masukkan Application File" } , 
+						{ "type" : "textbox", "id":"txtApplicationClass", "name": "txtApplicationClass", "label":"Application Class", "dataField":"ApplicationClass", "placeholder":"Masukkan Application Class" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtApplicationMainFunction", "name": "txtApplicationMainFunction", "label":"Application Main Function", "dataField":"ApplicationMainFunction", "placeholder":"Masukkan Application Main Function" } , 
+						{ "type": "checkbox", "id":"txtDisplayIcon", "name": "txtDisplayIcon", "label":"Display Icon", "dataField":"DisplayIcon", "placeholder":"Masukkan Display Icon" }   
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "checkbox", "id":"txtIsActive", "name": "txtIsActive", "label":"Is Active", "dataField":"IsActive", "placeholder":"Masukkan Is Active" } ,  
+						{ "type": "checkbox", "id":"txtUseWorkflow", "name": "txtUseWorkflow", "label":"Use Workflow", "dataField":"UseWorkflow", "placeholder":"Masukkan Use Workflow" }   
+					]
+				}
+				,
+				
+
+				{	"type": "row",
+					"controls":
+					[
+						{	"type": "tabs" 
+		
+						}
+					]
+				}	
+
+			]
+		}
+		,
+		{
+			"type": "row", "style" : "padding-left: 10px; padding-right: 10px; padding-top: 20px",
+			"controls":
+			[
+				{ "type":"button", "label":"Save", "iconClass": "fa-check", "onclick":"save()" },
+				{ "type":"button", "label":"Close", "iconClass": "fa-arrow-left", "onclick":"close()" }
+			]
+		}
+	]
+}

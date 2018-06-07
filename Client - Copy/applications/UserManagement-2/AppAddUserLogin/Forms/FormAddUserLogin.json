@@ -1,0 +1,75 @@
+{
+	"controls": 
+	[
+		{
+			"type" : "formgroup",
+			"controls" :
+			[
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtIdentityNo", "name": "txtIdentityNo", "label":"Identity No", "dataField":"IdentityNo", "placeholder":"Masukkan Identity No" } , 
+						{ "type" : "textbox", "id":"txtFirstName", "name": "txtFirstName", "label":"First Name", "dataField":"FirstName", "placeholder":"Masukkan First Name" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtLastName", "name": "txtLastName", "label":"Last Name", "dataField":"LastName", "placeholder":"Masukkan Last Name" } , 
+						{ "type" : "textbox", "id":"txtEmail", "name": "txtEmail", "label":"Email", "dataField":"Email", "placeholder":"Masukkan Email" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type" : "textbox", "id":"txtUsername", "name": "txtUsername", "label":"Username", "dataField":"Username", "placeholder":"Masukkan Username" } , 
+						{ "type" : "textbox", "id":"txtUserPassword", "name": "txtUserPassword", "label":"User Password", "dataField":"UserPassword", "placeholder":"Masukkan User Password" }  
+					]
+				}
+				,
+		
+				{
+					"type" : "row",
+					"controls" : 
+					[
+		
+						{ "type": "datetime", "id":"dtCreatedDate", "name": "dtCreatedDate", "label":"Created Date", "dataField":"CreatedDate", "placeholder":"Masukkan Created Date" } ,  
+						{ "type": "checkbox", "id":"chkIsActive", "name": "chkIsActive", "label":"Is Active", "dataField":"IsActive", "placeholder":"Masukkan Is Active" }   
+					]
+				}
+				,
+				
+
+				{	"type": "row",
+					"controls":
+					[
+						{	"type": "tabs" 
+		
+						}
+					]
+				}	
+
+			]
+		}
+		,
+		{
+			"type": "row", "style" : "padding-left: 10px; padding-right: 10px; padding-top: 20px",
+			"controls":
+			[
+				{ "type":"button", "id":"btnSave", "label":"Save", "iconClass": "fa fa-check", "onclick":"save()" },
+				{ "type":"button", "id":"btnClose", "label":"Close", "iconClass": "fa fa-arrow-left", "onclick":"close()" }
+			]
+		}
+	]
+}

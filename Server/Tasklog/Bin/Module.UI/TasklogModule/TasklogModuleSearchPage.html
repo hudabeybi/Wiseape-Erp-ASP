@@ -1,0 +1,246 @@
+<form id="formSearchTasklogModule">
+<table height="100%" width="70%" align="center">
+<tr>
+<td  height="10%">
+
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchTasklogModule', '', 'formSearchTasklogModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+</td>
+</tr>
+<tr>
+<td height="80%">
+
+
+<div id="divForm">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+	<tr>
+		<td width="5%"  height="20px"  valign="top" >&nbsp;</td>
+		<td width="95%" height="20px"  valign="top" >&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="20px" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByKeyword" value="true" checked> By Keyword (search in all free text input data)
+		</td>
+	</tr>
+	<tr>
+		<td width="5%"  height="20px">&nbsp;</td>
+		<td width="95%"  height="20px"  valign="top" >
+			<INPUT type="text" name="txtKeyword" id="txtKeyword" data="Keyword">
+		</td>
+	</tr>
+	<tr>
+		<td width="5%" height="20px">&nbsp;</td>
+		<td width="95%" height="20px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="38" valign="top" >
+			<input type="radio" id="rdByKeyword" name="rdByKeyword" data="ByColumns" value="true"> By Filter Columns
+		</td>
+	</tr>
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" valign="top" >
+			
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchTaskTitle1}" type="checkbox" name="chkSearchTaskTitle1" id="chkSearchTaskTitle1" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Task Title 1
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:TaskTitle1}" size="80" type="text" name="txt_TaskTitle1" id="txt_TaskTitle1" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchTaskTitle2}" type="checkbox" name="chkSearchTaskTitle2" id="chkSearchTaskTitle2" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Task Title 2
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:TaskTitle2}" size="80" type="text" name="txt_TaskTitle2" id="txt_TaskTitle2" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchTaskTitle3}" type="checkbox" name="chkSearchTaskTitle3" id="chkSearchTaskTitle3" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Task Title 3
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:TaskTitle3}" size="80" type="text" name="txt_TaskTitle3" id="txt_TaskTitle3" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchTaskTitle4}" type="checkbox" name="chkSearchTaskTitle4" id="chkSearchTaskTitle4" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Task Title 4
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<input data="{SOO.FUNCTION:Encrypt:TaskTitle4}" size="80" type="text" name="txt_TaskTitle4" id="txt_TaskTitle4" />
+					
+					</td>
+				</tr>
+			
+				<tr>
+					<td height="35" width="2%" class="tdFormLeft">
+					<input data="{SOO.FUNCTION:Encrypt:SearchTaskDate}" type="checkbox" name="chkSearchTaskDate" id="chkSearchTaskDate" value="true" checkedvalue="true" uncheckedvalue="false">
+					</td>
+					<td height="35" width="28%" class="tdFormLeft">
+					Task Date
+					</td>
+					<td height="35" width="3%">&nbsp;</td>
+					<td height="35" width="68%" class="tdFormRight">
+					
+						<select name="dt_TaskDateDay0" id="dt_TaskDateDay0" onchange="Soonda.ChangeDateValue('dt_TaskDate0')">
+							<soo:datarepeater:dt_TaskDateDay0>
+								<option {selecteddt_TaskDateDay0} value="{SOO.DATA:dt_TaskDateDay0}">{SOO.DATA:dt_TaskDateDayDisplay0}</option>
+							</soo:datarepeater:dt_TaskDateDay0>
+						</select>
+						<select name="dt_TaskDateMonth0" id="dt_TaskDateMonth0" onchange="Soonda.ChangeDateValue('dt_TaskDate0')">
+							<soo:datarepeater:dt_TaskDateMonth0>
+								<option {selecteddt_TaskDateMonth0} value="{SOO.DATA:dt_TaskDateMonth0}">
+								{SOO.DATA:dt_TaskDateMonthDisplay0}
+								</option>
+							</soo:datarepeater:dt_TaskDateMonth0>
+						</select>	
+						<select name="dt_TaskDateYear0" id="dt_TaskDateYear0" onchange="Soonda.ChangeDateValue('dt_TaskDate0')">
+							<soo:datarepeater:dt_TaskDateYear0>
+								<option {selecteddt_TaskDateYear0} value="{SOO.DATA:dt_TaskDateYear0}">
+								{SOO.DATA:dt_TaskDateYearDisplay0}
+								</option>
+							</soo:datarepeater:dt_TaskDateYear0>
+						</select>			
+					
+						:
+						<select name="dt_TaskDateHour0" id="dt_TaskDateHour0" onchange="Soonda.ChangeDateValue('dt_TaskDate0')">
+							<soo:datarepeater:dt_TaskDateHour0>
+								<option {selecteddt_TaskDateHour0} value="{SOO.DATA:dt_TaskDateHour0}">
+								{SOO.DATA:dt_TaskDateHourDisplay0}
+								</option>
+							</soo:datarepeater:dt_TaskDateHour0>
+						</select>
+						<select name="dt_TaskDateMinute0" id="dt_TaskDateMinute0" onchange="Soonda.ChangeDateValue('dt_TaskDate0')">
+							<soo:datarepeater:dt_TaskDateMinute0>
+								<option {selecteddt_TaskDateMinute0} value="{SOO.DATA:dt_TaskDateMinute0}">
+								{SOO.DATA:dt_TaskDateMinuteDisplay0}
+								</option>
+							</soo:datarepeater:dt_TaskDateMinute0>
+						</select>
+						<select name="dt_TaskDateSecond0" id="dt_TaskDateSecond0" onchange="Soonda.ChangeDateValue('dt_TaskDate0')">
+							<soo:datarepeater:dt_TaskDateSecond0>
+								<option {selecteddt_TaskDateSecond0} value="{SOO.DATA:dt_TaskDateSecond0}">
+								{SOO.DATA:dt_TaskDateSecondDisplay0}
+								</option>
+							</soo:datarepeater:dt_TaskDateSecond0>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:TaskDate0}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_TaskDate0}" name="dt_TaskDate0" id="dt_TaskDate0">
+					
+						<select name="dt_TaskDateDay1" id="dt_TaskDateDay1" onchange="Soonda.ChangeDateValue('dt_TaskDate1')">
+							<soo:datarepeater:dt_TaskDateDay1>
+								<option {selecteddt_TaskDateDay1} value="{SOO.DATA:dt_TaskDateDay1}">{SOO.DATA:dt_TaskDateDayDisplay1}</option>
+							</soo:datarepeater:dt_TaskDateDay1>
+						</select>
+						<select name="dt_TaskDateMonth1" id="dt_TaskDateMonth1" onchange="Soonda.ChangeDateValue('dt_TaskDate1')">
+							<soo:datarepeater:dt_TaskDateMonth1>
+								<option {selecteddt_TaskDateMonth1} value="{SOO.DATA:dt_TaskDateMonth1}">
+								{SOO.DATA:dt_TaskDateMonthDisplay1}
+								</option>
+							</soo:datarepeater:dt_TaskDateMonth1>
+						</select>	
+						<select name="dt_TaskDateYear1" id="dt_TaskDateYear1" onchange="Soonda.ChangeDateValue('dt_TaskDate1')">
+							<soo:datarepeater:dt_TaskDateYear1>
+								<option {selecteddt_TaskDateYear1} value="{SOO.DATA:dt_TaskDateYear1}">
+								{SOO.DATA:dt_TaskDateYearDisplay1}
+								</option>
+							</soo:datarepeater:dt_TaskDateYear1>
+						</select>			
+					
+						:
+						<select name="dt_TaskDateHour1" id="dt_TaskDateHour1" onchange="Soonda.ChangeDateValue('dt_TaskDate1')">
+							<soo:datarepeater:dt_TaskDateHour1>
+								<option {selecteddt_TaskDateHour1} value="{SOO.DATA:dt_TaskDateHour1}">
+								{SOO.DATA:dt_TaskDateHourDisplay1}
+								</option>
+							</soo:datarepeater:dt_TaskDateHour1>
+						</select>
+						<select name="dt_TaskDateMinute1" id="dt_TaskDateMinute1" onchange="Soonda.ChangeDateValue('dt_TaskDate1')">
+							<soo:datarepeater:dt_TaskDateMinute1>
+								<option {selecteddt_TaskDateMinute1} value="{SOO.DATA:dt_TaskDateMinute1}">
+								{SOO.DATA:dt_TaskDateMinuteDisplay1}
+								</option>
+							</soo:datarepeater:dt_TaskDateMinute1>
+						</select>
+						<select name="dt_TaskDateSecond1" id="dt_TaskDateSecond1" onchange="Soonda.ChangeDateValue('dt_TaskDate1')">
+							<soo:datarepeater:dt_TaskDateSecond1>
+								<option {selecteddt_TaskDateSecond1} value="{SOO.DATA:dt_TaskDateSecond1}">
+								{SOO.DATA:dt_TaskDateSecondDisplay1}
+								</option>
+							</soo:datarepeater:dt_TaskDateSecond1>
+						</select>							
+					
+						<input data="{SOO.FUNCTION:Encrypt:TaskDate1}"  type="hidden" value="{SOO.FUNCTION:SELECTEDDATE:dt_TaskDate1}" name="dt_TaskDate1" id="dt_TaskDate1">
+					
+					</td>
+				</tr>
+			
+			</table>
+			</div>
+		
+		</td>
+	</tr>
+</table>
+</div>
+
+</td>
+</tr>
+<tr>
+<td height="10%">
+
+<table height="100%" width="100%">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%" align="right">
+			<div id="btnSearch" onclick="Soonda.saveModule('{SOO:MODULENAME}', 'searchTasklogModule', '', 'formSearchTasklogModule', DefaultAnimatorContent, '{SOO:COMPONENTNAME}' )">
+				<img src="templates/default/images/search-icon.png" border="0" vspace="3px" hspace="3px" align="left">Search
+			</div>
+		</td>
+	</tr>
+</table>
+
+</td>
+</tr>
+</form>
